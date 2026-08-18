@@ -9,15 +9,18 @@ Geocomputation · GeoAI · Complexity Science · Quantum Computing
 
 ## Contents
 
-- `index.html` — lab home: research areas, selected work, platforms, news, about, contact
-- `publications/` — the full curated record (81 entries) with theme filters and search
+- `index.html` — lab home: research areas, selected work, people, the lab, news, contact
+- `publications/` — the full curated record (80 entries) with theme filters and search
 - `assets/art/` — generative grayscale artwork, produced deterministically by `tools/`
 - `assets/covers/` — Springer cover images for the seven monographs and edited volumes
 - `tools/` — the build scripts
 
+Only published work appears on the site. Anything under review or in preparation is
+deliberately excluded.
+
 ## Content provenance
 
-Every publication, book, platform and biographical claim on this site comes from the
+Every publication, book and biographical claim on this site comes from the
 existing record: the JSON-LD on ericvaz.com, Google Scholar, and Springer. Nothing is
 invented. Citation metrics (3,843 citations, h-index 32) are as reported by Google
 Scholar and should be refreshed periodically.

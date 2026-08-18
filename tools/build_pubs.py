@@ -12,7 +12,6 @@ EXTRA = [
  {"title":"GIScience as a Tool for Environmental Response in Northern Canada","year":"2026","venue":"Regional and Urban Change and GIScience (Springer)","authors":["Vaz, E."],"kind":"Chapter"},
  {"title":"Inuit Communities in the North","year":"2026","venue":"Regional and Urban Change and GIScience (Springer)","authors":["Vaz, E."],"kind":"Chapter"},
  {"title":"Food Scarcity in Nunavut: Socio-Economic, Cultural, and Environmental Dimensions","year":"2026","venue":"Regional and Urban Change and GIScience (Springer)","authors":["Vaz, E."],"kind":"Chapter"},
- {"title":"Spatial Nash Equilibria for Policy-Responsive Analysis of Regional Innovation in Europe","year":"2026","venue":"Under review","authors":["Vaz, E.","Mendonça, S.","Damásio, B."],"kind":"Working paper"},
  {"title":"Geographic Information System (GIS) methodology","year":"2025","venue":"Thematic Encyclopedia of Regional Science","authors":["Vaz, E."],"kind":"Chapter"},
  {"title":"Self-organising maps for exploring the change in Portuguese communities in Toronto","year":"2025","venue":"Handbook on Big Data, Artificial Intelligence and Cities","authors":["Vaz, E."],"kind":"Chapter"},
  {"title":"Quantum Computational Paradigms in Spatial Analytics: Advancing Environmental and Resource Econometrics","year":"2024","venue":"Regional Knowledge Economies (Springer)","authors":["Vaz, E."],"kind":"Chapter"},
@@ -69,8 +68,9 @@ chips = ''.join(
   f'<button data-f="{k}" aria-pressed="false">{esc(lbl)}</button>'
   for k, lbl, _ in THEMES)
 
+DOI_ISBN = {"978-3-032-19210-3": "978-3-032-19211-0"}   # print ISBN -> eBook ISBN used in the DOI
 books = ''.join(
-  f'<a class="book" href="https://link.springer.com/book/10.1007/{isbn}" target="_blank" rel="noopener">'
+  f'<a class="book" href="https://link.springer.com/book/10.1007/{DOI_ISBN.get(isbn, isbn)}" target="_blank" rel="noopener">'
   f'<img src="../assets/covers/{isbn}.webp" alt="{esc(t)} — {esc(sub)}" loading="lazy">'
   f'<h3>{esc(t)}</h3><span>{esc(sub)}</span><span>{yr} · Springer</span></a>'
   for isbn, t, sub, yr in BOOKS)
