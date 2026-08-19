@@ -48,13 +48,6 @@ for items not yet in the JSON-LD record) and re-run `build_pubs.py`.
 python3 -m http.server 8000
 ```
 
-## Custom domain
-
-To serve at `ericvazlab.ca`, add a `CNAME` file containing the bare domain, then point
-DNS at GitHub Pages (four `A` records for the apex, or a `CNAME` record to
-`ericvaz.github.io` for a subdomain). Do this only once DNS is configured — an
-unresolved `CNAME` file takes the `github.io` URL offline.
-
 ## The hero animation
 
 The hero is not a video or a static image. A Larger-than-Life cellular automaton runs on

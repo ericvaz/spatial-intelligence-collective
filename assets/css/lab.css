@@ -260,18 +260,26 @@ p{margin:0}
 .hero-art{z-index:1}
 
 /* bottom-right stack: the invitation, then the little code window */
-.hero-hud{position:absolute;right:18px;bottom:16px;z-index:3;display:flex;
-  flex-direction:column;align-items:flex-end;gap:9px;pointer-events:none}
-.hero-hint{display:flex;align-items:center;gap:8px;margin:0;
-  font-size:10.5px;letter-spacing:.02em;color:var(--muted);
-  background:rgba(255,255,255,.78);backdrop-filter:blur(2px);
-  padding:6px 11px;border:1px solid var(--line-2);border-radius:999px;
-  transition:opacity .7s ease}
-.hero-hint .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);
-  flex:none;animation:sugarPulse 2.6s ease-in-out infinite}
-.hero-hint.gone{opacity:0}
-@keyframes sugarPulse{0%,100%{opacity:.3;transform:scale(.75)}50%{opacity:1;transform:scale(1)}}
-@media(prefers-reduced-motion:reduce){.hero-hint .dot{animation:none;opacity:.9}}
+.hero-hud{position:absolute;right:18px;bottom:16px;z-index:4;display:flex;
+  flex-direction:column;align-items:flex-end;gap:14px;pointer-events:none}
+.hero-hint{display:flex;align-items:center;gap:9px;margin:0;
+  font-size:12.5px;font-weight:500;letter-spacing:-.005em;color:var(--ink);
+  background:#fff;padding:9px 15px 9px 13px;border:1px solid #d9d9e0;
+  border-radius:999px;box-shadow:0 6px 20px -8px rgba(15,15,25,.35);
+  opacity:0;transform:translateY(5px);
+  animation:hintIn .55s ease .9s forwards;transition:opacity .6s ease}
+.hero-hint .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);
+  flex:none;box-shadow:0 0 0 0 rgba(47,74,125,.55);
+  animation:sugarPulse 2.2s ease-in-out infinite}
+.hero-hint.gone{opacity:0;animation:none}
+@keyframes hintIn{to{opacity:1;transform:none}}
+@keyframes sugarPulse{
+  0%{box-shadow:0 0 0 0 rgba(47,74,125,.5)}
+  70%{box-shadow:0 0 0 9px rgba(47,74,125,0)}
+  100%{box-shadow:0 0 0 0 rgba(47,74,125,0)}}
+@media(prefers-reduced-motion:reduce){
+  .hero-hint{opacity:1;transform:none;animation:none}
+  .hero-hint .dot{animation:none}}
 
 .hero-code{margin:0;
   font:400 9.5px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
