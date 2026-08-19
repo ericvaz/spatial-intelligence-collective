@@ -11,6 +11,11 @@
   --ink:#111114; --ink-2:#38383f; --muted:#6f6f78; --faint:#9a9aa3;
   --line:#e7e7ea; --line-2:#f0f0f2;
   --accent:#2f4a7d; --accent-soft:#f4f7fc;
+  --oxblood:#6E1423;                      /* 11.8:1 on white */
+  /* highlight palette */
+  --amber:#FBAF00; --gold:#FFD639; --candy:#FFA3AF;
+  --teal:#007CBE;  --jungle:#00AF54;
+  --live:#007CBE;                         /* interaction accent: sugar, markers */
   --max:1180px; --pad:32px;
   --r:2px;
 }
@@ -41,10 +46,11 @@ p{margin:0}
 .hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.66fr);
   gap:40px;align-items:center;padding-top:60px;padding-bottom:56px;position:relative}
 .eyebrow{font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--accent);margin-bottom:24px}
-.hero h1{font-size:clamp(42px,5.6vw,76px);font-weight:600;line-height:.97;letter-spacing:-.035em}
+  color:var(--oxblood);margin-bottom:24px}
+.hero h1{font-size:clamp(42px,5.6vw,76px);font-weight:600;line-height:.97;
+  letter-spacing:-.035em;color:var(--oxblood)}
 .hero h1 .nb{white-space:nowrap}
-.rule{width:52px;height:3px;background:var(--accent);margin:30px 0 26px}
+.rule{width:52px;height:3px;background:var(--oxblood);margin:30px 0 26px}
 .hero .sub{font-size:19px;font-weight:400;color:var(--ink-2);letter-spacing:-.012em;
   line-height:1.42;max-width:34ch}
 .hero .lede{margin-top:18px;font-size:14.5px;color:var(--muted);max-width:46ch}
@@ -163,7 +169,7 @@ p{margin:0}
 
 /* ---------- publications page ---------- */
 .page-hero{border-bottom:1px solid var(--line);padding:52px 0 40px}
-.page-hero h1{font-size:clamp(34px,5vw,54px);letter-spacing:-.035em}
+.page-hero h1{font-size:clamp(34px,5vw,54px);letter-spacing:-.035em;color:var(--oxblood)}
 .page-hero .lede{margin-top:16px;font-size:15px;color:var(--muted);max-width:62ch}
 .metrics{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);
   margin-top:32px}
@@ -206,6 +212,10 @@ p{margin:0}
   .hero .wrap{grid-template-columns:1fr;padding-top:44px;padding-bottom:44px;gap:32px}
   .hero-art{position:relative;order:-1;right:auto;width:100%;height:300px;opacity:.9;
     margin:0 calc(-1*var(--pad))}
+  /* the code panel is unreadable at this width; the invitation still shows */
+  .hero-code{display:none}
+  .hero-hud{right:12px;bottom:12px;left:12px;align-items:center}
+  .hero-hint{font-size:11.5px;padding:8px 13px;text-align:center}
   .stats{grid-template-columns:1fr;max-width:none}
   .stat{border-right:0;border-bottom:1px solid var(--line)}
   .stat:last-child{border-bottom:0}
@@ -268,15 +278,15 @@ p{margin:0}
   border-radius:999px;box-shadow:0 6px 20px -8px rgba(15,15,25,.35);
   opacity:0;transform:translateY(5px);
   animation:hintIn .55s ease .9s forwards;transition:opacity .6s ease}
-.hero-hint .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);
-  flex:none;box-shadow:0 0 0 0 rgba(47,74,125,.55);
+.hero-hint .dot{width:9px;height:9px;border-radius:50%;background:var(--live);
+  flex:none;box-shadow:0 0 0 0 rgba(0,124,190,.55);
   animation:sugarPulse 2.2s ease-in-out infinite}
 .hero-hint.gone{opacity:0;animation:none}
 @keyframes hintIn{to{opacity:1;transform:none}}
 @keyframes sugarPulse{
-  0%{box-shadow:0 0 0 0 rgba(47,74,125,.5)}
-  70%{box-shadow:0 0 0 9px rgba(47,74,125,0)}
-  100%{box-shadow:0 0 0 0 rgba(47,74,125,0)}}
+  0%{box-shadow:0 0 0 0 rgba(0,124,190,.5)}
+  70%{box-shadow:0 0 0 9px rgba(0,124,190,0)}
+  100%{box-shadow:0 0 0 0 rgba(0,124,190,0)}}
 @media(prefers-reduced-motion:reduce){
   .hero-hint{opacity:1;transform:none;animation:none}
   .hero-hint .dot{animation:none}}
@@ -289,38 +299,43 @@ p{margin:0}
   -webkit-user-select:none;user-select:none}
 
 /* ---------- colour on hover ----------
-   Each surface takes a solid primary that clears WCAG AA against white text
-   (measured: 6.8:1 – 10.8:1). Line artwork inverts so it reads on the fill. */
-:root{
-  --h-navy:#2f4a7d; --h-teal:#186658; --h-rust:#8a4420;
-  --h-plum:#5f2f6b; --h-indigo:#33357e;
-}
+   Fills come from the brand palette. Only Bright Teal Blue clears WCAG AA
+   against white text (4.5:1); amber, gold, candy and jungle are far too light,
+   so those take dark ink instead (6.5:1 - 13.4:1). --on carries the text
+   colour, --edge the divider, and --art decides whether the line drawing needs
+   inverting: it does on the dark fill, and must not on the light ones. */
+.stat,.card,.work,.person{--fill:var(--teal);--on:#fff;--edge:rgba(255,255,255,.3);
+  --art:invert(1)}
+.lightfill{--on:#111114;--edge:rgba(0,0,0,.16);--art:none}
+
 .stat{transition:background-color .2s,color .2s}
-.stat:hover{background:var(--h-navy);color:#fff}
-.stat:hover b,.stat:hover span,.stat:hover .lbl{color:#fff}
-.stat:hover svg{stroke:#fff}
+.stat:nth-child(1){--fill:var(--amber);--on:#111114;--edge:rgba(0,0,0,.16);--art:none}
+.stat:nth-child(2){--fill:var(--teal)}
+.stat:nth-child(3){--fill:var(--jungle);--on:#111114;--edge:rgba(0,0,0,.16);--art:none}
+.stat:hover{background:var(--fill)}
+.stat:hover b,.stat:hover span,.stat:hover .lbl{color:var(--on)}
+.stat:hover svg{stroke:var(--on)}
 
-.card{--fill:var(--h-navy)}
-.card:nth-child(2){--fill:var(--h-teal)}
-.card:nth-child(3){--fill:var(--h-rust)}
-.card:nth-child(4){--fill:var(--h-plum)}
-.card:nth-child(5){--fill:var(--h-indigo)}
+.card:nth-child(1){--fill:var(--teal)}
+.card:nth-child(2){--fill:var(--jungle);--on:#111114;--edge:rgba(0,0,0,.16);--art:none}
+.card:nth-child(3){--fill:var(--amber); --on:#111114;--edge:rgba(0,0,0,.16);--art:none}
+.card:nth-child(4){--fill:var(--candy); --on:#111114;--edge:rgba(0,0,0,.16);--art:none}
+.card:nth-child(5){--fill:var(--gold);  --on:#111114;--edge:rgba(0,0,0,.16);--art:none}
 .card:hover{background:var(--fill);border-color:var(--fill)}
-.card:hover h3,.card:hover p,.card:hover .arrow,.card:hover .tag{color:#fff}
-.card:hover .thumb{background:transparent;border-bottom-color:rgba(255,255,255,.28)}
-.card:hover .thumb img{filter:invert(1)}
+.card:hover h3,.card:hover p,.card:hover .arrow,.card:hover .tag{color:var(--on)}
+.card:hover .thumb{background:transparent;border-bottom-color:var(--edge)}
+.card:hover .thumb img{filter:var(--art)}
 
-.work{--fill:var(--h-navy)}
 .work:hover{background:var(--fill);border-color:var(--fill)}
-.work:hover h3,.work:hover .yr,.work:hover .meta,.work:hover .meta em{color:#fff}
-.work:hover .thumb{background:transparent;border-bottom-color:rgba(255,255,255,.28)}
-.work:hover .thumb img{filter:invert(1)}
+.work:hover h3,.work:hover .yr,.work:hover .meta,.work:hover .meta em{color:var(--on)}
+.work:hover .thumb{background:transparent;border-bottom-color:var(--edge)}
+.work:hover .thumb img{filter:var(--art)}
 
-.person{--fill:var(--h-navy)}
-.person:nth-child(2){--fill:var(--h-teal)}
-.person:nth-child(3){--fill:var(--h-plum)}
+.person:nth-child(2){--fill:var(--amber);--on:#111114;--edge:rgba(0,0,0,.16);--art:none}
+.person:nth-child(3){--fill:var(--jungle);--on:#111114;--edge:rgba(0,0,0,.16);--art:none}
 .person:hover{background:var(--fill);border-color:var(--fill)}
 .person:hover h3,.person:hover .role,.person:hover .aff,
-.person:hover .links,.person:hover .links a{color:#fff}
-.person:hover .face{background:transparent;border-color:rgba(255,255,255,.28)}
-.person:hover .face img{filter:invert(1);mix-blend-mode:normal}
+.person:hover .links,.person:hover .links a{color:var(--on)}
+.person:hover .face{background:transparent;border-color:var(--edge)}
+.person:hover .face img{filter:var(--art);mix-blend-mode:normal}
+

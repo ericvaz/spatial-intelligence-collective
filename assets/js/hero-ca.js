@@ -343,9 +343,9 @@
       ctx.fill();
     }
 
-    // sugar grains, in the brand navy so they read as a distinct substance
+    // sugar grains, in the interaction blue so they read as a distinct substance
     if (sugar > 0) {
-      ctx.fillStyle = '#2f4a7d';
+      ctx.fillStyle = '#007CBE';
       for (y = 0; y < rows; y++)
         for (x = 0; x < cols; x++) {
           i = y * cols + x; v = food[i];
