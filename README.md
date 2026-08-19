@@ -12,6 +12,8 @@ Geocomputation · GeoAI · Complexity Science · Quantum Computing
 - `index.html` — lab home: research areas, selected work, people, the lab, news, contact
 - `publications/` — the full curated record (80 entries) with theme filters and search
 - `assets/art/` — generative grayscale artwork, produced deterministically by `tools/`
+- `assets/js/hero-ca.js` — the live hero: a Larger-than-Life cellular automaton
+  whose field drives the contours, particle cloud and node-link graph
 - `assets/covers/` — Springer cover images for the seven monographs and edited volumes
 - `tools/` — the build scripts
 
@@ -52,3 +54,18 @@ To serve at `ericvazlab.ca`, add a `CNAME` file containing the bare domain, then
 DNS at GitHub Pages (four `A` records for the apex, or a `CNAME` record to
 `ericvaz.github.io` for a subdomain). Do this only once DNS is configured — an
 unresolved `CNAME` file takes the `github.io` URL offline.
+
+## The hero animation
+
+The hero is not a video or a static image. A Larger-than-Life cellular automaton runs on
+a lattice: each cell reads the mean state of an isotropic gaussian neighbourhood and
+grows when that mean lands inside a narrow band, otherwise it decays. Everything drawn is
+read back out of that one field — iso-contours by marching squares, a particle cloud from
+cells above threshold, and a node-link graph over separated local maxima. The composition
+therefore builds itself from the rule.
+
+Parameters (`R=2`, band `0.22–0.34`, `dt=0.13`) were tuned offline for roughly 30%
+coverage — enough structure to read, enough white space to breathe. Rendering is batched
+into a handful of canvas fills per frame, capped near 25fps, and paused when the hero
+scrolls out of view. Visitors who prefer reduced motion, or whose browser lacks canvas,
+get the static SVG instead.

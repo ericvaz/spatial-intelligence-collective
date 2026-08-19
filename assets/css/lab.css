@@ -251,3 +251,43 @@ p{margin:0}
 .person .links a{color:var(--ink-2)}
 .person .links a:hover{color:var(--accent)}
 @media(max-width:640px){.grid-3{grid-template-columns:1fr}}
+
+/* ---------- live cellular-automaton hero ---------- */
+.hero-ca{position:absolute;inset:0;width:100%;height:100%;display:block}
+
+/* ---------- colour on hover ----------
+   Each surface takes a solid primary that clears WCAG AA against white text
+   (measured: 6.8:1 – 10.8:1). Line artwork inverts so it reads on the fill. */
+:root{
+  --h-navy:#2f4a7d; --h-teal:#186658; --h-rust:#8a4420;
+  --h-plum:#5f2f6b; --h-indigo:#33357e;
+}
+.stat{transition:background-color .2s,color .2s}
+.stat:hover{background:var(--h-navy);color:#fff}
+.stat:hover b,.stat:hover span,.stat:hover .lbl{color:#fff}
+.stat:hover svg{stroke:#fff}
+
+.card{--fill:var(--h-navy)}
+.card:nth-child(2){--fill:var(--h-teal)}
+.card:nth-child(3){--fill:var(--h-rust)}
+.card:nth-child(4){--fill:var(--h-plum)}
+.card:nth-child(5){--fill:var(--h-indigo)}
+.card:hover{background:var(--fill);border-color:var(--fill)}
+.card:hover h3,.card:hover p,.card:hover .arrow,.card:hover .tag{color:#fff}
+.card:hover .thumb{background:transparent;border-bottom-color:rgba(255,255,255,.28)}
+.card:hover .thumb img{filter:invert(1)}
+
+.work{--fill:var(--h-navy)}
+.work:hover{background:var(--fill);border-color:var(--fill)}
+.work:hover h3,.work:hover .yr,.work:hover .meta,.work:hover .meta em{color:#fff}
+.work:hover .thumb{background:transparent;border-bottom-color:rgba(255,255,255,.28)}
+.work:hover .thumb img{filter:invert(1)}
+
+.person{--fill:var(--h-navy)}
+.person:nth-child(2){--fill:var(--h-teal)}
+.person:nth-child(3){--fill:var(--h-plum)}
+.person:hover{background:var(--fill);border-color:var(--fill)}
+.person:hover h3,.person:hover .role,.person:hover .aff,
+.person:hover .links,.person:hover .links a{color:#fff}
+.person:hover .face{background:transparent;border-color:rgba(255,255,255,.28)}
+.person:hover .face img{filter:invert(1);mix-blend-mode:normal}
