@@ -253,7 +253,19 @@ p{margin:0}
 @media(max-width:640px){.grid-3{grid-template-columns:1fr}}
 
 /* ---------- live cellular-automaton hero ---------- */
-.hero-ca{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero-ca{position:absolute;inset:0;width:100%;height:100%;display:block;
+  cursor:crosshair;pointer-events:auto}
+/* the hero copy sits above the field so the canvas never steals its hovers */
+.hero .wrap>div:first-child{position:relative;z-index:2}
+.hero-art{z-index:1}
+
+/* the little code window */
+.hero-code{position:absolute;right:18px;bottom:16px;z-index:3;margin:0;
+  font:400 9.5px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  color:#8b8b95;white-space:pre;letter-spacing:.01em;pointer-events:none;
+  background:rgba(255,255,255,.72);backdrop-filter:blur(2px);
+  padding:9px 11px;border:1px solid var(--line-2);border-radius:2px;
+  -webkit-user-select:none;user-select:none}
 
 /* ---------- colour on hover ----------
    Each surface takes a solid primary that clears WCAG AA against white text

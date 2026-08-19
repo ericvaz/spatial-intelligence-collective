@@ -61,11 +61,28 @@ The hero is not a video or a static image. A Larger-than-Life cellular automaton
 a lattice: each cell reads the mean state of an isotropic gaussian neighbourhood and
 grows when that mean lands inside a narrow band, otherwise it decays. Everything drawn is
 read back out of that one field — iso-contours by marching squares, a particle cloud from
-cells above threshold, and a node-link graph over separated local maxima. The composition
-therefore builds itself from the rule.
+cells above threshold, and a node-link graph over separated local maxima. A small panel
+in the corner prints the rule actually being evaluated, with live counters.
 
-Parameters (`R=2`, band `0.22–0.34`, `dt=0.13`) were tuned offline for roughly 30%
-coverage — enough structure to read, enough white space to breathe. Rendering is batched
-into a handful of canvas fills per frame, capped near 25fps, and paused when the hero
-scrolls out of view. Visitors who prefer reduced motion, or whose browser lacks canvas,
-get the static SVG instead.
+**It stops.** The legible state of this system is a transient, not an attractor: measured
+over 260 steps the field's high-frequency energy climbs from 0.026 to 0.112, so a run
+left going drifts from clean structure into noise. Adding a diffusion term to damp that
+kills the system instead (alive fraction falls to zero by step 250). The lifecycle is
+therefore budgeted in steps rather than seconds — 25 warm-up plus 60 live, landing inside
+the band where the field reads clean — after which it eases down and halts.
+
+**Click to feed.** A click drops sugar: an attractant that diffuses into a gradient,
+widens the growth band along it so structures bulge toward the drop, and is consumed on
+arrival. Measured on the real rule, mass inside the drop radius rises 154% over 70 steps
+while a control region is unchanged, and 82% of the sugar is eaten. Each drop buys a
+bounded number of extra steps and applies one relaxation pass first, so repeated feeding
+does not accumulate into noise.
+
+**Steadiness.** Three things damp the flicker a raw CA would produce: rendering reads an
+exponential moving average of the state rather than the state itself; graph nodes persist
+across frames, matched to maxima and eased toward new positions with a life value fading
+them in and out; and edges use hysteresis, forming at a shorter distance than they break.
+
+Rendering is batched into a handful of canvas fills per frame, capped near 25fps, and
+paused off-screen. Visitors who prefer reduced motion, or whose browser lacks canvas, get
+the static SVG instead.
