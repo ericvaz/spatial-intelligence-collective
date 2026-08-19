@@ -70,7 +70,8 @@
   var cols, rows, n, W, H, dpr,
       cur, nbr, rf, rfs, food, foodB, bufA, bufB, jx, jy;
   var nodes = [], edges = [], nextId = 1, meshPath = null;
-  var steps = 0, sugar = 0, stopAt = 0, phase = 'growing', panel = null, lastPanel = 0;
+  var steps = 0, sugar = 0, stopAt = 0, phase = 'growing',
+      panel = null, hint = null, lastPanel = 0, fedOnce = false;
 
   function rand(s) {
     return function () {
@@ -174,6 +175,7 @@
 
     sugar = 1;
     phase = 'feeding';
+    if (!fedOnce) { fedOnce = true; if (hint) hint.className = 'hero-hint gone'; }
     stopAt = steps + FEED_STEPS;
     ensureLoop();
   }
@@ -416,10 +418,25 @@
 
   // ---- the little code window --------------------------------------------
   function buildPanel() {
+    var hud = document.createElement('div');
+    hud.className = 'hero-hud';
+
+    // the invitation is built here, by the same script that makes clicking do
+    // something — so it never advertises an interaction that isn't running
+    hint = document.createElement('p');
+    hint.className = 'hero-hint';
+    var verb = (window.matchMedia && window.matchMedia('(hover: none)').matches)
+             ? 'Tap' : 'Click';
+    hint.innerHTML = '<span class="dot"></span>' + verb +
+                     ' the field to drop sugar \u2014 the cells will grow toward it';
+    hud.appendChild(hint);
+
     panel = document.createElement('pre');
     panel.className = 'hero-code';
     panel.setAttribute('aria-hidden', 'true');
-    host.appendChild(panel);
+    hud.appendChild(panel);
+
+    host.appendChild(hud);
   }
 
   function updatePanel() {
@@ -437,7 +454,7 @@
       '   alive ' + (100 * alive / n).toFixed(1) + '%\n' +
       'nodes ' + String(nodes.length).padStart(4, ' ') +
       '    sugar ' + (sugar > 0 ? sugar.toFixed(2) : '0.00') + '\n' +
-      phase + (phase === 'settled' ? ' \u2014 click to feed' : '');
+      phase + (sugar > 0 ? ' \u2014 growing toward it' : ' \u00b7 click to drop sugar');
   }
 
   // ---- lifecycle: grow, settle, stop --------------------------------------
