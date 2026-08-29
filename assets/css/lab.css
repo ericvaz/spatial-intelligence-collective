@@ -1,6 +1,6 @@
 /* Eric Vaz Lab — Complexity Spatial Analysis */
 @font-face{font-family:'Vaz Hand';font-style:normal;font-weight:400;font-display:swap;
-  src:url(../fonts/vazhand.woff2) format('woff2')}
+  src:url(../fonts/vazhand.woff2?v=3) format('woff2')}
 @font-face{font-family:Inter;font-style:normal;font-weight:200 800;font-display:swap;
   src:url(../fonts/inter-latin.woff2) format('woff2');
   unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -36,9 +36,9 @@ p{margin:0}
 /* ---------- header ---------- */
 .hdr{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);
   backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line)}
-.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:24px}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:104px;gap:24px}
 .brand{display:flex;align-items:center;font-size:16px;font-weight:600;letter-spacing:-.025em;white-space:nowrap}
-.brand img{height:36px;width:auto;display:block}
+.brand img{height:72px;width:auto;display:block}
 .nav{display:flex;gap:30px}
 .nav a{font-family:var(--hand);font-weight:400;font-size:19px;letter-spacing:.005em;color:var(--oxblood);transition:color .18s,opacity .18s}
 .nav a:hover{color:var(--oxblood);opacity:.55}
@@ -213,6 +213,8 @@ p{margin:0}
   .books{grid-template-columns:repeat(3,1fr)}
 }
 @media(max-width:860px){
+  .hdr .wrap{height:72px}
+  .brand img{height:44px}
   :root{--pad:22px}
   .hero .wrap{grid-template-columns:1fr;padding-top:44px;padding-bottom:44px;gap:32px}
   .hero-art{position:relative;order:-1;right:auto;width:100%;height:300px;opacity:.9;
@@ -228,7 +230,7 @@ p{margin:0}
   .metrics div:nth-child(2n){border-right:0}
   .metrics div:nth-child(-n+2){border-bottom:1px solid var(--line)}
   .contact{grid-template-columns:1fr}
-  .nav{position:fixed;inset:60px 0 auto;background:#fff;flex-direction:column;gap:0;
+  .nav{position:fixed;inset:72px 0 auto;background:#fff;flex-direction:column;gap:0;
     padding:8px 22px 18px;border-bottom:1px solid var(--line);display:none}
   .nav.open{display:flex}
   .nav a{padding:11px 0;border-bottom:1px solid var(--line-2);font-size:21px}

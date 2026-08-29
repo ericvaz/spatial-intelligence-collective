@@ -82,19 +82,21 @@ PAGE = f"""<!doctype html>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Publications — Eric Vaz Lab</title>
 <meta name="description" content="Peer-reviewed articles, book chapters and Springer monographs by Eric Vaz on geocomputation, GeoAI, complexity science and quantum spatial analysis.">
-<link rel="preload" href="../assets/fonts/vazhand.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../assets/css/lab.css">
+<link rel="preload" href="../assets/fonts/vazhand.woff2?v=3" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/lab.css?v=3">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='4' fill='%23111'/><circle cx='6' cy='7' r='2' fill='%23111'/><circle cx='26' cy='9' r='2' fill='%23111'/><circle cx='8' cy='26' r='2' fill='%23111'/><circle cx='25' cy='25' r='2' fill='%23111'/><g stroke='%23111' stroke-width='1' fill='none'><path d='M16 16 6 7M16 16l10-7M16 16 8 26M16 16l9 9'/></g></svg>">
 </head>
 <body>
 
 <header class="hdr">
   <div class="wrap">
-    <a class="brand" href="../" aria-label="Eric Vaz Lab"><img src="../assets/art/logo-ericvazlab.png" alt="Eric Vaz Lab" width="173" height="36"></a>
+    <a class="brand" href="../" aria-label="Eric Vaz Lab"><img src="../assets/art/logo-ericvazlab.png" alt="Eric Vaz Lab" width="345" height="72"></a>
     <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="nav">
       <a href="../#research">Research</a>
       <a href="./">Publications</a>
+      <a href="../#people">People</a>
+      <a href="../#lab">The Lab</a>
       <a href="../#news">News</a>
       <a href="../#contact">Contact</a>
     </nav>
