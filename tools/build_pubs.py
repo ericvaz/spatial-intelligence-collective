@@ -95,8 +95,6 @@ PAGE = f"""<!doctype html>
     <nav class="nav">
       <a href="../#research">Research</a>
       <a href="./">Publications</a>
-      <a href="../#projects">Projects</a>
-      <a href="../#about">About</a>
       <a href="../#news">News</a>
       <a href="../#contact">Contact</a>
     </nav>
