@@ -89,7 +89,7 @@ PAGE = f"""<!doctype html>
 
 <header class="hdr">
   <div class="wrap">
-    <a class="brand" href="../">Eric Vaz Lab</a>
+    <a class="brand" href="../" aria-label="Eric Vaz Lab"><img src="../assets/art/logo-ericvazlab.png" alt="Eric Vaz Lab" width="143" height="30"></a>
     <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="nav">
       <a href="../#research">Research</a>
@@ -104,7 +104,6 @@ PAGE = f"""<!doctype html>
 
 <section class="page-hero">
   <div class="wrap">
-    <p class="eyebrow">Eric Vaz Lab</p>
     <h1>Publications</h1>
     <p class="lede">Peer-reviewed articles, chapters and monographs spanning geocomputation,
       spatial analysis, GeoAI, complexity science and — most recently — quantum approaches to
