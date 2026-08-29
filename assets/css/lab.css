@@ -1,6 +1,4 @@
 /* Eric Vaz Lab — Complexity Spatial Analysis */
-@font-face{font-family:'Vaz Hand';font-style:normal;font-weight:400;font-display:swap;
-  src:url(../fonts/vazhand.woff2?v=3) format('woff2')}
 @font-face{font-family:Inter;font-style:normal;font-weight:200 800;font-display:swap;
   src:url(../fonts/inter-latin.woff2) format('woff2');
   unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -12,7 +10,6 @@
   --bg:#fff; --bg-alt:#fafafa; --bg-soft:#f6f6f7;
   --ink:#111114; --ink-2:#38383f; --muted:#6f6f78; --faint:#9a9aa3;
   --line:#e7e7ea; --line-2:#f0f0f2;
-  --hand:'Vaz Hand',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif;
   --accent:#2f4a7d; --accent-soft:#f4f7fc;
   --oxblood:#6E1423;                      /* 11.8:1 on white */
   /* highlight palette */
@@ -23,7 +20,7 @@
   --r:2px;
 }
 *,*::before,*::after{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:72px}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:116px}
 body{margin:0;background:var(--bg);color:var(--ink);
   font:400 15px/1.65 Inter,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
   -webkit-font-smoothing:antialiased;font-feature-settings:"kern","liga","cv11"}
@@ -40,8 +37,8 @@ p{margin:0}
 .brand{display:flex;align-items:center;font-size:16px;font-weight:600;letter-spacing:-.025em;white-space:nowrap}
 .brand img{height:72px;width:auto;display:block}
 .nav{display:flex;gap:30px}
-.nav a{font-family:var(--hand);font-weight:400;font-size:19px;letter-spacing:.005em;color:var(--oxblood);transition:color .18s,opacity .18s}
-.nav a:hover{color:var(--oxblood);opacity:.55}
+.nav a{font-size:13.5px;color:var(--ink-2);transition:color .18s}
+.nav a:hover{color:var(--accent)}
 .burger{display:none;background:none;border:0;padding:6px;cursor:pointer}
 .burger span{display:block;width:20px;height:1.5px;background:var(--ink);margin:4px 0;transition:.25s}
 
@@ -51,8 +48,8 @@ p{margin:0}
   gap:40px;align-items:center;padding-top:60px;padding-bottom:56px;position:relative}
 .eyebrow{font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;
   color:var(--oxblood);margin-bottom:24px}
-.hero h1{font-family:var(--hand);font-size:clamp(46px,6vw,82px);font-weight:400;
-  line-height:1.06;letter-spacing:0;color:var(--oxblood)}
+.hero h1{font-size:clamp(42px,5.6vw,76px);font-weight:600;line-height:.97;
+  letter-spacing:-.035em;color:var(--oxblood)}
 .hero h1 .nb{white-space:nowrap}
 .rule{width:52px;height:3px;background:var(--oxblood);margin:30px 0 26px}
 .hero .sub{font-size:19px;font-weight:400;color:var(--ink-2);letter-spacing:-.012em;
@@ -173,8 +170,7 @@ p{margin:0}
 
 /* ---------- publications page ---------- */
 .page-hero{border-bottom:1px solid var(--line);padding:52px 0 40px}
-.page-hero h1{font-family:var(--hand);font-size:clamp(38px,5.4vw,60px);font-weight:400;
-  line-height:1.06;letter-spacing:0;color:var(--oxblood)}
+.page-hero h1{font-size:clamp(34px,5vw,54px);letter-spacing:-.035em;color:var(--oxblood)}
 .page-hero .lede{margin-top:16px;font-size:15px;color:var(--muted);max-width:62ch}
 .metrics{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);
   margin-top:32px}
@@ -213,6 +209,7 @@ p{margin:0}
   .books{grid-template-columns:repeat(3,1fr)}
 }
 @media(max-width:860px){
+  html{scroll-padding-top:84px}
   .hdr .wrap{height:72px}
   .brand img{height:44px}
   :root{--pad:22px}
@@ -233,7 +230,7 @@ p{margin:0}
   .nav{position:fixed;inset:72px 0 auto;background:#fff;flex-direction:column;gap:0;
     padding:8px 22px 18px;border-bottom:1px solid var(--line);display:none}
   .nav.open{display:flex}
-  .nav a{padding:11px 0;border-bottom:1px solid var(--line-2);font-size:21px}
+  .nav a{padding:11px 0;border-bottom:1px solid var(--line-2);font-size:14.5px}
   .burger{display:block}
   .sec{padding:48px 0}
 }
@@ -243,7 +240,7 @@ p{margin:0}
   .about{grid-template-columns:1fr}
   .news-item{grid-template-columns:64px 1fr;gap:14px}
   .news-item .k{grid-column:2;margin-top:2px}
-  .hero h1{font-size:44px}
+  .hero h1{font-size:40px}
 }
 @media(max-width:460px){
   .grid-5,.grid-6,.books{grid-template-columns:1fr}
