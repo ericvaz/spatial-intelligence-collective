@@ -173,7 +173,8 @@ p{margin:0}
 
 /* ---------- publications page ---------- */
 .page-hero{border-bottom:1px solid var(--line);padding:52px 0 40px}
-.page-hero h1{font-size:clamp(34px,5vw,54px);letter-spacing:-.035em;color:var(--oxblood)}
+.page-hero h1{font-family:var(--hand);font-size:clamp(38px,5.4vw,60px);font-weight:400;
+  line-height:1.06;letter-spacing:0;color:var(--oxblood)}
 .page-hero .lede{margin-top:16px;font-size:15px;color:var(--muted);max-width:62ch}
 .metrics{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);
   margin-top:32px}
