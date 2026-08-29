@@ -89,7 +89,7 @@ PAGE = f"""<!doctype html>
 
 <header class="hdr">
   <div class="wrap">
-    <a class="brand" href="../" aria-label="Eric Vaz Lab"><img src="../assets/art/logo-ericvazlab.png" alt="Eric Vaz Lab" width="143" height="30"></a>
+    <a class="brand" href="../" aria-label="Eric Vaz Lab"><img src="../assets/art/logo-ericvazlab.png" alt="Eric Vaz Lab" width="173" height="36"></a>
     <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="nav">
       <a href="../#research">Research</a>
