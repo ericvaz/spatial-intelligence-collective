@@ -11,7 +11,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ericvaz.github.io/ericvazlab/">
 <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/lab.css?v=5">
+<link rel="stylesheet" href="assets/css/lab.css?v=8">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='4' fill='%23111'/><circle cx='6' cy='7' r='2' fill='%23111'/><circle cx='26' cy='9' r='2' fill='%23111'/><circle cx='8' cy='26' r='2' fill='%23111'/><circle cx='25' cy='25' r='2' fill='%23111'/><g stroke='%23111' stroke-width='1' fill='none'><path d='M16 16 6 7M16 16l10-7M16 16 8 26M16 16l9 9'/></g></svg>">
 </head>
 <body>
@@ -196,9 +196,9 @@
           Toronto Metropolitan University</p>
         <p class="links">
           <a href="https://scholar.google.com/citations?user=EfpbSEYAAAAJ" target="_blank"
-            rel="noopener" aria-label="Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.6 2.2 8.6 12 13.6l9.8-5z"/><path d="M6.4 11.1v4.3c0 1.6 2.5 2.9 5.6 2.9s5.6-1.3 5.6-2.9v-4.3"/><path d="M21.3 9.1v4.8"/></svg></a>
+            rel="noopener" aria-label="Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg></a>
           <a href="https://orcid.org/0000-0003-1738-2677" target="_blank"
-            rel="noopener" aria-label="ORCID" title="ORCID"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="12" r="9.2"/><path d="M9.1 10.2v6.6" stroke-linecap="round"/><circle cx="9.1" cy="7.5" r=".95" fill="currentColor" stroke="none"/><path d="M12.9 16.8v-6.6h2.3a3.3 3.3 0 0 1 0 6.6z" stroke-linejoin="round"/></svg></a>
+            rel="noopener" aria-label="ORCID" title="ORCID"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 0a12 12 0 1 0 0 24 12 12 0 1 0 0-24zM6.9 5.55a1.35 1.35 0 1 0 0 2.7 1.35 1.35 0 1 0 0-2.7zM5.85 9.5h2.1v9h-2.1zM9.9 9.5H14a4.5 4.5 0 0 1 0 9H9.9zM12 11.5h2a2.5 2.5 0 0 1 0 5h-2z"/></svg></a>
         </p>
       </div>
 
@@ -208,7 +208,7 @@
         <p class="role">PhD Student</p>
         <p class="aff">Environmental Applied Science &amp; Management,
           Toronto Metropolitan University</p>
-        <p class="aff">Studies migration, demographics and settlement across North America
+        <p class="aff bio">Studies migration, demographics and settlement across North America
           and India — how climate, environmental and socioeconomic conditions shape human
           mobility over space and time — using GIS, spatial analysis, machine learning and
           quantitative methods.</p>
@@ -220,7 +220,7 @@
         <p class="role">PhD Student</p>
         <p class="aff">Environmental Applied Science &amp; Management,
           Toronto Metropolitan University</p>
-        <p class="aff">Studies how urban environments and transportation infrastructure shape
+        <p class="aff bio">Studies how urban environments and transportation infrastructure shape
           cycling safety, using spatial analysis and predictive modelling that accounts for how
           those relationships vary across spaces and communities — with a parallel interest in
           equity of access to safe infrastructure and in data representativeness, aimed at
@@ -450,7 +450,34 @@ n.addEventListener('click', function (e) {
   addEventListener('resize', apply);
   apply();
 })();
+
+/* Bios are clamped to a few lines so the cards stay even; the toggle only
+   appears on bios that actually overflow. */
+(function () {
+  Array.prototype.forEach.call(document.querySelectorAll('.person .bio'), function (bio) {
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'expand';
+    btn.textContent = 'Read more';
+    btn.setAttribute('aria-expanded', 'false');
+    bio.insertAdjacentElement('afterend', btn);
+
+    function sync() {
+      if (bio.classList.contains('open')) return;
+      btn.hidden = bio.scrollHeight <= bio.clientHeight + 1;
+    }
+    btn.addEventListener('click', function () {
+      var open = bio.classList.toggle('open');
+      btn.textContent = open ? 'Read less' : 'Read more';
+      btn.setAttribute('aria-expanded', open);
+    });
+    addEventListener('resize', sync);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+    sync();
+  });
+})();
 </script>
 <script src="assets/js/hero-ca.js" defer></script>
+<script src="assets/js/area-art.js" defer></script>
 </body>
 </html>
