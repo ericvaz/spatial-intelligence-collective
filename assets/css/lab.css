@@ -261,10 +261,22 @@ p{margin:0}
 .person .role{font-size:12px;color:var(--accent);margin-top:5px;font-weight:500;
   letter-spacing:.01em}
 .person .aff{font-size:12.5px;color:var(--muted);line-height:1.55;margin-top:9px}
-.person .links{font-size:12px;color:var(--muted);margin-top:12px}
-.person .links a{color:var(--ink-2)}
-.person .links a:hover{color:var(--accent)}
+.person .links{display:flex;gap:8px;margin-top:14px}
+.person .links a{display:grid;place-items:center;width:30px;height:30px;
+  border:1px solid var(--line);color:var(--ink-2);
+  transition:color .18s,border-color .18s,background-color .18s}
+.person .links svg{width:15px;height:15px;stroke:currentColor}
+.person .links a:hover{color:#fff;background:var(--accent);border-color:var(--accent)}
 @media(max-width:640px){.grid-3{grid-template-columns:1fr}}
+
+/* people beyond the second row, parked behind the More button */
+.person.is-hidden{display:none}
+.more-wrap{display:flex;justify-content:center;margin-top:26px}
+.more-wrap[hidden]{display:none}
+.more{font:500 11px/1 Inter,inherit;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-2);background:none;border:1px solid var(--line);padding:13px 30px;
+  cursor:pointer;transition:color .18s,border-color .18s,background-color .18s}
+.more:hover{color:#fff;background:var(--accent);border-color:var(--accent)}
 
 /* ---------- live cellular-automaton hero ---------- */
 .hero-ca{position:absolute;inset:0;width:100%;height:100%;display:block;
@@ -340,6 +352,8 @@ p{margin:0}
 .person:hover{background:var(--fill);border-color:var(--fill)}
 .person:hover h3,.person:hover .role,.person:hover .aff,
 .person:hover .links,.person:hover .links a{color:var(--on)}
+.person:hover .links a{border-color:var(--edge)}
+.person:hover .links a:hover{background:var(--on);color:var(--fill);border-color:var(--on)}
 .person:hover .face{background:transparent;border-color:var(--edge)}
 .person:hover .face img{filter:var(--art);mix-blend-mode:normal}
 

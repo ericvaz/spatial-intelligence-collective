@@ -11,7 +11,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ericvaz.github.io/ericvazlab/">
 <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/lab.css?v=4">
+<link rel="stylesheet" href="assets/css/lab.css?v=5">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='4' fill='%23111'/><circle cx='6' cy='7' r='2' fill='%23111'/><circle cx='26' cy='9' r='2' fill='%23111'/><circle cx='8' cy='26' r='2' fill='%23111'/><circle cx='25' cy='25' r='2' fill='%23111'/><g stroke='%23111' stroke-width='1' fill='none'><path d='M16 16 6 7M16 16l10-7M16 16 8 26M16 16l9 9'/></g></svg>">
 </head>
 <body>
@@ -186,7 +186,7 @@
 <section class="sec" id="people">
   <div class="wrap">
     <div class="sec-head"><p class="label">People</p></div>
-    <div class="grid-3">
+    <div class="grid-3" id="people-grid">
 
       <div class="person">
         <div class="face"><img src="assets/art/person-eric-vaz.svg" alt="" aria-hidden="true" width="300" height="300"></div>
@@ -195,8 +195,10 @@
         <p class="aff">Full Professor, Department of Geography &amp; Environmental Studies,
           Toronto Metropolitan University</p>
         <p class="links">
-          <a href="https://scholar.google.com/citations?user=EfpbSEYAAAAJ" target="_blank" rel="noopener">Scholar</a> ·
-          <a href="https://orcid.org/0000-0003-1738-2677" target="_blank" rel="noopener">ORCID</a>
+          <a href="https://scholar.google.com/citations?user=EfpbSEYAAAAJ" target="_blank"
+            rel="noopener" aria-label="Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.6 2.2 8.6 12 13.6l9.8-5z"/><path d="M6.4 11.1v4.3c0 1.6 2.5 2.9 5.6 2.9s5.6-1.3 5.6-2.9v-4.3"/><path d="M21.3 9.1v4.8"/></svg></a>
+          <a href="https://orcid.org/0000-0003-1738-2677" target="_blank"
+            rel="noopener" aria-label="ORCID" title="ORCID"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="12" r="9.2"/><path d="M9.1 10.2v6.6" stroke-linecap="round"/><circle cx="9.1" cy="7.5" r=".95" fill="currentColor" stroke="none"/><path d="M12.9 16.8v-6.6h2.3a3.3 3.3 0 0 1 0 6.6z" stroke-linejoin="round"/></svg></a>
         </p>
       </div>
 
@@ -225,6 +227,10 @@
           evidence for policy and tools for safer, better-informed travel choices.</p>
       </div>
 
+    </div>
+
+    <div class="more-wrap" id="people-more" hidden>
+      <button type="button" class="more" aria-controls="people-grid" aria-expanded="false">More</button>
     </div>
   </div>
 </section>
@@ -412,6 +418,38 @@ b.addEventListener('click', function () {
 n.addEventListener('click', function (e) {
   if (e.target.tagName === 'A') { n.classList.remove('open'); b.setAttribute('aria-expanded', false); }
 });
+
+/* People: show two rows, park the rest behind a More button. The row length
+   follows the grid, so it stays two rows at every breakpoint. */
+(function () {
+  var grid = document.getElementById('people-grid'),
+      wrap = document.getElementById('people-more');
+  if (!grid || !wrap) return;
+  var btn = wrap.querySelector('button'),
+      people = Array.prototype.slice.call(grid.querySelectorAll('.person')),
+      open = false;
+
+  function limit() {
+    var cols = getComputedStyle(grid).gridTemplateColumns.split(' ').filter(Boolean).length;
+    return (cols || 1) * 2;
+  }
+  function apply() {
+    var max = limit(), extra = people.length > max;
+    wrap.hidden = !extra;
+    people.forEach(function (p, i) {
+      p.classList.toggle('is-hidden', extra && !open && i >= max);
+    });
+    btn.textContent = open ? 'Less' : 'More';
+    btn.setAttribute('aria-expanded', open);
+  }
+  btn.addEventListener('click', function () {
+    open = !open;
+    apply();
+    if (!open) grid.scrollIntoView({ block: 'start', behavior: 'smooth' });
+  });
+  addEventListener('resize', apply);
+  apply();
+})();
 </script>
 <script src="assets/js/hero-ca.js" defer></script>
 </body>
