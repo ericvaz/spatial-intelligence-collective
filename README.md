@@ -1,15 +1,15 @@
-# Eric Vaz Lab — Complexity Spatial Analysis
+# Spatial Intelligence Collective — Complexity Spatial Analysis
 
-Lab site for the research of **Eric Vaz**, Full Professor, Department of Geography &
+Site of the Spatial Intelligence Collective, led by **Eric Vaz**, Full Professor, Department of Geography &
 Environmental Studies, Toronto Metropolitan University.
 
-**Live:** https://ericvaz.github.io/ericvazlab/
+**Live:** https://ericvaz.github.io/spatial-intelligence-collective/
 
 Geocomputation · GeoAI · Complexity Science · Quantum Computing
 
 ## Contents
 
-- `index.html` — lab home: research areas, selected work, people, the lab, news, contact
+- `index.html` — home page: research areas, selected work, people, the Collective, news, contact
 - `publications/` — the full curated record (80 entries) with theme filters and search
 - `assets/art/` — generative grayscale artwork, produced deterministically by `tools/`
 - `assets/js/hero-ca.js` — the live hero: a Larger-than-Life cellular automaton

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Deterministic generative grayscale artwork for the Eric Vaz Lab site.
+"""Deterministic generative grayscale artwork for the Spatial Intelligence Collective site.
 Everything is seeded, so rebuilds are byte-identical."""
 import math, random, os
 
