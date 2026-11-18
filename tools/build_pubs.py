@@ -71,7 +71,7 @@ chips = ''.join(
 DOI_ISBN = {"978-3-032-19210-3": "978-3-032-19211-0"}   # print ISBN -> eBook ISBN used in the DOI
 books = ''.join(
   f'<a class="book" href="https://link.springer.com/book/10.1007/{DOI_ISBN.get(isbn, isbn)}" target="_blank" rel="noopener">'
-  f'<img src="../assets/covers/{isbn}.webp" alt="{esc(t)} — {esc(sub)}" loading="lazy">'
+  f'<img src="../assets/covers/{isbn}.webp" alt="{esc(t)}: {esc(sub)}" loading="lazy">'
   f'<h3>{esc(t)}</h3><span>{esc(sub)}</span><span>{yr} · Springer</span></a>'
   for isbn, t, sub, yr in BOOKS)
 
@@ -79,52 +79,53 @@ PAGE = f"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Publications — Spatial Intelligence Collective</title>
-<meta name="description" content="Peer-reviewed articles, book chapters and Springer monographs by Eric Vaz on geocomputation, GeoAI, complexity science and quantum spatial analysis.">
-<link rel="stylesheet" href="../assets/css/lab.css?v=4">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Publications · Spatial Intelligence Collective</title>
+<meta name="description" content="Peer-reviewed articles, book chapters and Springer monographs from the Spatial Intelligence Collective on geocomputation, GeoAI, complexity science and quantum spatial analysis.">
+<meta name="theme-color" content="#ffffff">
+<link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css?v=1">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='4' fill='%23111'/><circle cx='6' cy='7' r='2' fill='%23111'/><circle cx='26' cy='9' r='2' fill='%23111'/><circle cx='8' cy='26' r='2' fill='%23111'/><circle cx='25' cy='25' r='2' fill='%23111'/><g stroke='%23111' stroke-width='1' fill='none'><path d='M16 16 6 7M16 16l10-7M16 16 8 26M16 16l9 9'/></g></svg>">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
 <header class="hdr">
   <div class="wrap">
-    <a class="brand" href="../" aria-label="Spatial Intelligence Collective"><img src="../assets/art/logo-sic.png" alt="Spatial Intelligence Collective" width="318" height="72"></a>
-    <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    <nav class="nav">
+    <a class="brand" href="../">Spatial Intelligence Collective</a>
+    <button class="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
       <a href="../#research">Research</a>
-      <a href="./">Publications</a>
       <a href="../#people">People</a>
-      <a href="../#lab">The Collective</a>
-      <a href="../#news">News</a>
+      <a href="../#strange">STRANGE</a>
+      <a href="./" aria-current="page">Publications</a>
       <a href="../#contact">Contact</a>
     </nav>
   </div>
 </header>
 
-<section class="page-hero">
+<main id="main">
+<section class="page-head">
   <div class="wrap">
     <h1>Publications</h1>
-    <p class="lede">Peer-reviewed articles, chapters and monographs spanning geocomputation,
-      spatial analysis, GeoAI, complexity science and — most recently — quantum approaches to
-      spatial problems. Filter by research area or search the full record.</p>
-    <div class="metrics">
-      <div><b>90+</b><span>peer-reviewed publications</span></div>
-      <div><b>3,843</b><span>citations</span></div>
-      <div><b>32</b><span>h-index</span></div>
-      <div><b>7</b><span>Springer volumes</span></div>
-    </div>
+    <p class="lede">Peer-reviewed articles, chapters, and monographs on geocomputation, spatial analysis, GeoAI, complexity science, and quantum approaches to spatial problems. Filter by research area or search the full record.</p>
+    <ul class="metrics">
+      <li><b>90+</b> peer-reviewed publications</li>
+      <li><b>3,843</b> citations</li>
+      <li><b>h-index</b> 32</li>
+      <li><b>7</b> Springer volumes</li>
+    </ul>
   </div>
 </section>
 
-<section class="sec" id="articles">
+<section id="articles">
   <div class="wrap">
-    <div class="sec-head"><p class="label">Curated Record · {len(rows)} entries</p></div>
+    <p class="label">Curated record · {len(rows)} entries</p>
     <div class="filters">
       <button data-f="all" aria-pressed="true">All</button>
       {chips}
     </div>
-    <input class="search" id="q" type="search" placeholder="Search titles, authors, journals…" aria-label="Search publications">
+    <input class="search" id="q" type="search" placeholder="Search titles, authors, journals" aria-label="Search publications">
     <p class="count" id="count"></p>
     <div id="list">
       {''.join(items)}
@@ -133,28 +134,27 @@ PAGE = f"""<!doctype html>
   </div>
 </section>
 
-<section class="sec alt" id="books">
+<section id="books">
   <div class="wrap">
-    <div class="sec-head"><p class="label">Books &amp; Edited Volumes</p></div>
+    <p class="label">Books and edited volumes</p>
     <div class="books">{books}</div>
   </div>
 </section>
 
+</main>
+
 <footer class="ftr">
   <div class="wrap">
-    <div class="ftr-btm" style="margin-top:0;border-top:0">
-      <span>© <span id="yr">2026</span> Spatial Intelligence Collective.</span>
-      <span><a href="https://scholar.google.com/citations?user=EfpbSEYAAAAJ" target="_blank" rel="noopener">Google Scholar</a> ·
-            <a href="https://orcid.org/0000-0003-1738-2677" target="_blank" rel="noopener">ORCID</a> ·
-            <a href="../">Back to the Collective</a></span>
-    </div>
+    <span>© <span id="yr">2026</span> Spatial Intelligence Collective · Toronto Metropolitan University</span>
+    <span><a href="https://scholar.google.com/citations?user=EfpbSEYAAAAJ" target="_blank" rel="noopener">Google Scholar</a> · <a href="https://orcid.org/0000-0003-1738-2677" target="_blank" rel="noopener">ORCID</a> · <a href="../">Home</a></span>
   </div>
 </footer>
 
 <script>
 document.getElementById('yr').textContent = new Date().getFullYear();
-var b=document.querySelector('.burger'), n=document.querySelector('.nav');
-b.addEventListener('click',function(){{var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);}});
+var m=document.querySelector('.menu'), nv=document.getElementById('nav'), h=document.querySelector('.hdr');
+m.addEventListener('click',function(){{var o=nv.classList.toggle('open');m.setAttribute('aria-expanded',o);m.textContent=o?'Close':'Menu';}});
+window.addEventListener('scroll',function(){{h.classList.toggle('scrolled',window.scrollY>8);}},{{passive:true}});
 
 var items=[].slice.call(document.querySelectorAll('.pub')),
     btns=[].slice.call(document.querySelectorAll('.filters button')),
