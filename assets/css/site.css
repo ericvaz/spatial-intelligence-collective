@@ -159,6 +159,21 @@ h2{font-size:clamp(26px,4vw,34px);line-height:1.15;margin-bottom:28px;max-width:
 .people li.off{display:none}
 @media (min-width:760px){.az{display:none}.people li.off{display:block}}
 
+/* everything flows: books and music */
+.flows-lede{color:var(--muted);margin-bottom:32px}
+.picks{display:grid;grid-template-columns:1fr 1fr;gap:28px 18px;margin:0;padding:0;list-style:none}
+.pick h3{font-size:16px;line-height:1.3;margin:4px 0 2px;letter-spacing:-.01em}
+.pick p{margin:0}
+.pick .kind{font-size:12px;font-weight:500;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin-top:14px}
+.pick .by{font-size:14px;color:var(--muted);line-height:1.45}
+.pick .from{font-size:13px;color:var(--muted);margin-top:8px;font-style:italic}
+.cover{margin:0;aspect-ratio:1/1;background:var(--soft);border-radius:6px;display:flex;align-items:center;justify-content:center;padding:14px;overflow:hidden}
+.cover img{max-height:100%;width:auto;box-shadow:0 1px 2px rgba(0,0,0,.08),0 10px 24px rgba(0,0,0,.12);border-radius:2px;transition:transform .3s ease}
+.cover.album img{width:100%;height:auto}
+.pick:hover .cover img{transform:translateY(-3px)}
+@media (prefers-reduced-motion:reduce){.cover img{transition:none}.pick:hover .cover img{transform:none}}
+@media (min-width:760px){.picks{grid-template-columns:repeat(4,1fr);gap:40px 28px}.cover{padding:20px}}
+
 /* contact & footer */
 .contact{display:grid;gap:24px}
 .contact p{margin:0}
