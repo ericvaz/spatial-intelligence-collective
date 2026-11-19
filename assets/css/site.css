@@ -89,6 +89,8 @@ h2{font-size:clamp(26px,4vw,34px);line-height:1.15;margin-bottom:28px;max-width:
 @media (min-width:760px){.dated>li{grid-template-columns:72px 1fr}}
 
 /* people */
+.reach{margin:-8px 0 16px}
+.reach-lede{color:var(--muted);font-size:clamp(16px,2vw,18px);margin:0 0 40px}
 .group{margin:0 0 24px}
 .group:last-child{margin-bottom:0}
 .group h3{font-size:15px;font-weight:500;color:var(--muted);margin:0 0 12px;letter-spacing:0}
