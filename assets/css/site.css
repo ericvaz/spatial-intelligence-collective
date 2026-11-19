@@ -89,7 +89,7 @@ h2{font-size:clamp(26px,4vw,34px);line-height:1.15;margin-bottom:28px;max-width:
 @media (min-width:760px){.dated>li{grid-template-columns:72px 1fr}}
 
 /* people */
-.group{margin:0 0 40px}
+.group{margin:0 0 24px}
 .group:last-child{margin-bottom:0}
 .group h3{font-size:15px;font-weight:500;color:var(--muted);margin:0 0 12px;letter-spacing:0}
 .people{display:grid;grid-template-columns:1fr;gap:0;margin:0;padding:0;list-style:none;border-top:1px solid var(--rule)}
@@ -111,17 +111,53 @@ h2{font-size:clamp(26px,4vw,34px);line-height:1.15;margin-bottom:28px;max-width:
 .issue figcaption{margin-top:14px;font-size:15px}
 .issue figcaption b{font-weight:600}
 .status{display:inline-block;margin-left:8px;font-size:12px;font-weight:500;border:1px solid #c9c9cc;border-radius:999px;padding:1px 8px;color:var(--muted);vertical-align:1px}
-.masthead{margin:24px 0 0;padding:0;list-style:none;font-size:15px;color:var(--muted)}
-.masthead li{padding:2px 0}
 .archive{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:48px 0 0;padding:0;list-style:none}
 .archive:empty{display:none}
 .archive a{text-decoration:none;font-size:14px}
 .archive img{margin-bottom:8px}
+.strange{grid-template-areas:"head" "cover" "body";gap:28px}
+.s-head{grid-area:head}.s-head .tagline{margin-bottom:0}
+.issue{grid-area:cover}
+.s-body{grid-area:body}
+.issue img{max-width:min(420px,72vw)}
+.masthead{border-top:0}
+.sub{font-size:13px;font-weight:500;color:var(--muted);margin:20px 0 4px;letter-spacing:.01em}
+.note{font-size:15px;color:var(--muted);margin:14px 0 0}
 @media (min-width:760px){
-  .strange{grid-template-columns:minmax(260px,420px) 1fr;gap:64px}
-  .strange .issue{order:-1}
+  .strange{grid-template-columns:minmax(260px,420px) 1fr;grid-template-areas:"cover head" "cover body";grid-template-rows:auto 1fr;column-gap:64px;row-gap:24px}
+  .issue img{max-width:420px}
   .archive{grid-template-columns:repeat(4,1fr)}
 }
+
+/* folds: collapsible groups on phones, always open on wide screens */
+.fold>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;
+  padding:14px 0;border-top:1px solid var(--rule);-webkit-tap-highlight-color:transparent}
+.fold>summary::-webkit-details-marker{display:none}
+.fold>summary h3{margin:0}
+.fold>summary::after{content:"";width:9px;height:9px;border-right:1.5px solid var(--muted);border-bottom:1.5px solid var(--muted);
+  transform:rotate(45deg);margin:-4px 4px 0 12px;transition:transform .2s}
+.fold[open]>summary::after{transform:rotate(-135deg);margin-top:4px}
+.fold .c{font-weight:400;color:var(--muted);margin-left:6px;font-size:14px}
+.fold[open]>summary{border-bottom:0}
+.fold:last-of-type:not([open])>summary{border-bottom:1px solid var(--rule)}
+.s-body .fold>.lede{margin:0 0 16px}
+.group.fold{margin-bottom:0}
+.group.fold[open]{margin-bottom:28px}
+@media (min-width:760px){
+  .fold>summary{cursor:default;border-top:0;padding:0 0 12px}
+  .fold>summary::after{display:none}
+  .group,.group.fold,.group.fold[open]{margin-bottom:40px}
+  .s-body .fold>summary{display:none}
+  .s-body .fold+.fold{margin-top:4px}
+  .fold:last-of-type:not([open])>summary{border-bottom:0}
+}
+
+/* A to Z bar for long member lists (phones) */
+.az{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.az button{font:inherit;font-size:14px;min-width:36px;height:36px;padding:0 10px;border-radius:999px;border:1px solid var(--rule);background:#fff;color:var(--ink);cursor:pointer}
+.az button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.people li.off{display:none}
+@media (min-width:760px){.az{display:none}.people li.off{display:block}}
 
 /* contact & footer */
 .contact{display:grid;gap:24px}
