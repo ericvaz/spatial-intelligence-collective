@@ -101,7 +101,8 @@ h2{font-size:clamp(26px,4vw,34px);line-height:1.15;margin-bottom:28px;max-width:
 .people .d{color:var(--muted);font-size:15px;display:block;margin-top:6px;max-width:36em}
 @media (min-width:640px){.people.cols{grid-template-columns:1fr 1fr;column-gap:32px}}
 @media (min-width:1000px){.people.cols{grid-template-columns:1fr 1fr 1fr}}
-@media (min-width:640px){.people.cols2{grid-template-columns:1fr 1fr;column-gap:28px}}
+.s-body{container-type:inline-size}
+@container (min-width:480px){.people.cols2{grid-template-columns:1fr 1fr;column-gap:28px}}
 
 /* STRANGE */
 .strange-band{background:var(--soft);margin-top:var(--step);padding:var(--step) 0}
@@ -156,11 +157,6 @@ h2{font-size:clamp(26px,4vw,34px);line-height:1.15;margin-bottom:28px;max-width:
 }
 
 /* A to Z bar for long member lists (phones) */
-.az{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
-.az button{font:inherit;font-size:14px;min-width:36px;height:36px;padding:0 10px;border-radius:999px;border:1px solid var(--rule);background:#fff;color:var(--ink);cursor:pointer}
-.az button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
-.people li.off{display:none}
-@media (min-width:760px){.az{display:none}.people li.off{display:block}}
 
 /* everything flows: books and music */
 .flows-lede{color:var(--muted);margin-bottom:32px}
@@ -208,3 +204,11 @@ h2{font-size:clamp(26px,4vw,34px);line-height:1.15;margin-bottom:28px;max-width:
 .book h3{font-size:15px;line-height:1.3;margin:0 0 4px;letter-spacing:-.01em}
 .book span{display:block;color:var(--muted)}
 @media (min-width:760px){.books{grid-template-columns:repeat(4,1fr)}}
+/* swipeable people rows on phones */
+@media (max-width:759px){
+  .people.swipe{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;border-top:0;padding:2px 0 10px;margin:0;scrollbar-width:none;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+  .people.swipe::-webkit-scrollbar{display:none}
+  .people.swipe li{flex:0 0 78%;scroll-snap-align:start;border:1px solid var(--rule);border-radius:14px;padding:18px 18px 16px;background:var(--soft)}
+  .swipe-count{font-size:13px;color:var(--muted);margin:2px 0 0}
+}
+@media (min-width:760px){.swipe-count{display:none}}
