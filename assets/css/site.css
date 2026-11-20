@@ -101,6 +101,7 @@ h2{font-size:clamp(26px,4vw,34px);line-height:1.15;margin-bottom:28px;max-width:
 .people .d{color:var(--muted);font-size:15px;display:block;margin-top:6px;max-width:36em}
 @media (min-width:640px){.people.cols{grid-template-columns:1fr 1fr;column-gap:32px}}
 @media (min-width:1000px){.people.cols{grid-template-columns:1fr 1fr 1fr}}
+@media (min-width:640px){.people.cols2{grid-template-columns:1fr 1fr;column-gap:28px}}
 
 /* STRANGE */
 .strange-band{background:var(--soft);margin-top:var(--step);padding:var(--step) 0}
