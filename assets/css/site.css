@@ -212,3 +212,11 @@ h2{font-size:clamp(26px,4vw,34px);line-height:1.15;margin-bottom:28px;max-width:
   .swipe-count{font-size:13px;color:var(--muted);margin:2px 0 0}
 }
 @media (min-width:760px){.swipe-count{display:none}}
+
+/* honorary fellow: name opens a short bio in a small window */
+.people li.hon{position:relative}
+.bio-trigger{font:inherit;font-weight:500;color:inherit;background:none;border:0;padding:0;margin:0;cursor:help;text-align:left;text-decoration:underline dotted var(--muted);text-underline-offset:4px}
+.bio-trigger:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:2px}
+.people .bio{position:absolute;left:0;top:calc(100% - 6px);z-index:30;width:min(460px,calc(100vw - 2*var(--gutter)));max-height:60vh;overflow:auto;background:var(--bg);color:var(--ink);border:1px solid var(--rule);border-radius:12px;box-shadow:0 12px 32px rgba(0,0,0,.12);padding:16px 18px;font-size:14px;line-height:1.55;opacity:0;visibility:hidden;transform:translateY(4px);transition:opacity .15s ease .2s,transform .15s ease .2s,visibility 0s linear .35s}
+.bio-trigger:hover ~ .bio,.bio-trigger:focus-visible ~ .bio,.people .bio:hover,.people li.hon.show .bio{opacity:1;visibility:visible;transform:none;transition:opacity .15s ease,transform .15s ease}
+@media (prefers-reduced-motion:reduce){.people .bio{transition:none}}
