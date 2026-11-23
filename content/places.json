@@ -95,6 +95,11 @@
    "city": "Kongens Lyngby",
    "lat": 55.7858,
    "lon": 12.5213
+  },
+  "Nashulai Maasai Conservancy": {
+   "city": "Maasai Mara",
+   "lat": -1.43,
+   "lon": 35.17
   }
  }
 }

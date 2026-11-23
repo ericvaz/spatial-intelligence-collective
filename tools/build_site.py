@@ -53,7 +53,8 @@ fellows = az([p for p in PEOPLE if p['category'] in ('fellow', 'honorary', 'advi
 honorary = [p for p in fellows if p['category'] == 'honorary']
 advisory = [p for p in fellows if p['category'] == 'advisory']
 doctoral = [p for p in PEOPLE if p['category'] == 'doctoral']
-academics = lead + fellows
+academics = [p for p in lead + fellows if not p.get('nonacademic')]   # university-based members
+practitioners = [p for p in fellows if p.get('nonacademic')]
 N_FELLOWS = len(fellows)
 N_UNIS = len({p['institution'] for p in academics})
 N_COUNTRIES = len({p['country'] for p in academics})
@@ -185,7 +186,7 @@ def person_ld(p):
     if p.get('scholar'):
         same.append(f'https://scholar.google.com/citations?user={p["scholar"]}')
     d = {'@type': 'Person', 'name': p['name'], 'jobTitle': p['position'],
-         'affiliation': {'@type': 'CollegeOrUniversity', 'name': p['institution']},
+         'affiliation': {'@type': 'Organization' if p.get('nonacademic') else 'CollegeOrUniversity', 'name': p['institution']},
          'url': f'{SITE}/people/#{p["id"]}'}
     if same:
         d['sameAs'] = same
@@ -213,7 +214,7 @@ N_MEMBERS = len(lead) + len(fellows)
 people_body = f"""<section class="page-head">
   <div class="wrap">
     <h1>People</h1>
-    <p class="lede">The Spatial Intelligence Collective is a research network founded and led by Eric Vaz at Toronto Metropolitan University. Its fellows hold appointments at their own universities and work across geography, planning, geomatics engineering, remote sensing, information management, computing science, business, economics, and nursing. Fellowship is by invitation.</p>
+    <p class="lede">The Spatial Intelligence Collective is a research network founded and led by Eric Vaz at Toronto Metropolitan University. Its fellows hold appointments at their own universities and organizations and work across geography, planning, geomatics engineering, remote sensing, information management, computing science, business, economics, and nursing. Fellowship is by invitation.</p>
     <ul class="metrics"><li><b>{N_FELLOWS}</b> fellows</li><li><b>{N_UNIS}</b> universities</li><li><b>{N_COUNTRIES}</b> countries</li><li><b>{N_DISC}</b> disciplines</li></ul>
   </div>
 </section>
@@ -560,10 +561,11 @@ region('work', f"""
 by_count = Counter(p['country'] for p in academics)
 cs = [('the ' + c if c.startswith('United') else c) for c, _ in sorted(by_count.items(), key=lambda x: (-x[1], x[0]))]
 COUNTRY_LIST = ', '.join(cs[:-1]) + ', and ' + cs[-1]
+PRACT = ', with practitioners in ' + ' and '.join(sorted({p['country'] for p in practitioners})) if practitioners else ''
 small = lambda p: f'<li><a class="n" href="people/#{p["id"]}">{esc(p["name"])}</a>{pills(p)}<span class="a">{esc(p["institution"])}</span></li>'
 region('people', f"""
     <ul class="facts reach"><li><b>{N_FELLOWS}</b> fellows</li><li><b>{N_UNIS}</b> universities</li><li><b>{N_COUNTRIES}</b> countries</li><li><b>{N_DISC}</b> disciplines</li></ul>
-    <p class="lede reach-lede">Members range from assistant to emeritus professors in geography, planning, geomatics engineering, remote sensing, information management, computing science, business, economics, and nursing, at universities in {COUNTRY_LIST}. That breadth lets the Collective build and fund research across disciplines and across borders.</p>
+    <p class="lede reach-lede">Members range from assistant to emeritus professors in geography, planning, geomatics engineering, remote sensing, information management, computing science, business, economics, and nursing, at universities in {COUNTRY_LIST}{PRACT}. That breadth lets the Collective build and fund research across disciplines and across borders.</p>
     <details class="group fold" data-fold>
       <summary><h3>Director and fellows <span class="c">{N_MEMBERS}</span></h3></summary>
       <ul class="people cols">{''.join(small(p) for p in az(lead + fellows))}</ul>

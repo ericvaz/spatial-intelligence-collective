@@ -133,7 +133,7 @@ def network_map(people, places, land, hub='Toronto Metropolitan University', lin
             break
 
     n_inst, n_people = len(sites), len(people)
-    title = f'Map of the Spatial Intelligence Collective: {n_people} members at {n_inst} universities, linked to Toronto'
+    title = f'Map of the Spatial Intelligence Collective: {n_people} members at {n_inst} institutions, linked to Toronto'
     return (f'<svg class="netmap" viewBox="{x0:.0f} {y0:.0f} {x1 - x0:.0f} {y1 - y0:.0f}" role="img" aria-label="{esc(title)}" '
             f'xmlns="http://www.w3.org/2000/svg"><title>{esc(title)}</title>'
             f'<path class="nm-land" d="{_land_path(land)}"/>'

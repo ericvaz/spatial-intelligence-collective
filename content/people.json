@@ -396,6 +396,22 @@
    "research": ""
   },
   {
+   "id": "ric-young",
+   "name": "Ric Young",
+   "sort": "Young",
+   "category": "fellow",
+   "position": "Co-founder",
+   "institution": "Nashulai Maasai Conservancy",
+   "country": "Kenya",
+   "nonacademic": true,
+   "strange": "board",
+   "orcid": null,
+   "openalex": [],
+   "scholar": null,
+   "bio": "",
+   "research": ""
+  },
+  {
    "id": "alexander-zipf",
    "name": "Alexander Zipf",
    "sort": "Zipf",
