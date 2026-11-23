@@ -260,6 +260,23 @@
    "research": ""
   },
   {
+   "id": "otto-anker-nielsen",
+   "name": "Otto Anker Nielsen",
+   "sort": "Nielsen",
+   "category": "fellow",
+   "position": "Full Professor",
+   "institution": "Technical University of Denmark",
+   "country": "Denmark",
+   "strange": null,
+   "orcid": "0000-0001-7901-7021",
+   "openalex": [
+    "A5035078471"
+   ],
+   "scholar": null,
+   "bio": "",
+   "research": ""
+  },
+  {
    "id": "marco-painho",
    "name": "Marco Painho",
    "sort": "Painho",

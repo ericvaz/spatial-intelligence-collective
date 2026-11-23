@@ -90,6 +90,11 @@
    "city": "Hong Kong",
    "lat": 22.3045,
    "lon": 114.1799
+  },
+  "Technical University of Denmark": {
+   "city": "Kongens Lyngby",
+   "lat": 55.7858,
+   "lon": 12.5213
   }
  }
 }
