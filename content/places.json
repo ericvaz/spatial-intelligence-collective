@@ -1,0 +1,95 @@
+{
+ "_note": "Campus coordinates for each institution in people.json, used for the network map. Add a line here when a fellow joins from a new institution.",
+ "places": {
+  "Toronto Metropolitan University": {
+   "city": "Toronto",
+   "lat": 43.6577,
+   "lon": -79.3788
+  },
+  "University of Toronto": {
+   "city": "Toronto",
+   "lat": 43.6629,
+   "lon": -79.3957
+  },
+  "Western University": {
+   "city": "London, Ontario",
+   "lat": 43.0096,
+   "lon": -81.2737
+  },
+  "Wilfrid Laurier University": {
+   "city": "Waterloo",
+   "lat": 43.4738,
+   "lon": -80.5275
+  },
+  "Université de Montréal": {
+   "city": "Montréal",
+   "lat": 45.5048,
+   "lon": -73.6132
+  },
+  "Simon Fraser University": {
+   "city": "Burnaby",
+   "lat": 49.2781,
+   "lon": -122.9199
+  },
+  "University of Calgary": {
+   "city": "Calgary",
+   "lat": 51.0784,
+   "lon": -114.1288
+  },
+  "University of Alberta": {
+   "city": "Edmonton",
+   "lat": 53.5232,
+   "lon": -113.5263
+  },
+  "Clark University": {
+   "city": "Worcester",
+   "lat": 42.251,
+   "lon": -71.8231
+  },
+  "University of Michigan-Flint": {
+   "city": "Flint",
+   "lat": 43.0195,
+   "lon": -83.6886
+  },
+  "Rochester Institute of Technology": {
+   "city": "Rochester",
+   "lat": 43.0848,
+   "lon": -77.6744
+  },
+  "University College London": {
+   "city": "London",
+   "lat": 51.5246,
+   "lon": -0.134
+  },
+  "Universidade Federal do Paraná": {
+   "city": "Curitiba",
+   "lat": -25.45,
+   "lon": -49.2312
+  },
+  "Universidade do Algarve": {
+   "city": "Faro",
+   "lat": 37.0446,
+   "lon": -7.9714
+  },
+  "NOVA Information Management School, Universidade Nova de Lisboa": {
+   "city": "Lisbon",
+   "lat": 38.7323,
+   "lon": -9.16
+  },
+  "Aalborg University": {
+   "city": "Copenhagen",
+   "lat": 55.6503,
+   "lon": 12.5426
+  },
+  "Heidelberg University": {
+   "city": "Heidelberg",
+   "lat": 49.417,
+   "lon": 8.67
+  },
+  "The Hong Kong Polytechnic University": {
+   "city": "Hong Kong",
+   "lat": 22.3045,
+   "lon": 114.1799
+  }
+ }
+}

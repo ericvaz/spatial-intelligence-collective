@@ -239,3 +239,15 @@ h2{font-size:clamp(26px,4vw,34px);line-height:1.15;margin-bottom:28px;max-width:
 /* learn page */
 code{font-size:.9em;overflow-wrap:anywhere;word-break:break-word}
 #learn .cta,.page-head .cta{margin-top:28px}
+
+/* network map */
+.netmap-fig{margin:36px 0 0}
+.netmap{display:block;width:100%;height:auto}
+.nm-land{fill:#efeff1}
+.nm-arcs path{fill:none;stroke:var(--ink);stroke-width:.8;stroke-opacity:.32;vector-effect:non-scaling-stroke}
+.nm-dot{fill:var(--ink)}
+.nm-ring{fill:none;stroke:var(--ink);stroke-width:1;stroke-opacity:.45;vector-effect:non-scaling-stroke}
+.nm-site:hover .nm-dot{fill:#000}
+.nm-label{font:500 13px Inter,system-ui,sans-serif;fill:var(--muted);paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round}
+.nm-label.nm-hub{fill:var(--ink);font-weight:600}
+.netmap-fig figcaption{font-size:14px;color:var(--muted);margin-top:12px}

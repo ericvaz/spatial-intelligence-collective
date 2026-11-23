@@ -15,7 +15,7 @@ from collections import Counter
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 SITE = 'https://spatialintelligence.network'
-CSS_V = 11
+CSS_V = 12
 
 
 def load(name):
@@ -163,15 +163,19 @@ def links(p, cls='plinks'):
 
 
 def affil(p):
-    if p['category'] == 'honorary':
-        return f'Honorary fellow · {esc(p["position"])} · {esc(p["institution"])}'
-    if p['category'] == 'advisory':
-        return f'Advisory board · {esc(p["position"])} · {esc(p["institution"])}'
     if p['category'] == 'doctoral':
         return f'{esc(p["position"])}, {esc(p["institution"])}'
-    if p['category'] == 'lead':
-        return f'{esc(p["position"])}, {esc(p["institution"])}'
     return f'{esc(p["position"])} · {esc(p["institution"])}'
+
+
+PILL = {'lead': 'Director', 'honorary': 'Honorary fellow', 'advisory': 'Advisory board'}
+
+
+def pills(p):
+    out = [PILL[p['category']]] if p['category'] in PILL else []
+    if p.get('strange') == 'board':
+        out.append('STRANGE board')
+    return ''.join(f' <span class="tag">{t}</span>' for t in out)
 
 
 def person_ld(p):
@@ -189,15 +193,21 @@ def person_ld(p):
 
 
 # ================================================================== people/
-def entry(p, bio=True):
-    tag = ' <span class="tag">STRANGE board</span>' if p.get('strange') == 'board' else ''
-    extra = ''
-    if bio and p.get('bio'):
-        extra = f'<p class="d">{p["bio"]}</p>'
-    elif p.get('research'):
-        extra = f'<p class="d">{esc(p["research"])}</p>'
-    return (f'<li id="{p["id"]}"><span class="n">{esc(p["name"])}{tag}</span>'
+def entry(p):
+    extra = f'<p class="d">{esc(p["research"])}</p>' if p.get('research') else ''
+    return (f'<li id="{p["id"]}"><span class="n">{esc(p["name"])}{pills(p)}</span>'
             f'<span class="a">{affil(p)}</span>{extra}{links(p)}</li>')
+
+
+sys.path.insert(0, HERE)
+from build_map import network_map
+PLACES = load('places.json')['places']
+LAND = load('world-land.geojson')
+for p in PEOPLE:
+    if p['institution'] not in PLACES:
+        sys.exit(f'{p["id"]}: add "{p["institution"]}" to content/places.json')
+NETMAP = network_map(lead + fellows + doctoral, PLACES, LAND)
+N_MEMBERS = len(lead) + len(fellows)
 
 
 people_body = f"""<section class="page-head">
@@ -208,31 +218,10 @@ people_body = f"""<section class="page-head">
   </div>
 </section>
 
-<section id="lead">
+<section id="fellows">
   <div class="wrap">
-    <p class="label">Lead</p>
-    <ul class="people">{''.join(entry(p) for p in lead)}</ul>
-  </div>
-</section>
-
-<section id="honorary">
-  <div class="wrap">
-    <p class="label">Honorary fellows</p>
-    <ul class="people">{''.join(entry(p) for p in honorary)}</ul>
-  </div>
-</section>
-
-{f'''<section id="advisory">
-  <div class="wrap">
-    <p class="label">Advisory board</p>
-    <ul class="people">{''.join(entry(p) for p in advisory)}</ul>
-  </div>
-</section>
-
-''' if advisory else ''}<section id="fellows">
-  <div class="wrap">
-    <p class="label">Fellows · {N_FELLOWS - len(honorary) - len(advisory)}</p>
-    <ul class="people cols">{''.join(entry(p) for p in fellows if p['category'] == 'fellow')}</ul>
+    <p class="label">Director and fellows · {N_MEMBERS}</p>
+    <ul class="people cols">{''.join(entry(p) for p in az(lead + fellows))}</ul>
   </div>
 </section>
 
@@ -242,6 +231,15 @@ people_body = f"""<section class="page-head">
     <ul class="people cols">{''.join(entry(p) for p in doctoral)}</ul>
     <p class="more">Researchers whose work fits the Collective are welcome to <a href="mailto:evaz@torontomu.ca?subject=Spatial%20Intelligence%20Collective">write to Eric Vaz</a>. Each fellow's own research record is linked from their entry, and the <a href="../publications/">publications page</a> brings the Collective's work together.</p>
   </div>
+</section>
+
+<section id="map">
+  <div class="wrap">
+    <p class="label">Where we are</p>
+    <figure class="netmap-fig">{NETMAP}
+      <figcaption>{len(lead + fellows + doctoral)} members at {N_UNIS} universities in {N_COUNTRIES} countries, linked to Toronto, where the Collective is based.</figcaption>
+    </figure>
+  </div>
 </section>"""
 
 people_ld = {'@context': 'https://schema.org', '@type': 'ItemList', 'name': 'Members of the Spatial Intelligence Collective',
@@ -249,7 +247,7 @@ people_ld = {'@context': 'https://schema.org', '@type': 'ItemList', 'name': 'Mem
                                  for i, p in enumerate(lead + fellows + doctoral)]}
 write('people/index.html', page(
     'people/', 'People · Spatial Intelligence Collective',
-    f'The {N_FELLOWS} fellows, lead and doctoral researchers of the Spatial Intelligence Collective, at {N_UNIS} universities in {N_COUNTRIES} countries.',
+    f'The director, {N_FELLOWS} fellows and doctoral researchers of the Spatial Intelligence Collective, at {N_UNIS} universities in {N_COUNTRIES} countries.',
     people_body, 'people', jsonld=people_ld))
 
 # ================================================================== strange/
@@ -562,22 +560,19 @@ region('work', f"""
 by_count = Counter(p['country'] for p in academics)
 cs = [('the ' + c if c.startswith('United') else c) for c, _ in sorted(by_count.items(), key=lambda x: (-x[1], x[0]))]
 COUNTRY_LIST = ', '.join(cs[:-1]) + ', and ' + cs[-1]
-small = lambda p: f'<li><a class="n" href="people/#{p["id"]}">{esc(p["name"])}</a><span class="a">{esc(p["institution"])}</span></li>'
+small = lambda p: f'<li><a class="n" href="people/#{p["id"]}">{esc(p["name"])}</a>{pills(p)}<span class="a">{esc(p["institution"])}</span></li>'
 region('people', f"""
     <ul class="facts reach"><li><b>{N_FELLOWS}</b> fellows</li><li><b>{N_UNIS}</b> universities</li><li><b>{N_COUNTRIES}</b> countries</li><li><b>{N_DISC}</b> disciplines</li></ul>
     <p class="lede reach-lede">Members range from assistant to emeritus professors in geography, planning, geomatics engineering, remote sensing, information management, computing science, business, economics, and nursing, at universities in {COUNTRY_LIST}. That breadth lets the Collective build and fund research across disciplines and across borders.</p>
-    <div class="group">
-      <h3>Lead</h3>
-      <ul class="people">{''.join(f'<li><a class="n" href="people/#{p["id"]}">{esc(p["name"])}</a><span class="a">{affil(p)}</span></li>' for p in lead)}</ul>
-    </div>
     <details class="group fold" data-fold>
-      <summary><h3>Fellows <span class="c">{N_FELLOWS}</span></h3></summary>
-      <ul class="people cols">{''.join(small(p) for p in fellows)}</ul>
+      <summary><h3>Director and fellows <span class="c">{N_MEMBERS}</span></h3></summary>
+      <ul class="people cols">{''.join(small(p) for p in az(lead + fellows))}</ul>
     </details>
     <details class="group fold" data-fold>
       <summary><h3>Doctoral researchers <span class="c">{len(doctoral)}</span></h3></summary>
       <ul class="people cols">{''.join(small(p) for p in doctoral)}</ul>
     </details>
+    <figure class="netmap-fig">{NETMAP}</figure>
     <p class="more"><a href="people/">Full directory, with each member's research profiles</a></p>
     """)
 
