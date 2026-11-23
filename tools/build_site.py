@@ -559,7 +559,7 @@ region('work', f"""
     """)
 
 by_count = Counter(p['country'] for p in academics)
-cs = [('the ' + c if c.startswith('United') else c) for c, _ in sorted(by_count.items(), key=lambda x: (-x[1], x[0]))]
+cs = [('the ' + c if c.startswith('United') or c == 'Netherlands' else c) for c, _ in sorted(by_count.items(), key=lambda x: (-x[1], x[0]))]
 COUNTRY_LIST = ', '.join(cs[:-1]) + ', and ' + cs[-1]
 PRACT = ', with practitioners in ' + ' and '.join(sorted({p['country'] for p in practitioners})) if practitioners else ''
 small = lambda p: f'<li><a class="n" href="people/#{p["id"]}">{esc(p["name"])}</a>{pills(p)}<span class="a">{esc(p["institution"])}</span></li>'
