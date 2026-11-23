@@ -34,7 +34,7 @@ are always derived from `people.json`. Edit anything outside the marked regions 
 
 `tools/fetch_openalex.py` matches each member to OpenAlex by ORCID, deduplicates works by OpenAlex
 ID, DOI and title, and counts articles, reviews, books, chapters and conference papers. Run it once
-a month. Set `records_confirmed` to `true` for a member once they have confirmed their links.
+a month.
 No per-member counts or collective h-index are published.
 
 ## STRANGE

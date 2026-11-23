@@ -1,7 +1,7 @@
 {
  "meta": {
   "disciplines": 9,
-  "_note": "Edit this file to add or change members, then run python3 tools/build_site.py. records_confirmed becomes true once a fellow confirms their ORCID, OpenAlex and Scholar links."
+  "_note": "Edit this file to add or change members, then run python3 tools/fetch_openalex.py and python3 tools/build_site.py."
  },
  "people": [
   {
@@ -19,8 +19,7 @@
    ],
    "scholar": "EfpbSEYAAAAJ",
    "bio": "",
-   "research": "",
-   "records_confirmed": false
+   "research": ""
   },
   {
    "id": "godwin-arku",
@@ -37,8 +36,7 @@
    ],
    "scholar": "7_gUjc0AAAAJ",
    "bio": "",
-   "research": "",
-   "records_confirmed": false
+   "research": ""
   },
   {
    "id": "michael-batty",
@@ -55,8 +53,7 @@
    ],
    "scholar": "UqKi_qAAAAAJ",
    "bio": "Michael Batty is Emeritus Bartlett Professor of Planning at University College London and Chair of the Centre for Advanced Spatial Analysis (CASA). He is a graduate of the University of Manchester in Town and Country Planning and of the University of Wales Institute of Science and Technology in Architecture, where he was Professor of Town Planning and Dean in the 1980s. He was Director of the National Center for Geographic Information and Analysis (NCGIA) at SUNY-Buffalo from 1990 to 1995 before he set up CASA at UCL. He is a Fellow of the British Academy, the Royal Society, the Academy of Social Sciences, and the Royal Town Planning Institute, and he was elected a foreign Academician of the Chinese Academy of Sciences in 2023 and the Indian National Science Academy in 2025. He has worked on computer models of cities and their visualisation since the 1970s. His recent books are Cities and Complexity (2005), The New Science of Cities (2013), Inventing Future Cities (2018), and The Computable City (2024), all from The MIT Press. His edited book Urban Informatics (Springer, 2021) reflects his focus on digital and geospatial technologies in urban planning, and he co-authored A Digital Future for Planning, the report of the Digital Task Force for Planning (2022).",
-   "research": "",
-   "records_confirmed": false
+   "research": ""
   },
   {
    "id": "fabio-breunig",
@@ -73,8 +70,7 @@
    ],
    "scholar": "ssCj7awAAAAJ",
    "bio": "",
-   "research": "",
-   "records_confirmed": false
+   "research": ""
   },
   {
    "id": "luis-serra-coelho",
@@ -91,8 +87,7 @@
    ],
    "scholar": null,
    "bio": "",
-   "research": "",
-   "records_confirmed": false
+   "research": ""
   },
   {
    "id": "suzana-dragicevic",
@@ -109,8 +104,7 @@
    ],
    "scholar": "u30396MAAAAJ",
    "bio": "",
-   "research": "",
-   "records_confirmed": false
+   "research": ""
   },
   {
    "id": "victoria-fast",
@@ -127,8 +121,7 @@
    ],
    "scholar": "_5Bk4NYAAAAJ",
    "bio": "",
-   "research": "",
-   "records_confirmed": false
+   "research": ""
   },
   {
    "id": "suzanne-fredericks",
@@ -145,8 +138,7 @@
    ],
    "scholar": "B4zTPhMAAAAJ",
    "bio": "",
-   "research": "",
-   "records_confirmed": false
+   "research": ""
   },
   {
    "id": "murtaza-haider",
@@ -163,8 +155,7 @@
    ],
    "scholar": "WfxbeZ0AAAAJ",
    "bio": "",
-   "research": "",
-   "records_confirmed": false
+   "research": ""
   },
   {
    "id": "jamal-jokar-arsanjani",
@@ -181,8 +172,7 @@
    ],
    "scholar": "3DrsOpkAAAAJ",
    "bio": "",
-   "research": "",
-   "records_confirmed": false
+   "research": ""
   },
   {
    "id": "jinhyung-lee",
@@ -199,8 +189,7 @@
    ],
    "scholar": "jU-OIv4AAAAJ",
    "bio": "",
-   "research": "",
-   "records_confirmed": false
+   "research": ""
   },
   {
    "id": "songnian-li",
@@ -217,8 +206,7 @@
    ],
    "scholar": "RodaPPgAAAAJ",
    "bio": "",
-   "research": "",
-   "records_confirmed": false
+   "research": ""
   },
   {
    "id": "xintao-liu",
@@ -235,8 +223,7 @@
    ],
    "scholar": "BhcMunkAAAAJ",
    "bio": "",
-   "research": "",
-   "records_confirmed": false
+   "research": ""
   },
   {
    "id": "raktim-mitra",
@@ -253,8 +240,7 @@
    ],
    "scholar": "FNtreSgAAAAJ",
    "bio": "",
-   "research": "",
-   "records_confirmed": false
+   "research": ""
   },
   {
    "id": "marco-painho",
@@ -271,8 +257,7 @@
    ],
    "scholar": "L1PHpI8AAAAJ",
    "bio": "",
-   "research": "",
-   "records_confirmed": false
+   "research": ""
   },
   {
    "id": "liliana-perez",
@@ -289,8 +274,7 @@
    ],
    "scholar": "iCCIPAoAAAAJ",
    "bio": "",
-   "research": "",
-   "records_confirmed": false
+   "research": ""
   },
   {
    "id": "robert-gilmore-pontius",
@@ -307,8 +291,7 @@
    ],
    "scholar": "Lfmhbd8AAAAJ",
    "bio": "Robert Gilmore Pontius Jr is Professor in the Graduate School of Geography at Clark University, where he has taught since 1998. He holds a PhD in Environmental Science from the State University of New York College of Environmental Science and Forestry and a Master of Applied Statistics from The Ohio State University. He creates quantitative methods for GIScience, remote sensing, and statistics, among them quantity and allocation disagreement, Intensity Analysis, and the Total Operating Characteristic, and several of these methods are built into the TerrSet software, formerly IDRISI. He was a Fulbright Scholar in Brazil in 2022 to 2023. His book <a href=\"https://link.springer.com/book/10.1007/978-3-030-70765-1\" target=\"_blank\" rel=\"noopener\">Metrics That Make a Difference: How to Analyze Change and Error</a> (Springer, 2022) brings these methods together for students and researchers.",
-   "research": "",
-   "records_confirmed": false
+   "research": ""
   },
   {
    "id": "greg-rybarczyk",
@@ -325,8 +308,7 @@
    ],
    "scholar": "hrvCZUQAAAAJ",
    "bio": "",
-   "research": "",
-   "records_confirmed": false
+   "research": ""
   },
   {
    "id": "alysha-van-duynhoven",
@@ -343,8 +325,7 @@
    ],
    "scholar": "Vh7MAJ0AAAAJ",
    "bio": "",
-   "research": "",
-   "records_confirmed": false
+   "research": ""
   },
   {
    "id": "michael-widener",
@@ -361,8 +342,7 @@
    ],
    "scholar": "EIjB7f0AAAAJ",
    "bio": "",
-   "research": "",
-   "records_confirmed": false
+   "research": ""
   },
   {
    "id": "alexander-zipf",
@@ -379,8 +359,7 @@
    ],
    "scholar": "1TAZiPwAAAAJ",
    "bio": "",
-   "research": "",
-   "records_confirmed": false
+   "research": ""
   },
   {
    "id": "teagan-soni",
@@ -395,8 +374,7 @@
    "openalex": [],
    "scholar": null,
    "bio": "",
-   "research": "Migration, demographics, and settlement across North America and India, and how climate, environmental, and socioeconomic conditions shape human mobility.",
-   "records_confirmed": false
+   "research": "Migration, demographics, and settlement across North America and India, and how climate, environmental, and socioeconomic conditions shape human mobility."
   },
   {
    "id": "anastasiia-smirnova",
@@ -411,8 +389,7 @@
    "openalex": [],
    "scholar": null,
    "bio": "",
-   "research": "How urban environments and transportation infrastructure shape cycling safety, with attention to equity of access and data representativeness.",
-   "records_confirmed": false
+   "research": "How urban environments and transportation infrastructure shape cycling safety, with attention to equity of access and data representativeness."
   }
  ]
 }
