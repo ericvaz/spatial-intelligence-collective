@@ -105,6 +105,11 @@
    "city": "Tallahassee",
    "lat": 30.4419,
    "lon": -84.2985
+  },
+  "University of Groningen": {
+   "city": "Groningen",
+   "lat": 53.2194,
+   "lon": 6.5665
   }
  }
 }

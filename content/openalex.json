@@ -11,6 +11,7 @@
   "luis-serra-coelho",
   "suzana-dragicevic",
   "victoria-fast",
+  "henk-folmer",
   "stewart-fotheringham",
   "suzanne-fredericks",
   "murtaza-haider",
@@ -55,6 +56,9 @@
   ],
   "victoria-fast": [
    "A5044551536"
+  ],
+  "henk-folmer": [
+   "A5067369111"
   ],
   "stewart-fotheringham": [
    "A5014732659"
@@ -116,8 +120,8 @@
   ]
  },
  "totals": {
-  "publications": 3667,
-  "citations": 172776,
+  "publications": 3908,
+  "citations": 178358,
   "multi_fellow": 85
  },
  "multi_fellow": [

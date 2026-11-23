@@ -141,6 +141,23 @@
    "research": ""
   },
   {
+   "id": "henk-folmer",
+   "name": "Henk Folmer",
+   "sort": "Folmer",
+   "category": "honorary",
+   "position": "Professor Emeritus",
+   "institution": "University of Groningen",
+   "country": "Netherlands",
+   "strange": null,
+   "orcid": "0000-0003-1742-4427",
+   "openalex": [
+    "A5067369111"
+   ],
+   "scholar": null,
+   "bio": "",
+   "research": ""
+  },
+  {
    "id": "stewart-fotheringham",
    "name": "A. Stewart Fotheringham",
    "sort": "Fotheringham",
