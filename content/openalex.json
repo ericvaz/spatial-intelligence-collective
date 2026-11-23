@@ -100,9 +100,9 @@
   ]
  },
  "totals": {
-  "publications": 2841,
-  "citations": 129456,
-  "multi_fellow": 74
+  "publications": 2686,
+  "citations": 123493,
+  "multi_fellow": 68
  },
  "multi_fellow": [
   {
@@ -312,30 +312,6 @@
    ]
   },
   {
-   "title": "ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences: XXIV ISPRS Congress, Imaging Today, Foreseeing Tomorrow, Commission IV, Vol. V-4-2021",
-   "year": 2021,
-   "type": "article",
-   "venue": "",
-   "doi": "",
-   "openalex": "W3197429678",
-   "members": [
-    "jamal-jokar-arsanjani",
-    "suzana-dragicevic"
-   ]
-  },
-  {
-   "title": "The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences: XXIV ISPRS Congress Imaging Today, Foreseeing Tomorrow, Commission IV, Vol. XLIII-B4-2021",
-   "year": 2021,
-   "type": "article",
-   "venue": "",
-   "doi": "",
-   "openalex": "W3197641134",
-   "members": [
-    "jamal-jokar-arsanjani",
-    "suzana-dragicevic"
-   ]
-  },
-  {
    "title": "Validating models of one-way land change: an example case of forest insect disturbance",
    "year": 2021,
    "type": "article",
@@ -368,18 +344,6 @@
    "openalex": "W3049664500",
    "members": [
     "liliana-perez",
-    "suzana-dragicevic"
-   ]
-  },
-  {
-   "title": "ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences: XXIV ISPRS Congress, Commission IV, Vol. V-4-2020",
-   "year": 2020,
-   "type": "article",
-   "venue": "",
-   "doi": "",
-   "openalex": "W3197379839",
-   "members": [
-    "jamal-jokar-arsanjani",
     "suzana-dragicevic"
    ]
   },
@@ -441,18 +405,6 @@
    "members": [
     "songnian-li",
     "suzana-dragicevic"
-   ]
-  },
-  {
-   "title": "Introduction to Urban Geo-Informatics",
-   "year": 2018,
-   "type": "article",
-   "venue": "",
-   "doi": "",
-   "openalex": "W3121119699",
-   "members": [
-    "michael-batty",
-    "xintao-liu"
    ]
   },
   {
@@ -525,18 +477,6 @@
    "members": [
     "eric-vaz",
     "jamal-jokar-arsanjani"
-   ]
-  },
-  {
-   "title": "PREFACE",
-   "year": 2016,
-   "type": "article",
-   "venue": "ISPRS annals of the photogrammetry, remote sensing and spatial information sciences",
-   "doi": "https://doi.org/10.5194/isprs-annals-iii-2-1-2016",
-   "openalex": "W4256009769",
-   "members": [
-    "marco-painho",
-    "songnian-li"
    ]
   },
   {
@@ -980,18 +920,6 @@
    "openalex": "W2093478134",
    "members": [
     "liliana-perez",
-    "suzana-dragicevic"
-   ]
-  },
-  {
-   "title": "Introduction",
-   "year": 2001,
-   "type": "book-chapter",
-   "venue": "CRC Press eBooks",
-   "doi": "https://doi.org/10.1201/9780203305850.pt3",
-   "openalex": "W4242385115",
-   "members": [
-    "michael-batty",
     "suzana-dragicevic"
    ]
   }

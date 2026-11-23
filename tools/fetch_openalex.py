@@ -9,6 +9,7 @@ daily request budget; the script works without one.
 Counting policy (stated on the publications page):
   * a work counts once, however many members wrote it (deduplicated by OpenAlex
     work ID, then by DOI, then by normalized title);
+  * front matter, whole proceedings volumes and stub records without DOI or venue are dropped;
   * headline totals include articles, reviews, books, book chapters and
     conference papers; preprints, editorials, errata and other items are left out;
   * a multi-fellow work has two or more members among its authors;
@@ -98,7 +99,20 @@ for g in groups.values():
     else:
         by_title[t] = g
 distinct = list(by_title.values())
-counted = [g for g in distinct if g['w']['type'] in COUNTED]
+
+# front matter and whole proceedings volumes are indexed as "articles" too
+FRONT = re.compile(r'^(preface|foreword|introduction|editorial|front matter|contents|index)\.?$'
+                   r'|^(isprs annals|the international archives|international archives) of the photogrammetry', re.I)
+
+
+def is_work(w):
+    t = (w.get('title') or '').strip()
+    if not t or FRONT.search(t):
+        return False
+    return bool(w.get('doi') or venue(w))   # no DOI and no venue: usually a stub record
+
+
+counted = [g for g in distinct if g['w']['type'] in COUNTED and is_work(g['w'])]
 
 multi = []
 for g in counted:

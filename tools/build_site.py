@@ -63,6 +63,8 @@ manager_p = [p for p in PEOPLE if p.get('strange') == 'manager']
 N_MAST = len(director_p) + len(manager_p) + len(board)
 T = OA['totals']
 indexed = len(OA['members_indexed'])
+N_IDX_FELLOWS = sum(1 for p in fellows if p['id'] in OA['members_indexed'])
+COVER = ('All ' if N_IDX_FELLOWS == len(fellows) else f'{N_IDX_FELLOWS} of ') + f'{len(fellows)} fellows and the director indexed'
 confirmed = sum(1 for p in PEOPLE if p['id'] in OA['members_indexed'] and p.get('records_confirmed'))
 UPDATED = datetime.date.fromisoformat(OA['updated'])
 UPDATED_TXT = f'{UPDATED.day} {UPDATED:%B %Y}'
@@ -367,17 +369,17 @@ dm = DIR['metrics']
 
 pubs_body = f"""<section class="page-head">
   <div class="wrap">
-    <h1>Research</h1>
+    <h1>Publications</h1>
     <p class="lede">The research record of the Collective's members, drawn from OpenAlex and matched to each member by ORCID. Every member's own record is one click away, and the work fellows have written together is listed in full.</p>
     <ul class="metrics">
       <li><b>{fmt(T['publications'])}</b> publications by members</li>
       <li><b>{T['multi_fellow']}</b> written by two or more fellows</li>
-      <li><b>{indexed}</b> of {len(PEOPLE)} members indexed</li>
+      <li><b>{COVER}</b></li>
     </ul>
     <p class="prov">Source: OpenAlex · updated {UPDATED_TXT} · {confirmed} of {indexed} records confirmed by the members themselves, the rest matched by ORCID and provisional.</p>
     <details class="method">
       <summary>How these numbers are counted</summary>
-      <p>Each member is matched to OpenAlex through their ORCID, never by name, so namesakes are not counted. A work counts once however many members wrote it: duplicates are folded together by OpenAlex identifier, DOI, and title. The totals include journal articles, reviews, books, book chapters, and conference papers, and leave out preprints, editorials, and errata. Together these {fmt(T['publications'])} publications have been cited {fmt(T['citations'])} times in OpenAlex; one citing paper can cite several of them, so this is not a count of distinct citing works.</p>
+      <p>Each member is matched to OpenAlex through their ORCID rather than by name, which keeps most namesakes out; OpenAlex can still attribute a work to the wrong person, which is why members are asked to check their records. A work counts once however many members wrote it: duplicates are folded together by OpenAlex identifier, DOI, and title. The totals include journal articles, reviews, books, book chapters, and conference papers, and leave out preprints, editorials, errata, front matter, and whole proceedings volumes. Together these {fmt(T['publications'])} publications have been cited {fmt(T['citations'])} times in OpenAlex; one citing paper can cite several of them, so this is not a count of distinct citing works.</p>
       <p>The totals describe the work members bring to the Collective across their careers, much of it written before the Collective existed. Works by two or more fellows include collaborations from before the Collective was founded. No collective h-index is given, and no member is ranked against another; individual metrics are on each member's own profiles. The record is refreshed monthly, and members can correct or withdraw their records by writing to Eric Vaz.</p>
     </details>
   </div>
@@ -454,7 +456,7 @@ if(qs){qs=qs.replace(/\+/g,' ');q.value=qs;q2.value=qs;}
 a1();a2();
 """
 write('publications/index.html', page(
-    'publications/', 'Research · Spatial Intelligence Collective',
+    'publications/', 'Publications · Spatial Intelligence Collective',
     f'{fmt(T["publications"])} publications by members of the Spatial Intelligence Collective, {T["multi_fellow"]} of them written by two or more fellows, with each member\'s own research record.',
     pubs_body, 'publications', script=pubs_js))
 
