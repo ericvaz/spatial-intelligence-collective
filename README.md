@@ -1,50 +1,54 @@
-# Spatial Intelligence Collective — Complexity Spatial Analysis
+# Spatial Intelligence Collective
 
-Site of the Spatial Intelligence Collective, led by **Eric Vaz**, Full Professor, Department of Geography &
-Environmental Studies, Toronto Metropolitan University.
+Site of the Spatial Intelligence Collective, a research network founded and led by Eric Vaz,
+Full Professor, Department of Geography and Environmental Studies, Toronto Metropolitan University.
 
-**Live:** https://ericvaz.github.io/spatial-intelligence-collective/
+**Live:** https://spatialintelligence.network/
 
-Geocomputation · GeoAI · Complexity Science · Quantum Computing
+## Pages
 
-## Contents
+- `index.html`: home page with research, recent joint work, people, STRANGE, books, news, data, and contact
+- `people/`: the full directory, with each member's Google Scholar, ORCID and OpenAlex links
+- `publications/`: the research record of all members, the works written by two or more fellows, and Eric Vaz's curated record
+- `strange/`: the magazine, its masthead, and how to contribute
 
-- `index.html`: home page with research, selected work, people, STRANGE, news, data, and contact
-- `publications/`: the full curated record (80 entries) with theme filters and search
-- `assets/css/site.css`: the single stylesheet for both pages (Inter, near-black on white, phone first)
-- `assets/strange/`: the STRANGE wordmark (SVG) and issue covers
-- `assets/covers/`: Springer cover images for the seven monographs and edited volumes
-- `tools/`: the build scripts
+## Content
+
+Everything that changes as the Collective grows lives in `content/`:
+
+- `people.json`: every member, their position, institution, country, STRANGE role and profile identifiers
+- `openalex.json`: the dated research snapshot (generated, do not edit by hand)
+- `director.json`: Eric Vaz's curated publication record and Springer volumes, with DOIs
+
+## Adding a fellow
+
+1. Add an entry to `content/people.json` (keep `sort` as the surname used for ordering, set `strange` to `"board"` for editorial board members).
+2. Run `python3 tools/fetch_openalex.py` if the fellow has an ORCID, then `python3 tools/build_site.py`.
+3. Check the diff and push.
+
+The builder fills the marked `<!--b:...-->` regions of `index.html` and writes the other pages,
+`sitemap.xml` and `robots.txt`, so counts of fellows, universities, countries and the masthead
+are always derived from `people.json`. Edit anything outside the marked regions by hand.
+
+## Research record
+
+`tools/fetch_openalex.py` matches each member to OpenAlex by ORCID, deduplicates works by OpenAlex
+ID, DOI and title, and counts articles, reviews, books, chapters and conference papers. Run it once
+a month. Set `records_confirmed` to `true` for a member once they have confirmed their links.
+No per-member counts or collective h-index are published.
 
 ## STRANGE
 
-STRANGE is the Collective's magazine. The current issue sits in the `#strange` section of
-`index.html`. When a new issue is ready, export its cover from Figma, save it as
-`assets/strange/strange-NN.webp` (about 900 px wide) plus a `-sm` version (600 px), point the
-featured `<figure class="issue">` at it, and move the previous issue into the `<ul class="archive">`
-list just below (newest first). The archive grid stays hidden while it is empty.
+When a new issue is ready, export its cover from Figma, save it as `assets/strange/strange-NN.webp`
+(about 900 px wide) plus a `-sm` version (600 px), and update the cover in `tools/build_site.py`
+and `index.html`. Give each issue its own page at `strange/issue-NN/` and list it in the archive.
 
-## Content provenance
-
-Every publication, book and biographical claim on this site comes from the
-existing record: the JSON-LD on ericvaz.com, Google Scholar, and Springer. Nothing is
-invented. Citation metrics (3,843 citations, h-index 32) are as reported by Google
-Scholar and should be refreshed periodically.
-
-## Rebuilding
-
-The artwork and the publications page are generated. Requires Python 3 only — no
-dependencies, no build toolchain.
+## Rebuilding the artwork
 
 ```bash
-python3 tools/build_art.py     # hero + research-area artwork
-python3 tools/build_work.py    # selected-work thumbnails + about backdrop
-python3 tools/build_pubs.py    # publications/index.html from tools/pubs.json
+python3 tools/build_art.py     # hero and research-area artwork
+python3 tools/build_work.py    # work thumbnails and about backdrop
 ```
-
-All generators are seeded, so rebuilds are byte-identical unless the source data changes.
-To add a publication, edit `tools/pubs.json` (or the `EXTRA` list in `tools/build_pubs.py`
-for items not yet in the JSON-LD record) and re-run `build_pubs.py`.
 
 ## Local preview
 

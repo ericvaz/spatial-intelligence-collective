@@ -1,0 +1,1007 @@
+{
+ "_note": "Eric Vaz's curated record, from ericvaz.com JSON-LD, Google Scholar and Springer. DOIs matched against OpenAlex by title.",
+ "metrics": {
+  "citations": "3,843",
+  "h_index": 32,
+  "source": "Google Scholar"
+ },
+ "publications": [
+  {
+   "title": "Artificial terrariums as urban habitats: Innovative solutions for environmental, economic, and social development",
+   "year": "2024",
+   "venue": "Habitat International",
+   "authors": [
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.habitatint.2024.103017"
+  },
+  {
+   "title": "Assessing coastal vulnerability at the village level: The case of Canacona in South Goa, India",
+   "year": "2024",
+   "venue": "iScience",
+   "authors": [
+    "Nigam, R.",
+    "Luis, A. J.",
+    "Gagnon, A. S.",
+    "Vaz, E.",
+    "Damasio, B.",
+    "Kotha, M."
+   ],
+   "kind": "Article",
+   "doi": ""
+  },
+  {
+   "title": "Faith, policy, and suicide: A machine learning and spatial analysis approach of religious affiliation and suicide rates in Toronto",
+   "year": "2024",
+   "venue": "Habitat International",
+   "authors": [
+    "Vaz, E.",
+    "Damasio, B.",
+    "Cusimano, M."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.habitatint.2024.103119"
+  },
+  {
+   "title": "Modelling future wetland loss with land use/land cover change simulation in the Greater Toronto and Hamilton Area",
+   "year": "2024",
+   "venue": "Habitat International",
+   "authors": [
+    "Penfound, E.",
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.habitatint.2023.102974"
+  },
+  {
+   "title": "Quantum machine learning in spatial analysis: A paradigm shift in resource allocation and environmental modeling",
+   "year": "2024",
+   "venue": "Letters in Spatial and Resource Sciences",
+   "authors": [
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1007/s12076-024-00374-y"
+  },
+  {
+   "title": "Urban habitats and food insecurity: Lessons learned throughout a pandemic",
+   "year": "2023",
+   "venue": "Habitat International",
+   "authors": [
+    "Vaz, E.",
+    "Damasio, B.",
+    "Bação, F.",
+    "Shaker, R.R.",
+    "Penfound, E."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.habitatint.2023.102779"
+  },
+  {
+   "title": "Analysis of 200 years of change in Ontario wetland systems",
+   "year": "2022",
+   "venue": "Applied Geography",
+   "authors": [
+    "Penfound, E.",
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.apgeog.2021.102625"
+  },
+  {
+   "title": "Did COVID-19 lockdown positively affect the urban environment and UN SDGs?",
+   "year": "2022",
+   "venue": "PLOS ONE",
+   "authors": [
+    "Nigam, R.",
+    "Tripathi, G.",
+    "Priya, T.",
+    "Luis, A.",
+    "Kumar, S.",
+    "Shakya, A.",
+    "Damasio, B.",
+    "Kotha, M.",
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": ""
+  },
+  {
+   "title": "Modelling the impact of temperature under climate change scenarios on native and invasive vascular vegetation on the Antarctic Peninsula",
+   "year": "2022",
+   "venue": "Geomatics",
+   "authors": [
+    "Penfound, E.",
+    "Wellen, C.",
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.3390/geomatics2040022"
+  },
+  {
+   "title": "Analysis of wetland landcover change in Great Lakes urban areas using self-organizing maps",
+   "year": "2021",
+   "venue": "Remote Sensing",
+   "authors": [
+    "Penfound, E.",
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.3390/rs13244960"
+  },
+  {
+   "title": "COVID-19 in Toronto: A spatial exploratory analysis",
+   "year": "2021",
+   "venue": "Sustainability",
+   "authors": [
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.3390/su13020498"
+  },
+  {
+   "title": "Machine learning for analysis of wealth in cities: A spatial-empirical examination of wealth in Toronto",
+   "year": "2021",
+   "venue": "Habitat International",
+   "authors": [
+    "Vaz, E.",
+    "Bação, F.",
+    "Damásio, B.",
+    "Haynes, M.",
+    "Penfound, E."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.habitatint.2021.102319"
+  },
+  {
+   "title": "Mumbai's business landscape: A spatial analytical approach to urbanisation",
+   "year": "2021",
+   "venue": "Heliyon",
+   "authors": [
+    "Vaz, E.",
+    "Damásio, B.",
+    "Bação, F.",
+    "Haynes, M.",
+    "Penfound, E."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.heliyon.2021.e07522"
+  },
+  {
+   "title": "Open data and injuries in urban areas: A spatial analytical framework of Toronto using machine learning and spatial regressions",
+   "year": "2021",
+   "venue": "PLOS ONE",
+   "authors": [
+    "Vaz, E.",
+    "Cusimano, M.",
+    "Damásio, B.",
+    "Bação, F.",
+    "Penfound, E."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1371/journal.pone.0248285"
+  },
+  {
+   "title": "Spatio-temporal assessment of COVID-19 lockdown impact on beach litter status in Goa, India",
+   "year": "2021",
+   "venue": "Marine Pollution Bulletin",
+   "authors": [
+    "Nigam, R.",
+    "Luis, A.",
+    "Prasad, P.",
+    "Kuttikar, S.",
+    "Yadav, R.",
+    "Vaz, E.",
+    "Kotha, M."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.marpolbul.2021.113293"
+  },
+  {
+   "title": "A geographical exploration of environmental and land use characteristics of suicide in the Greater Toronto Area",
+   "year": "2020",
+   "venue": "Psychiatry Research",
+   "authors": [
+    "Vaz, E.",
+    "Shaker, R.R.",
+    "Cusimano, M."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.psychres.2020.112790"
+  },
+  {
+   "title": "Archaeological sites in small towns — A sustainability assessment of Northumberland County",
+   "year": "2020",
+   "venue": "Sustainability",
+   "authors": [
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.3390/su12052018"
+  },
+  {
+   "title": "Data analysis of land use change and urban and rural impacts in Lagos State, Nigeria",
+   "year": "2020",
+   "venue": "Data",
+   "authors": [
+    "Onilude, O.",
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.3390/data5030072"
+  },
+  {
+   "title": "Does land use and landscape contribute to self-harm? A sustainable cities framework",
+   "year": "2020",
+   "venue": "Data",
+   "authors": [
+    "Vaz, E.",
+    "Shaker, R.R.",
+    "Cusimano, M."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.3390/data5010009"
+  },
+  {
+   "title": "Mars terraforming: A geographic information systems framework",
+   "year": "2020",
+   "venue": "Life Sciences in Space Research",
+   "authors": [
+    "Vaz, E.",
+    "Penfound, E."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.lssr.2019.12.001"
+  },
+  {
+   "title": "Modeling nature-based and cultural recreation preferences in Mediterranean regions",
+   "year": "2020",
+   "venue": "Sustainability",
+   "authors": [
+    "Samora-Arvela, A.",
+    "Ferreira, J.",
+    "Vaz, E.",
+    "Panagopoulos, T."
+   ],
+   "kind": "Article",
+   "doi": ""
+  },
+  {
+   "title": "Rethinking agricultural land use in Algiers: A spatial analysis of the Eastern Mitidja Plain",
+   "year": "2020",
+   "venue": "Habitat International",
+   "authors": [
+    "Bellout, A.",
+    "Vaz, E.",
+    "Penfound, E."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.habitatint.2020.102239"
+  },
+  {
+   "title": "Theoretical foundations for the promotion of small and medium towns",
+   "year": "2020",
+   "venue": "Sustainability",
+   "authors": [
+    "Noronha, T.",
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": ""
+  },
+  {
+   "title": "Urban sprawl and growth prediction for Lagos using GlobeLand30 data and a cellular automata model",
+   "year": "2020",
+   "venue": "Sci",
+   "authors": [
+    "Onilude, O.",
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.3390/sci3020023"
+  },
+  {
+   "title": "Investigating urban heat island through spatial analysis of New York City streetscapes",
+   "year": "2019",
+   "venue": "Journal of Cleaner Production",
+   "authors": [
+    "Shaker, R.",
+    "Altman, Y.",
+    "Deng, C.",
+    "Vaz, E.",
+    "Forsythe, K.W."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.jclepro.2019.05.389"
+  },
+  {
+   "title": "Evolution of the agri-food business landscape of Portugal at a local level",
+   "year": "2018",
+   "venue": "Public Policy Portuguese Journal",
+   "authors": [
+    "de Noronha, T.",
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": ""
+  },
+  {
+   "title": "Exploring expert perception towards brownfield redevelopment benefits",
+   "year": "2018",
+   "venue": "Habitat International",
+   "authors": [
+    "Loures, L.",
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": ""
+  },
+  {
+   "title": "Pollen sleuthing for terrestrial plant surveys: Locating plant populations by exploiting pollen movement",
+   "year": "2018",
+   "venue": "Applications in Plant Sciences",
+   "authors": [
+    "Campbell, L.G.",
+    "Melles, S.J.",
+    "Vaz, E.",
+    "Parker, R.J.",
+    "Burgess, K.S."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1002/aps3.1020"
+  },
+  {
+   "title": "Spatial data for slum upgrading: Volunteered geographic information and the role of citizen science",
+   "year": "2018",
+   "venue": "Habitat International",
+   "authors": [
+    "Hachmann, S.",
+    "Arsanjani, J.J.",
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.habitatint.2017.04.011"
+  },
+  {
+   "title": "Supporting policy development in the Aveiro region by modeling urban sustainability",
+   "year": "2018",
+   "venue": "Public Policy Portuguese Journal",
+   "authors": [
+    "Esteves, T.C.",
+    "Vaz, E.",
+    "Alves, F.L."
+   ],
+   "kind": "Article",
+   "doi": ""
+  },
+  {
+   "title": "A local spatial analysis criterion of post-traumatic brain injury and accessibility to public transportation",
+   "year": "2017",
+   "venue": "Journal of Spatial and Organizational Dynamics",
+   "authors": [
+    "Vaz, E.",
+    "Foster, A.",
+    "Cusimano, M."
+   ],
+   "kind": "Article",
+   "doi": ""
+  },
+  {
+   "title": "Development of a cellular automata model for monitoring urbanisation in the Global South: Maputo, Mozambique",
+   "year": "2017",
+   "venue": "Habitat International",
+   "authors": [
+    "Arsanjani, J.J.",
+    "Samso-Fibek, C.",
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": ""
+  },
+  {
+   "title": "Earth observation and geoinformation technologies for sustainable development: An editorial",
+   "year": "2017",
+   "venue": "Sustainability",
+   "authors": [
+    "Arsanjani, J.J.",
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": ""
+  },
+  {
+   "title": "New methods for resilient societies: The geographical analysis of injury data",
+   "year": "2017",
+   "venue": "Journal of Spatial and Organizational Dynamics",
+   "authors": [
+    "Vaz, E.",
+    "Miki, J.",
+    "Noronha, T.",
+    "Cusimano, M."
+   ],
+   "kind": "Article",
+   "doi": ""
+  },
+  {
+   "title": "Spatial assessment of road traffic injuries in the Greater Toronto Area",
+   "year": "2017",
+   "venue": "Journal of Spatial and Organizational Dynamics",
+   "authors": [
+    "Vaz, E.",
+    "Tehranchi, S.",
+    "Cusimano, M."
+   ],
+   "kind": "Article",
+   "doi": ""
+  },
+  {
+   "title": "The geography of environmental injustice",
+   "year": "2017",
+   "venue": "Habitat International",
+   "authors": [
+    "Vaz, E.",
+    "Anthony, A.",
+    "McHenry, M."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.habitatint.2016.12.001"
+  },
+  {
+   "title": "Urban change in Goa, India",
+   "year": "2017",
+   "venue": "Habitat International",
+   "authors": [
+    "Vaz, E.",
+    "Taubenböck, H.",
+    "Mahender, K.",
+    "Jokar Arsanjani, J."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.habitatint.2017.07.010"
+  },
+  {
+   "title": "Analyzing crop change scenarios with the SmartScape spatial decision support system",
+   "year": "2016",
+   "venue": "Land Use Policy",
+   "authors": [
+    "Tayyebi, A.",
+    "Tayyebi, A.H.",
+    "Vaz, E.",
+    "Arsanjani, J.",
+    "Helbich, M."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.landusepol.2015.11.002"
+  },
+  {
+   "title": "GlobeLand30 as an alternative fine-scale global land cover map",
+   "year": "2016",
+   "venue": "Habitat International",
+   "authors": [
+    "Arsanjani, J.J.",
+    "Tayyebi, A.H.",
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": ""
+  },
+  {
+   "title": "Potential of geographic information systems for refugee crisis: Syrian refugee relocation in urban habitats",
+   "year": "2016",
+   "venue": "Habitat International",
+   "authors": [
+    "Vaz, E.",
+    "Lee, K.",
+    "Moonilal, V.",
+    "Pereira, K."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.habitatint.2017.02.001"
+  },
+  {
+   "title": "The future of landscapes and habitats: The regional science contribution to the understanding of geographical space",
+   "year": "2016",
+   "venue": "Habitat International",
+   "authors": [
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.habitatint.2015.10.004"
+  },
+  {
+   "title": "Urban habitats and the injury landscape",
+   "year": "2016",
+   "venue": "Habitat International",
+   "authors": [
+    "Vaz, E.",
+    "Zhao, Y.",
+    "Cusimano, M."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.habitatint.2016.04.006"
+  },
+  {
+   "title": "Using GIS for characterization and soil mapping of the Caia Irrigation Perimeter",
+   "year": "2016",
+   "venue": "Sustainability",
+   "authors": [
+    "Nunes, J.R.",
+    "Loures, L.",
+    "Lopez-Piñeiro, A.",
+    "Loures, A.",
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.3390/su8040368"
+  },
+  {
+   "title": "An assessment of a collaborative mapping approach for exploring land use patterns in European metropolises",
+   "year": "2015",
+   "venue": "International Journal of Applied Earth Observation and Geoinformation",
+   "authors": [
+    "Arsanjani, J.J.",
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.jag.2014.09.009"
+  },
+  {
+   "title": "Crowdsourced mapping of land use in dense urban environments: An assessment of Toronto",
+   "year": "2015",
+   "venue": "The Canadian Geographer",
+   "authors": [
+    "Vaz, E.",
+    "Arsanjani, J.J."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1111/cag.12170"
+  },
+  {
+   "title": "Framing urban habitats: Small and medium towns in the peripheries",
+   "year": "2015",
+   "venue": "Habitat International",
+   "authors": [
+    "Noronha, T.",
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.habitatint.2014.06.025"
+  },
+  {
+   "title": "Governance in information systems: Management of conventions and health agreements in the Algarve",
+   "year": "2015",
+   "venue": "Iberian Journal of Information Systems and Technologies",
+   "authors": [
+    "Lami, J.",
+    "Fernandes, S.",
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": ""
+  },
+  {
+   "title": "Gravitational forces in the spatial impacts of urban sprawl: An investigation of the Veneto region, Italy",
+   "year": "2015",
+   "venue": "Habitat International",
+   "authors": [
+    "Vaz, E.",
+    "Nijkamp, P."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.habitatint.2014.06.024"
+  },
+  {
+   "title": "How corporations deal with reporting sustainability: Multicriteria logistic biplot approach",
+   "year": "2015",
+   "venue": "Systems",
+   "authors": [
+    "Galindo, P.",
+    "Vaz, E.",
+    "Noronha, T."
+   ],
+   "kind": "Article",
+   "doi": ""
+  },
+  {
+   "title": "Innovative firms behind the regions: Regional innovation performance in Portugal",
+   "year": "2015",
+   "venue": "European Urban and Regional Studies",
+   "authors": [
+    "Noronha, M.T.",
+    "Galindo, P.",
+    "Vaz, E.",
+    "Nijkamp, P."
+   ],
+   "kind": "Article",
+   "doi": ""
+  },
+  {
+   "title": "Is heritage really important? A theoretical framework for heritage reputation using citizen sensing",
+   "year": "2015",
+   "venue": "Habitat International",
+   "authors": [
+    "Monteiro, V.",
+    "Painho, M.",
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.habitatint.2014.06.022"
+  },
+  {
+   "title": "Land use perception of self-reported health: Exploratory analysis of anthropogenic land use phenotypes",
+   "year": "2015",
+   "venue": "Land Use Policy",
+   "authors": [
+    "Vaz, E.",
+    "Cusimano, M.D.",
+    "Hernandez, T."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.landusepol.2015.02.014"
+  },
+  {
+   "title": "Linking agricultural policies with decision-making: A spatial approach",
+   "year": "2015",
+   "venue": "European Planning Studies",
+   "authors": [
+    "Vaz, E.",
+    "Painho, M.",
+    "Nijkamp, P."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1080/09654313.2014.945818"
+  },
+  {
+   "title": "Predicting urban growth in the Greater Toronto Area: Markov cellular automata with document meta-analysis",
+   "year": "2015",
+   "venue": "Journal of Environmental Informatics",
+   "authors": [
+    "Vaz, E.",
+    "Arsanjani, J.J."
+   ],
+   "kind": "Article",
+   "doi": ""
+  },
+  {
+   "title": "Spatiotemporal monitoring of Bakhtegan Lake's areal fluctuations using a cellular automata model",
+   "year": "2015",
+   "venue": "Computers & Geosciences",
+   "authors": [
+    "Jokar Arsanjani, T.",
+    "Javidan, R.",
+    "Nazemosadat, M.J.",
+    "Jokar Arsanjani, J.",
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": ""
+  },
+  {
+   "title": "Sustainability in trans-border regions: The case of Andalusia–Algarve",
+   "year": "2015",
+   "venue": "International Journal of Global Environmental Issues",
+   "authors": [
+    "Dominguez, J.A.",
+    "Noronha, M.T.",
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1504/ijgenvi.2015.067487"
+  },
+  {
+   "title": "Exploratory landscape metrics for agricultural sustainability",
+   "year": "2014",
+   "venue": "Agroecology and Sustainable Food Systems",
+   "authors": [
+    "Vaz, E.",
+    "Noronha, T.",
+    "Nijkamp, P."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1080/21683565.2013.825829"
+  },
+  {
+   "title": "Managing urban coastal areas through landscape metrics: An assessment of Mumbai's mangroves",
+   "year": "2014",
+   "venue": "Ocean & Coastal Management",
+   "authors": [
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.ocecoaman.2014.05.020"
+  },
+  {
+   "title": "Modelling innovation support systems for regional development: Cluster structures in Portugal",
+   "year": "2014",
+   "venue": "Entrepreneurship and Regional Development",
+   "authors": [
+    "Vaz, E.",
+    "Noronha, T.",
+    "Galindo, P.",
+    "Nijkamp, P."
+   ],
+   "kind": "Article",
+   "doi": ""
+  },
+  {
+   "title": "A graph theory approach for geovisualization of land use change: An application to Lisbon",
+   "year": "2013",
+   "venue": "Journal of Spatial and Organizational Dynamics",
+   "authors": [
+    "Vaz, E.",
+    "Aversa, J."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.32920/ryerson.14639208.v2"
+  },
+  {
+   "title": "A multi-dasymetric mapping approach for tourism",
+   "year": "2013",
+   "venue": "Journal of Spatial and Organizational Dynamics",
+   "authors": [
+    "Vaz, E.",
+    "Campos, A.C."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.32920/ryerson.14636172"
+  },
+  {
+   "title": "A regional spatial-retrofitting approach (RSRA) to geovisualise regional urban growth: The Golden Horseshoe in Canada",
+   "year": "2013",
+   "venue": "Journal of Spatial and Organizational Dynamics",
+   "authors": [
+    "Vaz, E.",
+    "Buckland, A.",
+    "Worthington, K."
+   ],
+   "kind": "Article",
+   "doi": ""
+  },
+  {
+   "title": "An application for regional coastal erosion processes in urban areas: The Golden Horseshoe in Canada",
+   "year": "2013",
+   "venue": "Land",
+   "authors": [
+    "Vaz, E.",
+    "Bowman, L."
+   ],
+   "kind": "Article",
+   "doi": ""
+  },
+  {
+   "title": "Regional challenges in tourist wetland systems: The Ria Formosa in the Algarve, Portugal",
+   "year": "2013",
+   "venue": "Regional Environmental Change",
+   "authors": [
+    "Vaz, E.",
+    "Walczynska, A.",
+    "Nijkamp, P."
+   ],
+   "kind": "Article",
+   "doi": ""
+  },
+  {
+   "title": "Spatial hedonic models to estimate single-family home prices in Austria",
+   "year": "2013",
+   "venue": "Urban Studies",
+   "authors": [
+    "Helbich, M.",
+    "Brunauer, W.",
+    "Vaz, E.",
+    "Nijkamp, P."
+   ],
+   "kind": "Article",
+   "doi": ""
+  },
+  {
+   "title": "Spatiotemporal simulation of urban growth patterns using agent-based modeling: The case of Tehran",
+   "year": "2013",
+   "venue": "Cities",
+   "authors": [
+    "Arsanjani, J.J.",
+    "Helbich, M.",
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.cities.2013.01.005"
+  },
+  {
+   "title": "The spatial business landscape of India",
+   "year": "2013",
+   "venue": "Journal of Spatial and Organizational Dynamics",
+   "authors": [
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": ""
+  },
+  {
+   "title": "A multi-scenario forecast of urban change: Urban growth in the Algarve",
+   "year": "2012",
+   "venue": "Landscape and Urban Planning",
+   "authors": [
+    "Vaz, E.",
+    "Nijkamp, P.",
+    "Painho, M.",
+    "Caetano, M."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.landurbplan.2011.10.007"
+  },
+  {
+   "title": "Urban heritage endangerment at the interface of future cities and past heritage: A spatial vulnerability assessment",
+   "year": "2012",
+   "venue": "Habitat International",
+   "authors": [
+    "Vaz, E.",
+    "Cabral, P.",
+    "Caetano, M.",
+    "Nijkamp, P.",
+    "Painho, M."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1016/j.habitatint.2011.10.007"
+  },
+  {
+   "title": "A multi-level spatial urban pressure analysis of the Giza pyramid plateau in Egypt",
+   "year": "2011",
+   "venue": "Journal of Heritage Tourism",
+   "authors": [
+    "Vaz, E.",
+    "Caetano, M.",
+    "Nijkamp, P."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1080/1743873x.2011.553285"
+  },
+  {
+   "title": "The use of gravity concepts for agricultural land-use dynamics: The Algarve",
+   "year": "2011",
+   "venue": "International Journal of Foresight and Innovation Policy",
+   "authors": [
+    "Vaz, E.",
+    "Noronha, T.",
+    "Nijkamp, P."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1504/ijfip.2012.046113"
+  },
+  {
+   "title": "Trapped between antiquity and urbanism: A multi-criteria assessment model of Greater Cairo",
+   "year": "2011",
+   "venue": "Journal of Land Use Science",
+   "authors": [
+    "Vaz, E.",
+    "Caetano, M.",
+    "Nijkamp, P."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1080/1747423x.2010.519059"
+  },
+  {
+   "title": "Regional and Urban Change and Geographical Information Systems and Science: An Analysis of Northern Canada",
+   "year": "2026",
+   "venue": "Springer",
+   "authors": [
+    "Vaz, E."
+   ],
+   "kind": "Book",
+   "doi": "https://doi.org/10.1007/978-3-032-19211-0"
+  },
+  {
+   "title": "Adaptive multi-criteria ecotopes: a memory-embedded cellular automata framework",
+   "year": "2026",
+   "venue": "Open Geosciences",
+   "authors": [
+    "Vaz, E."
+   ],
+   "kind": "Article",
+   "doi": "https://doi.org/10.1515/geo-2025-0990"
+  },
+  {
+   "title": "GIScience as a Tool for Environmental Response in Northern Canada",
+   "year": "2026",
+   "venue": "Regional and Urban Change and GIScience (Springer)",
+   "authors": [
+    "Vaz, E."
+   ],
+   "kind": "Chapter",
+   "doi": "https://doi.org/10.1007/978-3-032-19211-0_6"
+  },
+  {
+   "title": "Inuit Communities in the North",
+   "year": "2026",
+   "venue": "Regional and Urban Change and GIScience (Springer)",
+   "authors": [
+    "Vaz, E."
+   ],
+   "kind": "Chapter",
+   "doi": "https://doi.org/10.1007/978-3-032-19211-0_8"
+  },
+  {
+   "title": "Food Scarcity in Nunavut: Socio-Economic, Cultural, and Environmental Dimensions",
+   "year": "2026",
+   "venue": "Regional and Urban Change and GIScience (Springer)",
+   "authors": [
+    "Vaz, E."
+   ],
+   "kind": "Chapter",
+   "doi": "https://doi.org/10.1007/978-3-032-19211-0_4"
+  },
+  {
+   "title": "Geographic Information System (GIS) methodology",
+   "year": "2025",
+   "venue": "Thematic Encyclopedia of Regional Science",
+   "authors": [
+    "Vaz, E."
+   ],
+   "kind": "Chapter",
+   "doi": ""
+  },
+  {
+   "title": "Self-organising maps for exploring the change in Portuguese communities in Toronto",
+   "year": "2025",
+   "venue": "Handbook on Big Data, Artificial Intelligence and Cities",
+   "authors": [
+    "Vaz, E."
+   ],
+   "kind": "Chapter",
+   "doi": "https://doi.org/10.4337/9781803928050.00020"
+  },
+  {
+   "title": "Quantum Computational Paradigms in Spatial Analytics: Advancing Environmental and Resource Econometrics",
+   "year": "2024",
+   "venue": "Regional Knowledge Economies (Springer)",
+   "authors": [
+    "Vaz, E."
+   ],
+   "kind": "Chapter",
+   "doi": "https://doi.org/10.1007/978-3-031-76906-1_10"
+  }
+ ],
+ "books": [
+  {
+   "isbn": "978-3-032-19210-3",
+   "title": "Regional and Urban Change and Geographical Information Systems and Science",
+   "subtitle": "An Analysis of Northern Canada",
+   "year": "2026"
+  },
+  {
+   "isbn": "978-3-031-76906-1",
+   "title": "Regional Knowledge Economies",
+   "subtitle": "Technology, Geography, and Innovation in the Digital Era",
+   "year": "2024"
+  },
+  {
+   "isbn": "978-3-031-24731-6",
+   "title": "Regional and Urban Change and Geographical Information Systems and Science",
+   "subtitle": "An Analysis of Ontario, Canada",
+   "year": "2023"
+  },
+  {
+   "isbn": "978-3-031-19871-7",
+   "title": "Geography of Happiness",
+   "subtitle": "A Spatial Analysis of Subjective Well-Being",
+   "year": "2023"
+  },
+  {
+   "isbn": "978-3-662-62177-6",
+   "title": "Sustainable Development in Southern Europe",
+   "subtitle": "Spatial Analysis of Regional Challenges",
+   "year": "2020"
+  },
+  {
+   "isbn": "978-3-030-36479-3",
+   "title": "Regional Intelligence",
+   "subtitle": "Spatial Analysis and Anthropogenic Regional Challenges in the Digital Age",
+   "year": "2020"
+  },
+  {
+   "isbn": "978-3-319-95135-5",
+   "title": "Resilience and Regional Dynamics",
+   "subtitle": "An International Approach to a New Research Agenda",
+   "year": "2018"
+  }
+ ]
+}

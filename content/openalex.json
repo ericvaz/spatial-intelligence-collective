@@ -1,0 +1,1152 @@
+{
+ "source": "OpenAlex",
+ "updated": "2026-11-23",
+ "policy": "Matched by ORCID. Works deduplicated by OpenAlex ID, DOI and title. Counts include articles, reviews, books, book chapters and conference papers.",
+ "members_indexed": [
+  "eric-vaz",
+  "godwin-arku",
+  "michael-batty",
+  "fabio-breunig",
+  "luis-serra-coelho",
+  "suzana-dragicevic",
+  "victoria-fast",
+  "suzanne-fredericks",
+  "murtaza-haider",
+  "jamal-jokar-arsanjani",
+  "jinhyung-lee",
+  "songnian-li",
+  "xintao-liu",
+  "raktim-mitra",
+  "marco-painho",
+  "liliana-perez",
+  "robert-gilmore-pontius",
+  "greg-rybarczyk",
+  "alysha-van-duynhoven",
+  "michael-widener",
+  "alexander-zipf"
+ ],
+ "author_ids": {
+  "eric-vaz": [
+   "A5084167587",
+   "A5140764817"
+  ],
+  "godwin-arku": [
+   "A5089570894"
+  ],
+  "michael-batty": [
+   "A5003307854",
+   "A5095078991"
+  ],
+  "fabio-breunig": [
+   "A5002401708"
+  ],
+  "luis-serra-coelho": [
+   "A5082823043"
+  ],
+  "suzana-dragicevic": [
+   "A5085750678"
+  ],
+  "victoria-fast": [
+   "A5044551536"
+  ],
+  "suzanne-fredericks": [
+   "A5059538210"
+  ],
+  "murtaza-haider": [
+   "A5047899302"
+  ],
+  "jamal-jokar-arsanjani": [
+   "A5057027850"
+  ],
+  "jinhyung-lee": [
+   "A5020535116",
+   "A5100725773",
+   "A5135406960"
+  ],
+  "songnian-li": [
+   "A5047703394",
+   "A5122830576",
+   "A5123774144"
+  ],
+  "xintao-liu": [
+   "A5056683902",
+   "A5123662468",
+   "A5125512357",
+   "A5136211838"
+  ],
+  "raktim-mitra": [
+   "A5019437444"
+  ],
+  "marco-painho": [
+   "A5021459381"
+  ],
+  "liliana-perez": [
+   "A5060446935"
+  ],
+  "robert-gilmore-pontius": [
+   "A5077205117"
+  ],
+  "greg-rybarczyk": [
+   "A5058346563"
+  ],
+  "alysha-van-duynhoven": [
+   "A5004975866"
+  ],
+  "michael-widener": [
+   "A5053169940"
+  ],
+  "alexander-zipf": [
+   "A5091474205"
+  ]
+ },
+ "totals": {
+  "publications": 2841,
+  "citations": 129456,
+  "multi_fellow": 74
+ },
+ "multi_fellow": [
+  {
+   "title": "Built Environment and Spatiotemporal Traffic Congestion Patterns: A Systematic Review",
+   "year": 2026,
+   "type": "review",
+   "venue": "Transactions in GIS",
+   "doi": "https://doi.org/10.1111/tgis.70337",
+   "openalex": "W7166577590",
+   "members": [
+    "songnian-li",
+    "xintao-liu"
+   ]
+  },
+  {
+   "title": "Census-validated agent-based modeling of immigrant settlement and diversity in Metro Vancouver",
+   "year": 2026,
+   "type": "article",
+   "venue": "Computers Environment and Urban Systems",
+   "doi": "https://doi.org/10.1016/j.compenvurbsys.2026.102515",
+   "openalex": "W7204761115",
+   "members": [
+    "liliana-perez",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "Geosimulation of urban densification and its association with surface urban heat island effects",
+   "year": 2026,
+   "type": "article",
+   "venue": "Geocarto International",
+   "doi": "https://doi.org/10.1080/10106049.2026.2746843",
+   "openalex": "W7234928398",
+   "members": [
+    "alysha-van-duynhoven",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "Improving Machine Learning Models of Land Cover Change Using Spatial Sample Weights Based on Patch‐Level Landscape Metrics",
+   "year": 2026,
+   "type": "article",
+   "venue": "Transactions in GIS",
+   "doi": "https://doi.org/10.1111/tgis.70276",
+   "openalex": "W7161825823",
+   "members": [
+    "alysha-van-duynhoven",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "Assessing the Number of Criteria in GIS ‐Based Multicriteria Evaluation: A Machine Learning Approach",
+   "year": 2025,
+   "type": "article",
+   "venue": "Geographical Analysis",
+   "doi": "https://doi.org/10.1111/gean.70004",
+   "openalex": "W4408985142",
+   "members": [
+    "liliana-perez",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "Correlation and causality between traffic congestion and the built environment: a case study in New York city",
+   "year": 2025,
+   "type": "article",
+   "venue": "International Journal of Digital Earth",
+   "doi": "https://doi.org/10.1080/17538947.2025.2548377",
+   "openalex": "W4414076565",
+   "members": [
+    "songnian-li",
+    "xintao-liu"
+   ]
+  },
+  {
+   "title": "Spatial sample weighted machine learning for multitemporal land cover change modeling with imbalanced datasets",
+   "year": 2025,
+   "type": "article",
+   "venue": "Big Earth Data",
+   "doi": "https://doi.org/10.1080/20964471.2025.2518763",
+   "openalex": "W4411738446",
+   "members": [
+    "alysha-van-duynhoven",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "Spatiotemporal dynamics of violence in social unrest events based on geo-social media data",
+   "year": 2025,
+   "type": "article",
+   "venue": "Environment and Planning B Urban Analytics and City Science",
+   "doi": "https://doi.org/10.1177/23998083251344354",
+   "openalex": "W4410717389",
+   "members": [
+    "songnian-li",
+    "xintao-liu"
+   ]
+  },
+  {
+   "title": "Machine Learning for Criteria Weighting in GIS-Based Multi-Criteria Evaluation: A Case Study of Urban Suitability Analysis",
+   "year": 2024,
+   "type": "article",
+   "venue": "Land",
+   "doi": "https://doi.org/10.3390/land13081288",
+   "openalex": "W4401616884",
+   "members": [
+    "alysha-van-duynhoven",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "The Geographic Automata Tool: A New General-Purpose Geosimulation Extension for ArcGIS Pro",
+   "year": 2024,
+   "type": "article",
+   "venue": "Applied Sciences",
+   "doi": "https://doi.org/10.3390/app14156530",
+   "openalex": "W4401023011",
+   "members": [
+    "alysha-van-duynhoven",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "A landscape metrics-based sample weighting approach for forecasting land cover change with deep learning models",
+   "year": 2023,
+   "type": "article",
+   "venue": "Geocarto International",
+   "doi": "https://doi.org/10.1080/10106049.2023.2240283",
+   "openalex": "W4385065509",
+   "members": [
+    "alysha-van-duynhoven",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "Artificial intelligence and visual analytics in geographical space and cyberspace: Research opportunities and challenges",
+   "year": 2023,
+   "type": "article",
+   "venue": "Earth-Science Reviews",
+   "doi": "https://doi.org/10.1016/j.earscirev.2023.104438",
+   "openalex": "W4367043536",
+   "members": [
+    "michael-batty",
+    "songnian-li",
+    "xintao-liu"
+   ]
+  },
+  {
+   "title": "Assessing the Impact of Neighborhood Size on Temporal Convolutional Networks for Modeling Land Cover Change",
+   "year": 2022,
+   "type": "article",
+   "venue": "Remote Sensing",
+   "doi": "https://doi.org/10.3390/rs14194957",
+   "openalex": "W4303980706",
+   "members": [
+    "alysha-van-duynhoven",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "Geographic information science in the era of geospatial big data: A cyberspace perspective",
+   "year": 2022,
+   "type": "article",
+   "venue": "The Innovation",
+   "doi": "https://doi.org/10.1016/j.xinn.2022.100279",
+   "openalex": "W4283826507",
+   "members": [
+    "michael-batty",
+    "songnian-li",
+    "xintao-liu"
+   ]
+  },
+  {
+   "title": "Mitigating Imbalance of Land Cover Change Data for Deep Learning Models with Temporal and Spatiotemporal Sample Weighting Schemes",
+   "year": 2022,
+   "type": "article",
+   "venue": "ISPRS International Journal of Geo-Information",
+   "doi": "https://doi.org/10.3390/ijgi11120587",
+   "openalex": "W4309852942",
+   "members": [
+    "alysha-van-duynhoven",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "Prospective for urban informatics",
+   "year": 2022,
+   "type": "article",
+   "venue": "Urban Informatics",
+   "doi": "https://doi.org/10.1007/s44212-022-00006-0",
+   "openalex": "W4295866777",
+   "members": [
+    "michael-batty",
+    "xintao-liu"
+   ]
+  },
+  {
+   "title": "Exploring the Sensitivity of Recurrent Neural Network Models for Forecasting Land Cover Change",
+   "year": 2021,
+   "type": "article",
+   "venue": "Land",
+   "doi": "https://doi.org/10.3390/land10030282",
+   "openalex": "W3135150642",
+   "members": [
+    "alysha-van-duynhoven",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences: XXIV ISPRS Congress, Imaging Today, Foreseeing Tomorrow, Commission IV, Vol. V-4-2021",
+   "year": 2021,
+   "type": "article",
+   "venue": "",
+   "doi": "",
+   "openalex": "W3197429678",
+   "members": [
+    "jamal-jokar-arsanjani",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences: XXIV ISPRS Congress Imaging Today, Foreseeing Tomorrow, Commission IV, Vol. XLIII-B4-2021",
+   "year": 2021,
+   "type": "article",
+   "venue": "",
+   "doi": "",
+   "openalex": "W3197641134",
+   "members": [
+    "jamal-jokar-arsanjani",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "Validating models of one-way land change: an example case of forest insect disturbance",
+   "year": 2021,
+   "type": "article",
+   "venue": "Landscape Ecology",
+   "doi": "https://doi.org/10.1007/s10980-021-01272-0",
+   "openalex": "W3176343726",
+   "members": [
+    "liliana-perez",
+    "robert-gilmore-pontius"
+   ]
+  },
+  {
+   "title": "Does Land Use and Landscape Contribute to Self-Harm? A Sustainability Cities Framework",
+   "year": 2020,
+   "type": "article",
+   "venue": "Data",
+   "doi": "https://doi.org/10.3390/data5010009",
+   "openalex": "W3001314207",
+   "members": [
+    "eric-vaz",
+    "jamal-jokar-arsanjani"
+   ]
+  },
+  {
+   "title": "Investigating the Effects of Panethnicity in Geospatial Models of Segregation",
+   "year": 2020,
+   "type": "article",
+   "venue": "Applied Spatial Analysis and Policy",
+   "doi": "https://doi.org/10.1007/s12061-020-09355-2",
+   "openalex": "W3049664500",
+   "members": [
+    "liliana-perez",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences: XXIV ISPRS Congress, Commission IV, Vol. V-4-2020",
+   "year": 2020,
+   "type": "article",
+   "venue": "",
+   "doi": "",
+   "openalex": "W3197379839",
+   "members": [
+    "jamal-jokar-arsanjani",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "Modeling the geospatial dynamics of residential segregation in three Canadian cities: An agent‐based approach",
+   "year": 2020,
+   "type": "article",
+   "venue": "Transactions in GIS",
+   "doi": "https://doi.org/10.1111/tgis.12712",
+   "openalex": "W3107998865",
+   "members": [
+    "liliana-perez",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "A geospatial agent-based model of the spatial urban dynamics of immigrant population: A study of the island of Montreal, Canada",
+   "year": 2019,
+   "type": "article",
+   "venue": "PLoS ONE",
+   "doi": "https://doi.org/10.1371/journal.pone.0219188",
+   "openalex": "W2962740708",
+   "members": [
+    "liliana-perez",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "Analyzing the Effects of Temporal Resolution and Classification Confidence for Modeling Land Cover Change with Long Short-Term Memory Networks",
+   "year": 2019,
+   "type": "article",
+   "venue": "Remote Sensing",
+   "doi": "https://doi.org/10.3390/rs11232784",
+   "openalex": "W2991448558",
+   "members": [
+    "alysha-van-duynhoven",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "Land-Use Change Detection with Convolutional Neural Network Methods",
+   "year": 2019,
+   "type": "article",
+   "venue": "Environments",
+   "doi": "https://doi.org/10.3390/environments6020025",
+   "openalex": "W2916838572",
+   "members": [
+    "songnian-li",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "Short-Term Forecasting of Land Use Change Using Recurrent Neural Network Models",
+   "year": 2019,
+   "type": "article",
+   "venue": "Sustainability",
+   "doi": "https://doi.org/10.3390/su11195376",
+   "openalex": "W2976506461",
+   "members": [
+    "songnian-li",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "Introduction to Urban Geo-Informatics",
+   "year": 2018,
+   "type": "article",
+   "venue": "",
+   "doi": "",
+   "openalex": "W3121119699",
+   "members": [
+    "michael-batty",
+    "xintao-liu"
+   ]
+  },
+  {
+   "title": "Online monitoring of local taxi travel momentum and congestion effects using projections of taxi GPS-based vector fields",
+   "year": 2018,
+   "type": "article",
+   "venue": "Journal of Geographical Systems",
+   "doi": "https://doi.org/10.1007/s10109-018-0273-6",
+   "openalex": "W2794670114",
+   "members": [
+    "songnian-li",
+    "xintao-liu"
+   ]
+  },
+  {
+   "title": "Development of a cellular automata model using open source technologies for monitoring urbanisation in the global south: The case of Maputo, Mozambique",
+   "year": 2017,
+   "type": "article",
+   "venue": "Habitat International",
+   "doi": "https://doi.org/10.1016/j.habitatint.2017.11.003",
+   "openalex": "W2768358664",
+   "members": [
+    "eric-vaz",
+    "jamal-jokar-arsanjani"
+   ]
+  },
+  {
+   "title": "Spatial data for slum upgrading: Volunteered Geographic Information and the role of citizen science",
+   "year": 2017,
+   "type": "article",
+   "venue": "Habitat International",
+   "doi": "https://doi.org/10.1016/j.habitatint.2017.04.011",
+   "openalex": "W2608257556",
+   "members": [
+    "eric-vaz",
+    "jamal-jokar-arsanjani"
+   ]
+  },
+  {
+   "title": "Urban change in Goa, India",
+   "year": 2017,
+   "type": "article",
+   "venue": "Habitat International",
+   "doi": "https://doi.org/10.1016/j.habitatint.2017.07.010",
+   "openalex": "W2742715398",
+   "members": [
+    "eric-vaz",
+    "jamal-jokar-arsanjani"
+   ]
+  },
+  {
+   "title": "GEOSPATIAL MODELLING APPROACH FOR 3D URBAN DENSIFICATION DEVELOPMENTS",
+   "year": 2016,
+   "type": "article",
+   "venue": "The international archives of the photogrammetry, remote sensing and spatial information sciences/International archives of the photogrammetry, remote sensing and spatial information sciences",
+   "doi": "https://doi.org/10.5194/isprsarchives-xli-b2-349-2016",
+   "openalex": "W4248876383",
+   "members": [
+    "songnian-li",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "GlobeLand30 as an alternative fine-scale global land cover map: Challenges, possibilities, and implications for developing countries",
+   "year": 2016,
+   "type": "article",
+   "venue": "Habitat International",
+   "doi": "https://doi.org/10.1016/j.habitatint.2016.02.003",
+   "openalex": "W2290682182",
+   "members": [
+    "eric-vaz",
+    "jamal-jokar-arsanjani"
+   ]
+  },
+  {
+   "title": "PREFACE",
+   "year": 2016,
+   "type": "article",
+   "venue": "ISPRS annals of the photogrammetry, remote sensing and spatial information sciences",
+   "doi": "https://doi.org/10.5194/isprs-annals-iii-2-1-2016",
+   "openalex": "W4256009769",
+   "members": [
+    "marco-painho",
+    "songnian-li"
+   ]
+  },
+  {
+   "title": "Towards an Automatic Ice Navigation Support System in the Arctic Sea",
+   "year": 2016,
+   "type": "article",
+   "venue": "ISPRS International Journal of Geo-Information",
+   "doi": "https://doi.org/10.3390/ijgi5030036",
+   "openalex": "W2295627742",
+   "members": [
+    "songnian-li",
+    "xintao-liu"
+   ]
+  },
+  {
+   "title": "A comparative study on three EOF analysis techniques using decades of Arctic sea-ice concentration data",
+   "year": 2015,
+   "type": "article",
+   "venue": "Journal of Central South University",
+   "doi": "https://doi.org/10.1007/s11771-015-2798-x",
+   "openalex": "W1172289642",
+   "members": [
+    "songnian-li",
+    "xintao-liu"
+   ]
+  },
+  {
+   "title": "ADVANCES IN GEOSPATIAL STATISTICAL MODELLING, ANALYSIS AND DATA MINING",
+   "year": 2015,
+   "type": "article",
+   "venue": "Geomatica",
+   "doi": "https://doi.org/10.5623/cig2015-301",
+   "openalex": "W2473523307",
+   "members": [
+    "songnian-li",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "An Exploration of Future Patterns of the Contributions to OpenStreetMap and Development of a Contribution Index",
+   "year": 2015,
+   "type": "article",
+   "venue": "Transactions in GIS",
+   "doi": "https://doi.org/10.1111/tgis.12139",
+   "openalex": "W2114161167",
+   "members": [
+    "alexander-zipf",
+    "jamal-jokar-arsanjani"
+   ]
+  },
+  {
+   "title": "An Introduction to OpenStreetMap in Geographic Information Science: Experiences, Research, and Applications",
+   "year": 2015,
+   "type": "book-chapter",
+   "venue": "Lecture notes in geoinformation and cartography",
+   "doi": "https://doi.org/10.1007/978-3-319-14280-7_1",
+   "openalex": "W116962720",
+   "members": [
+    "alexander-zipf",
+    "jamal-jokar-arsanjani"
+   ]
+  },
+  {
+   "title": "Analyzing crop change scenario with the SmartScape™ spatial decision support system",
+   "year": 2015,
+   "type": "article",
+   "venue": "Land Use Policy",
+   "doi": "https://doi.org/10.1016/j.landusepol.2015.11.002",
+   "openalex": "W2197581249",
+   "members": [
+    "eric-vaz",
+    "jamal-jokar-arsanjani"
+   ]
+  },
+  {
+   "title": "Crowdsourced mapping of land use in urban dense environments: An assessment of Toronto",
+   "year": 2015,
+   "type": "article",
+   "venue": "Canadian Geographies / Géographies canadiennes",
+   "doi": "https://doi.org/10.1111/cag.12170",
+   "openalex": "W1787125913",
+   "members": [
+    "eric-vaz",
+    "jamal-jokar-arsanjani"
+   ]
+  },
+  {
+   "title": "Designing sea ice web APIs for ice information services",
+   "year": 2015,
+   "type": "article",
+   "venue": "Earth Science Informatics",
+   "doi": "https://doi.org/10.1007/s12145-015-0207-5",
+   "openalex": "W2012376554",
+   "members": [
+    "songnian-li",
+    "xintao-liu"
+   ]
+  },
+  {
+   "title": "OpenStreetMap in GIScience: Experiences, Research, and Applications",
+   "year": 2015,
+   "type": "book",
+   "venue": "Lecture notes in geoinformation and cartography",
+   "doi": "https://doi.org/10.1007/978-3-319-14280-7",
+   "openalex": "W1538477035",
+   "members": [
+    "alexander-zipf",
+    "jamal-jokar-arsanjani"
+   ]
+  },
+  {
+   "title": "Predicting human mobility with activity changes",
+   "year": 2015,
+   "type": "article",
+   "venue": "International Journal of Geographical Information Science",
+   "doi": "https://doi.org/10.1080/13658816.2015.1033421",
+   "openalex": "W1971532547",
+   "members": [
+    "songnian-li",
+    "xintao-liu"
+   ]
+  },
+  {
+   "title": "Quality Assessment of the Contributed Land Use Information from OpenStreetMap Versus Authoritative Datasets",
+   "year": 2015,
+   "type": "book-chapter",
+   "venue": "Lecture notes in geoinformation and cartography",
+   "doi": "https://doi.org/10.1007/978-3-319-14280-7_3",
+   "openalex": "W2279302892",
+   "members": [
+    "alexander-zipf",
+    "jamal-jokar-arsanjani"
+   ]
+  },
+  {
+   "title": "Spatiotemporal monitoring of Bakhtegan Lake's areal fluctuations and an exploration of its future status by applying a cellular automata model",
+   "year": 2015,
+   "type": "article",
+   "venue": "Computers & Geosciences",
+   "doi": "https://doi.org/10.1016/j.cageo.2015.02.004",
+   "openalex": "W1980335931",
+   "members": [
+    "eric-vaz",
+    "jamal-jokar-arsanjani"
+   ]
+  },
+  {
+   "title": "A Hybrid Spatio-Temporal Data Indexing Method for Trajectory Databases",
+   "year": 2014,
+   "type": "article",
+   "venue": "Sensors",
+   "doi": "https://doi.org/10.3390/s140712990",
+   "openalex": "W2055567224",
+   "members": [
+    "songnian-li",
+    "xintao-liu"
+   ]
+  },
+  {
+   "title": "An Across-Country Comparison Of The Hierarchical Spatial Structures Of Cities",
+   "year": 2014,
+   "type": "article",
+   "venue": "Geomatica",
+   "doi": "https://doi.org/10.5623/cig2014-305",
+   "openalex": "W2009907279",
+   "members": [
+    "songnian-li",
+    "xintao-liu"
+   ]
+  },
+  {
+   "title": "An assessment of a collaborative mapping approach for exploring land use patterns for several European metropolises",
+   "year": 2014,
+   "type": "article",
+   "venue": "International Journal of Applied Earth Observation and Geoinformation",
+   "doi": "https://doi.org/10.1016/j.jag.2014.09.009",
+   "openalex": "W2019459432",
+   "members": [
+    "eric-vaz",
+    "jamal-jokar-arsanjani"
+   ]
+  },
+  {
+   "title": "Exploiting Big VGI to Improve Routing and Navigation Services",
+   "year": 2014,
+   "type": "book-chapter",
+   "venue": "CRC Press eBooks",
+   "doi": "https://doi.org/10.1201/b16524-12",
+   "openalex": "W2501856297",
+   "members": [
+    "alexander-zipf",
+    "jamal-jokar-arsanjani"
+   ]
+  },
+  {
+   "title": "Fine-resolution population mapping using OpenStreetMap points-of-interest",
+   "year": 2014,
+   "type": "article",
+   "venue": "International Journal of Geographical Information Science",
+   "doi": "https://doi.org/10.1080/13658816.2014.909045",
+   "openalex": "W2144314902",
+   "members": [
+    "alexander-zipf",
+    "jamal-jokar-arsanjani"
+   ]
+  },
+  {
+   "title": "Is the heritage really important? A theoretical framework for heritage reputation using citizen sensing",
+   "year": 2014,
+   "type": "article",
+   "venue": "Habitat International",
+   "doi": "https://doi.org/10.1016/j.habitatint.2014.06.022",
+   "openalex": "W2037766476",
+   "members": [
+    "eric-vaz",
+    "marco-painho"
+   ]
+  },
+  {
+   "title": "Linking Agricultural Policies with Decision-Making: A Spatial Approach",
+   "year": 2014,
+   "type": "article",
+   "venue": "European Planning Studies",
+   "doi": "https://doi.org/10.1080/09654313.2014.945818",
+   "openalex": "W2106288150",
+   "members": [
+    "eric-vaz",
+    "marco-painho"
+   ]
+  },
+  {
+   "title": "Sensing World Heritage",
+   "year": 2014,
+   "type": "conference-paper",
+   "venue": "Lecture notes in computer science",
+   "doi": "https://doi.org/10.1007/978-3-319-09129-7_31",
+   "openalex": "W269753523",
+   "members": [
+    "eric-vaz",
+    "marco-painho"
+   ]
+  },
+  {
+   "title": "Towards initiating OpenLandMap founded on citizens’ science: The current status of land use features of OpenStreetMap in Europe",
+   "year": 2014,
+   "type": "book-chapter",
+   "venue": "LA Referencia (Red Federada de Repositorios Institucionales de Publicaciones Científicas)",
+   "doi": "",
+   "openalex": "W2181493961",
+   "members": [
+    "eric-vaz",
+    "jamal-jokar-arsanjani"
+   ]
+  },
+  {
+   "title": "Semantic Interoperability of Sensor Data with Volunteered Geographic Information: A Unified Model",
+   "year": 2013,
+   "type": "article",
+   "venue": "ISPRS International Journal of Geo-Information",
+   "doi": "https://doi.org/10.3390/ijgi2030766",
+   "openalex": "W2056707593",
+   "members": [
+    "alexander-zipf",
+    "jamal-jokar-arsanjani"
+   ]
+  },
+  {
+   "title": "Spatiotemporal simulation of urban growth patterns using agent-based modeling: The case of Tehran",
+   "year": 2013,
+   "type": "article",
+   "venue": "Cities",
+   "doi": "https://doi.org/10.1016/j.cities.2013.01.005",
+   "openalex": "W2061889996",
+   "members": [
+    "eric-vaz",
+    "jamal-jokar-arsanjani"
+   ]
+  },
+  {
+   "title": "Toward mapping land-use patterns from volunteered geographic information",
+   "year": 2013,
+   "type": "article",
+   "venue": "International Journal of Geographical Information Science",
+   "doi": "https://doi.org/10.1080/13658816.2013.800871",
+   "openalex": "W2003425021",
+   "members": [
+    "alexander-zipf",
+    "jamal-jokar-arsanjani"
+   ]
+  },
+  {
+   "title": "Analytical Geospatial Web Services",
+   "year": 2012,
+   "type": "article",
+   "venue": "Geomatica",
+   "doi": "https://doi.org/10.5623/cig2012-004",
+   "openalex": "W2078021643",
+   "members": [
+    "songnian-li",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "Fuzzy Query Propagation in Sensor Networks",
+   "year": 2012,
+   "type": "article",
+   "venue": "International journal on advances in intelligent systems",
+   "doi": "",
+   "openalex": "W2212194408",
+   "members": [
+    "alexander-zipf",
+    "jamal-jokar-arsanjani"
+   ]
+  },
+  {
+   "title": "Landscape-level simulation of forest insect disturbance: Coupling swarm intelligent agents with GIS-based cellular automata model",
+   "year": 2012,
+   "type": "article",
+   "venue": "Ecological Modelling",
+   "doi": "https://doi.org/10.1016/j.ecolmodel.2012.01.020",
+   "openalex": "W2057930235",
+   "members": [
+    "liliana-perez",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "Model testing and assessment: Perspectives from a swarm intelligence, agent-based model of forest insect infestations",
+   "year": 2012,
+   "type": "article",
+   "venue": "Computers Environment and Urban Systems",
+   "doi": "https://doi.org/10.1016/j.compenvurbsys.2012.10.004",
+   "openalex": "W2083768211",
+   "members": [
+    "liliana-perez",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "A multi-scenario forecast of urban change: A study on urban growth in the Algarve",
+   "year": 2011,
+   "type": "article",
+   "venue": "Landscape and Urban Planning",
+   "doi": "https://doi.org/10.1016/j.landurbplan.2011.10.007",
+   "openalex": "W2131795981",
+   "members": [
+    "eric-vaz",
+    "marco-painho"
+   ]
+  },
+  {
+   "title": "Advances, challenges and future directions in web-based GIS, mapping services and applications",
+   "year": 2011,
+   "type": "book-chapter",
+   "venue": "CRC Press eBooks",
+   "doi": "https://doi.org/10.1201/b11080-3",
+   "openalex": "W2496339934",
+   "members": [
+    "songnian-li",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "Crossroads of tourism: a complex spatial systems analysis of tourism and urban sprawl in the Algarve",
+   "year": 2011,
+   "type": "article",
+   "venue": "International Journal of Sustainable Development",
+   "doi": "https://doi.org/10.1504/ijsd.2011.041963",
+   "openalex": "W2098594255",
+   "members": [
+    "eric-vaz",
+    "marco-painho"
+   ]
+  },
+  {
+   "title": "Pervasive Web Mapping, Geoprocessing and Services",
+   "year": 2011,
+   "type": "article",
+   "venue": "Transactions in GIS",
+   "doi": "https://doi.org/10.1111/j.1467-9671.2011.01251.x",
+   "openalex": "W1901567717",
+   "members": [
+    "songnian-li",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "Urban heritage endangerment at the interface of future cities and past heritage: A spatial vulnerability assessment",
+   "year": 2011,
+   "type": "article",
+   "venue": "Habitat International",
+   "doi": "https://doi.org/10.1016/j.habitatint.2011.10.007",
+   "openalex": "W2045967348",
+   "members": [
+    "eric-vaz",
+    "marco-painho"
+   ]
+  },
+  {
+   "title": "Exploring Forest Management Practices Using an Agent-Based Model of Forest Insect Infestations",
+   "year": 2010,
+   "type": "article",
+   "venue": "ScholarsArchive  (Brigham Young University)",
+   "doi": "",
+   "openalex": "W2189399682",
+   "members": [
+    "liliana-perez",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "ForestSimMPB: A swarming intelligence and agent-based modeling approach for mountain pine beetle outbreaks",
+   "year": 2010,
+   "type": "article",
+   "venue": "Ecological Informatics",
+   "doi": "https://doi.org/10.1016/j.ecoinf.2010.09.003",
+   "openalex": "W1993296455",
+   "members": [
+    "liliana-perez",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "An agent-based approach for modeling dynamics of contagious disease spread",
+   "year": 2009,
+   "type": "article",
+   "venue": "International Journal of Health Geographics",
+   "doi": "https://doi.org/10.1186/1476-072x-8-50",
+   "openalex": "W2146036952",
+   "members": [
+    "liliana-perez",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "Modeling mountain pine beetle infestation with an agent-based approach at two spatial scales",
+   "year": 2009,
+   "type": "article",
+   "venue": "Environmental Modelling & Software",
+   "doi": "https://doi.org/10.1016/j.envsoft.2009.08.004",
+   "openalex": "W2093478134",
+   "members": [
+    "liliana-perez",
+    "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "Introduction",
+   "year": 2001,
+   "type": "book-chapter",
+   "venue": "CRC Press eBooks",
+   "doi": "https://doi.org/10.1201/9780203305850.pt3",
+   "openalex": "W4242385115",
+   "members": [
+    "michael-batty",
+    "suzana-dragicevic"
+   ]
+  }
+ ],
+ "director_dois": {
+  "spatiotemporalsimulationofurbangrowthpatternsusingagentbasedmodelingthecaseoftehran": "https://doi.org/10.1016/j.cities.2013.01.005",
+  "spatialheterogeneityinhedonichousepricemodelsthecaseofaustria": "https://doi.org/10.1177/0042098013492234",
+  "amultiscenarioforecastofurbanchangeastudyonurbangrowthinthealgarve": "https://doi.org/10.1016/j.landurbplan.2011.10.007",
+  "exploringexpertperceptiontowardsbrownfieldredevelopmentbenefitsaccordingtotheirtypology": "https://doi.org/10.1016/j.habitatint.2016.11.003",
+  "globeland30asanalternativefinescalegloballandcovermapchallengespossibilitiesandimplication": "https://doi.org/10.1016/j.habitatint.2016.02.003",
+  "investigatingurbanheatislandthroughspatialanalysisofnewyorkcitystreetscapes": "https://doi.org/10.1016/j.jclepro.2019.05.389",
+  "anassessmentofacollaborativemappingapproachforexploringlandusepatternsforseveraleuropeanme": "https://doi.org/10.1016/j.jag.2014.09.009",
+  "gravitationalforcesinthespatialimpactsofurbansprawlaninvestigationoftheregionofvenetoitaly": "https://doi.org/10.1016/j.habitatint.2014.06.024",
+  "modelingnaturebasedandculturalrecreationpreferencesinmediterraneanregionsasopportunitiesfo": "https://doi.org/10.3390/su12010433",
+  "urbanheritageendangermentattheinterfaceoffuturecitiesandpastheritageaspatialvulnerabilitya": "https://doi.org/10.1016/j.habitatint.2011.10.007",
+  "predictingurbangrowthofthegreatertorontoareacouplingamarkovcellularautomatawithdocumentmet": "https://doi.org/10.3808/jei.201500299",
+  "spatialdataforslumupgradingvolunteeredgeographicinformationandtheroleofcitizenscience": "https://doi.org/10.1016/j.habitatint.2017.04.011",
+  "thefutureoflandscapesandhabitatstheregionalsciencecontributiontotheunderstandingofgeograph": "https://doi.org/10.1016/j.habitatint.2015.10.004",
+  "managingurbancoastalareasthroughlandscapemetricsanassessmentofmumbaismangrovesystem": "https://doi.org/10.1016/j.ocecoaman.2014.05.020",
+  "modellinginnovationsupportsystemsforregionaldevelopmentanalysisofclusterstructuresininnova": "https://doi.org/10.1080/08985626.2013.860193",
+  "thegeographyofenvironmentalinjustice": "https://doi.org/10.1016/j.habitatint.2016.12.001",
+  "istheheritagereallyimportantatheoreticalframeworkforheritagereputationusingcitizensensing": "https://doi.org/10.1016/j.habitatint.2014.06.022",
+  "crowdsourcedmappingoflanduseinurbandenseenvironmentsanassessmentoftoronto": "https://doi.org/10.1111/cag.12170",
+  "exploratorylandscapemetricsforagriculturalsustainability": "https://doi.org/10.1080/21683565.2013.825829",
+  "analysisof200yearsofchangeinontariowetlandsystems": "https://doi.org/10.1016/j.apgeog.2021.102625",
+  "dataanalysisoflandusechangeandurbanandruralimpactsinlagosstatenigeria": "https://doi.org/10.3390/data5030072",
+  "framingurbanhabitatsthesmallandmediumtownsintheperipheries": "https://doi.org/10.1016/j.habitatint.2014.06.025",
+  "covid19intorontoaspatialexploratoryanalysis": "https://doi.org/10.3390/su13020498",
+  "spatiotemporalmonitoringofbakhteganlakesarealfluctuationsandanexplorationofitsfuturestatus": "https://doi.org/10.1016/j.cageo.2015.02.004",
+  "spatiotemporalassessmentofcovid19lockdownimpactonbeachlitterstatusandcompositioningoaindia": "https://doi.org/10.1016/j.marpolbul.2021.113293",
+  "urbansprawlandgrowthpredictionforlagosusingglobeland30dataandcellularautomatamodel": "https://doi.org/10.3390/sci3020023",
+  "rethinkingagriculturallanduseinalgiersaspatialanalysisoftheeasternmitidjaplain": "https://doi.org/10.1016/j.habitatint.2020.102239",
+  "modellingfuturewetlandlosswithlanduselandcoverchangesimulationinthegreatertorontoandhamilt": "https://doi.org/10.1016/j.habitatint.2023.102974",
+  "assessingcoastalvulnerabilityatthevillagelevelusingarobustframeworktheexampleofcanaconains": "https://doi.org/10.1016/j.isci.2024.109129",
+  "quantummachinelearninginspatialanalysisaparadigmshiftinresourceallocationandenvironmentalm": "https://doi.org/10.1007/s12076-024-00374-y",
+  "theroleofthemetaverseandthegeographicaldimensionofknowledgemanagement": "https://doi.org/10.1007/978-3-031-76906-1_3",
+  "regionalknowledgeeconomiesexploringtheintersectionoftechnologygeographyandinnovationinthed": "https://doi.org/10.1007/978-3-031-76906-1",
+  "regionalchallengesintouristwetlandsystemsanintegratedapproachtotheriaformosainthealgarvepo": "https://doi.org/10.1007/s10113-012-0310-9",
+  "urbanchangeingoaindia": "https://doi.org/10.1016/j.habitatint.2017.07.010",
+  "anapplicationforregionalcoastalerosionprocessesinurbanareasacasestudyofthegoldenhorseshoei": "https://doi.org/10.3390/land2040595",
+  "developmentofacellularautomatamodelusingopensourcetechnologiesformonitoringurbanisationint": "https://doi.org/10.1016/j.habitatint.2017.11.003",
+  "landuseperceptionofselfreportedhealthexploratoryanalysisofanthropogeniclandusephenotypes": "https://doi.org/10.1016/j.landusepol.2015.02.014",
+  "sustainabilityinthetransborderregionsthecaseofandalusiaalgarve": "https://doi.org/10.1504/ijgenvi.2015.067487",
+  "potentialofgeographicinformationsystemsforrefugeecrisissyrianrefugeerelocationinurbanhabit": "https://doi.org/10.1016/j.habitatint.2017.02.001",
+  "innovativefirmsbehindtheregionsanalysisofregionalinnovationperformanceinportugalbyexternal": "https://doi.org/10.2139/ssrn.2321155",
+  "theoreticalfoundationsinsupportofsmallandmediumtowns": "https://doi.org/10.3390/su12135312",
+  "trappedbetweenantiquityandurbanismamulticriteriaassessmentmodelofthegreatercairometropolit": "https://doi.org/10.1080/1747423x.2010.519059",
+  "linkingagriculturalpolicieswithdecisionmakingaspatialapproach": "https://doi.org/10.1080/09654313.2014.945818",
+  "analyzingcropchangescenariowiththesmartscapespatialdecisionsupportsystem": "https://doi.org/10.1016/j.landusepol.2015.11.002",
+  "urbanhabitatsandtheinjurylandscape": "https://doi.org/10.1016/j.habitatint.2016.04.006",
+  "analysisofwetlandlandcoverchangeingreatlakesurbanareasusingselforganizingmaps": "https://doi.org/10.3390/rs13244960",
+  "didcovid19lockdownpositivelyaffecttheurbanenvironmentandunsustainabledevelopmentgoals": "https://doi.org/10.1371/journal.pone.0274621",
+  "amultilevelspatialurbanpressureanalysisofthegizapyramidplateauinegypt": "https://doi.org/10.1080/1743873x.2011.553285",
+  "ageographicalexplorationofenvironmentalandlandusecharacteristicsofsuicideinthegreatertoron": "https://doi.org/10.1016/j.psychres.2020.112790",
+  "diversifyingmediterraneantourismasastrategyforregionalresilienceenhancement": "https://doi.org/10.1007/978-3-319-95135-5_6",
+  "machinelearningforanalysisofwealthincitiesaspatialempiricalexaminationofwealthintoronto": "https://doi.org/10.1016/j.habitatint.2021.102319",
+  "opendataandinjuriesinurbanareasaspatialanalyticalframeworkoftorontousingmachinelearningand": "https://doi.org/10.1371/journal.pone.0248285",
+  "doeslanduseandlandscapecontributetoselfharmasustainabilitycitiesframework": "https://doi.org/10.3390/data5010009",
+  "archaeologicalsitesinsmalltownsasustainabilityassessmentofnorthumberlandcounty": "https://doi.org/10.3390/su12052018",
+  "resilienceandregionaldynamicsaninternationalapproachtoanewresearchagenda": "https://doi.org/10.1007/978-3-319-95135-5",
+  "regionalintelligencespatialanalysisandanthropogenicregionalchallengesinthedigitalage": "https://doi.org/10.1007/978-3-030-36479-3",
+  "tourismclimatechangeandwellbeingtheproductsdiversityasanopportunity": "https://doi.org/10.1007/978-3-031-19871-7_7",
+  "usinggistowardsthecharacterizationandsoilmappingofthecaiairrigationperimeter": "https://doi.org/10.3390/su8040368",
+  "traumaticbraininjuryabuseandpoorsustainedattentioninyouthandyoungadultswhopreviouslyexperi": "https://doi.org/10.1089/neur.2020.0030",
+  "mumbaisbusinesslandscapeaspatialanalyticalapproachtourbanisation": "https://doi.org/10.1016/j.heliyon.2021.e07522",
+  "geographyofhappinessaspatialanalysisofsubjectivewellbeing": "https://doi.org/10.1007/978-3-031-19871-7",
+  "urbanhabitatsandfoodinsecuritylessonslearnedthroughoutapandemic": "https://doi.org/10.1016/j.habitatint.2023.102779",
+  "regionalresilienceanddependenceontourisminachangingclimatestrategicpathwaysforthealgarvere": "https://doi.org/10.1007/978-3-031-59431-1_6",
+  "artificialterrariumsasurbanhabitatsinnovativesolutionsforenvironmentaleconomicandsocialdev": "https://doi.org/10.1016/j.habitatint.2024.103017",
+  "innovationsinspatialanalysistheimpactofgisandpythoninknowledgesocieties": "https://doi.org/10.1007/978-3-031-76906-1_6",
+  "technologicaladvancementsandknowledgedistribution": "https://doi.org/10.1007/978-3-031-76906-1_7",
+  "spatialspilloversandknowledgestructures": "https://doi.org/10.1007/978-3-031-76906-1_2",
+  "howcorporationsdealwithreportingsustainabilityassessmentusingthemulticriterialogisticbiplo": "https://doi.org/10.3390/systems3010006",
+  "crossroadsoftourismacomplexspatialsystemsanalysisoftourismandurbansprawlinthealgarve": "https://doi.org/10.1504/ijsd.2011.041963",
+  "historicoculturalsustainabilityandurbandynamics": "https://doi.org/10.1007/978-90-481-2419-0_8",
+  "theuseofgravityconceptsforagriculturallandusedynamicsacasestudyonthealgarve": "https://doi.org/10.1504/ijfip.2012.046113",
+  "marsterraformingageographicinformationsystemsframework": "https://doi.org/10.1016/j.lssr.2019.12.001",
+  "mergingentropyinselforganisationageographicalapproach": "https://doi.org/10.1007/978-3-319-95135-5_9",
+  "modellingtheimpactoftemperatureunderclimatechangescenariosonnativeandinvasivevascularveget": "https://doi.org/10.3390/geomatics2040022",
+  "touristsresidentsandexpertsrethinkthefutureofmediterraneanregionsaquestionofregionalintell": "https://doi.org/10.1007/978-3-030-36479-3_8",
+  "pollensleuthingforterrestrialplantsurveyslocatingplantpopulationsbyexploitingpollenmovemen": "https://doi.org/10.1002/aps3.1020",
+  "heritagepreservationforlocalknowledgeandinnovation": "https://doi.org/10.1007/978-3-031-76906-1_9",
+  "historicalpathdependenciesandplacetheoryinknowledgesocieties": "https://doi.org/10.1007/978-3-031-76906-1_4",
+  "happinessgeographydefiningthefield": "https://doi.org/10.1007/978-3-031-19871-7_1",
+  "spatialanalysesforpolicyevaluationoftheruralworldportugueseagricultureinthelastdecade": "https://doi.org/10.1007/978-3-7908-2422-3_6",
+  "recoveringancientlandscapesincoastalzonesforculturaltourismaspatialanalysis": "https://doi.org/10.1007/978-3-030-36479-3_2",
+  "introductionresilienceconceptsandgeography": "https://doi.org/10.1007/978-3-319-95135-5_1",
+  "conclusionresiliencewhatsnext": "https://doi.org/10.1007/978-3-319-95135-5_13",
+  "introductionregionalintelligenceanewkindofscience": "https://doi.org/10.1007/978-3-030-36479-3_1",
+  "canadianregionalscience20": "https://doi.org/10.1007/978-981-33-4098-5_3",
+  "sustainabledevelopmentinsoutherneuropespatialanalysisofregionalchallenges": "https://doi.org/10.1007/978-3-662-62177-6",
+  "aspatialanalysisoftheinstagramhashtaghappyanassessmentoftoronto": "https://doi.org/10.1007/978-3-031-19871-7_2",
+  "regionalandurbanchangeandgeographicalinformationsystemsandscienceananalysisofnortherncanad": "https://doi.org/10.1007/978-3-032-19211-0",
+  "dynamicsustainabilitybacktohistorytoadvocateforsmallandmediumsizedtowns": "https://doi.org/10.1007/978-981-33-4098-5_4",
+  "faithpolicyandsuicideamachinelearningandspatialanalysisapproachofreligiousaffiliationandsu": "https://doi.org/10.1016/j.habitatint.2024.103119",
+  "theemergenceofglobalknowledgenetworksandcollaborationplatforms": "https://doi.org/10.1007/978-3-031-76906-1_5",
+  "thesubjectivewellbeinginnorthafricaandtheimpactsonagricultureandurbanland": "https://doi.org/10.1007/978-3-031-19871-7_3",
+  "urbansprawlintotheniagararegionurbanencroachmentonagriculture": "https://doi.org/10.1007/978-3-031-24731-6_2",
+  "integratinggisinbusinesseducationbridgingdistancelearningandspatialanalyticsforfutureprofe": "https://doi.org/10.1007/978-3-031-76906-1_11",
+  "quantumcomputationalparadigmsinspatialanalyticsadvancingenvironmentalandresourceeconometri": "https://doi.org/10.1007/978-3-031-76906-1_10",
+  "selforganisingmapsforexploringthechangeinportuguesecommunitiesintoronto": "https://doi.org/10.4337/9781803928050.00020",
+  "adaptivemulticriteriaecotopesamemoryembeddedcellularautomataframework": "https://doi.org/10.1515/geo-2025-0990",
+  "statememorychangememoryandthepersistenceceilingreexaminingterritorialmemoryinmarkovcellula": "https://doi.org/10.3390/ijgi15100448",
+  "sensingworldheritage": "https://doi.org/10.1007/978-3-319-09129-7_31",
+  "agovernaoemsiocasodagestodasconveneseacordosdesadedoalgarve": "https://doi.org/10.17013/risti.15.69-81",
+  "thespatialinstitutionalarchitectureoffirmsinnovativebehaviour": "https://doi.org/10.1007/978-3-642-37819-5_3",
+  "spatialanalysisofcharacteristicsandinfluencingfactorsofkilledorseriouslyinjuredpersonsfrom": "https://doi.org/10.1007/978-3-031-24731-6_4",
+  "whyamultidisciplinaryagendaforsoutherneurope": "https://doi.org/10.18335/region.v6i4.280",
+  "couplingagentbasedmodellingwithgeographicinformationsystemsforenvironmentalstudiesareview": "https://doi.org/10.1007/978-3-030-36479-3_12",
+  "regionalopportunitiesinsoutherneurope": "https://doi.org/10.1007/978-3-662-62177-6_2",
+  "landscapeandheritageinsoutherneurope": "https://doi.org/10.1007/978-3-662-62177-6_3",
+  "behavioralpatternsofinnovationinlaggingregionsofsoutherneurope": "https://doi.org/10.1007/978-3-662-62177-6_5",
+  "southerneuropeancoastalenvironmentsanassessmentofportugal": "https://doi.org/10.1007/978-3-662-62177-6_7",
+  "modellingregionalinnovationpatternsthecasestudyofportugal": "https://doi.org/10.1007/978-3-662-62177-6_6",
+  "covid19intorontoinvestigatingthespatialimpactofretailersinthefoodretailandfoodservicesecto": "https://doi.org/10.1007/978-3-031-24731-6_3",
+  "sociospatialvariationininformalcaregivingtoontarioseniors": "https://doi.org/10.1007/978-3-031-24731-6_5",
+  "spatialanalysisofsustainabilityofurbanhabitatsintroduction": "https://doi.org/10.1016/j.habitatint.2014.06.029",
+  "amultidasymetricmappingapproachfortourism": "https://doi.org/10.32920/ryerson.14636172",
+  "regionalintelligenceanewkindofgiscience": "https://doi.org/10.1016/j.habitatint.2017.11.015",
+  "agraphtheoryapproachforgeovisualizationoflandusechangeanapplicationtolisbon": "https://doi.org/10.32920/ryerson.14639208.v2",
+  "analysisofregionalinnovationperformanceinportugalresultsfromanexternallogisticbiplotmethod": "https://doi.org/10.2139/ssrn.1898573",
+  "specialissueeditorialearthobservationandgeoinformationtechnologiesforsustainabledevelopmen": "https://doi.org/10.3390/su9050760",
+  "anexploratorylandscapemetricsapproachtoagriculturalchangesapplicationsofspatialeconomiccon": "https://doi.org/10.2139/ssrn.2324882",
+  "correctiontoresilienceandregionaldynamics": "https://doi.org/10.1007/978-3-319-95135-5_14",
+  "aregionalspatialretrofittingapproachtogeovisualiseregionalurbangrowthanapplicationtothegol": "https://doi.org/10.32920/ryerson.14639694.v1",
+  "monitoringsettlementsgrowthanddevelopmentinalgierscityeasternarea": "https://doi.org/10.21203/rs.3.rs-187885/v1",
+  "modellinginnovationsupportsystemsfordevelopment": "https://doi.org/10.32920/ryerson.14669205.v1",
+  "isittheoutstandinguniversalvalueofheritagereallyglobalmeasuringreputationusingsocialmedia": "https://doi.org/10.32920/ryerson.14638893.v2",
+  "spatialassociationofagriculturallandlossinsoutherneurope": "https://doi.org/10.1007/978-3-662-62177-6_8",
+  "southerneuropethenewregionalworld": "https://doi.org/10.1007/978-3-662-62177-6_9",
+  "diversityandcountryperformance": "https://doi.org/10.1007/978-3-662-62177-6_1",
+  "analyticaltoolsfromasocioeconomicpointofview": "https://doi.org/10.1007/978-3-662-62177-6_4",
+  "collapsinglandscapestheregionalsciencecontributiontospatialunderstanding": "https://doi.org/10.32920/ryerson.14639790.v1",
+  "aspatialstatisticalunderstandingofinadequatedwellingsinthecityoftoronto": "https://doi.org/10.1007/978-3-031-24731-6_6",
+  "landuseandlandcoverchangeadvancingwithgeographicinformationscience": "https://doi.org/10.1007/978-3-031-24731-6_1",
+  "correctiontoregionalandurbanchangeandgeographicalinformationsystemsandscience": "https://doi.org/10.1007/978-3-031-24731-6_10",
+  "towardsanindigenizedpedagogyintegrativeapproachesinhighereducationacrossgeographies": "https://doi.org/10.1007/978-3-031-76906-1_8",
+  "theneedforregionalknowledgeeconomies": "https://doi.org/10.1007/978-3-031-76906-1_1",
+  "foodscarcityinnunavutsocioeconomicculturalandenvironmentaldimensions": "https://doi.org/10.1007/978-3-032-19211-0_4",
+  "structuralconnectivityandtransportationnetworksinnortherncanada": "https://doi.org/10.1007/978-3-032-19211-0_7",
+  "resilienceandadaptabilityunderclimatechangeinnortherncanada": "https://doi.org/10.1007/978-3-032-19211-0_9",
+  "spatialintelligenceasfoundationfornorthernfutures": "https://doi.org/10.1007/978-3-032-19211-0_10",
+  "inuitcommunitiesinthenorth": "https://doi.org/10.1007/978-3-032-19211-0_8",
+  "shrubificationinnortherncanadapatternsprocessesandprospects": "https://doi.org/10.1007/978-3-032-19211-0_3",
+  "arcticurbanismandthelogicofanchoring": "https://doi.org/10.1007/978-3-032-19211-0_2",
+  "giscienceasatoolforenvironmentalresponseinnortherncanada": "https://doi.org/10.1007/978-3-032-19211-0_6",
+  "laggingregionsruralconnectivityofhealthsystemsinthecanadiannorth": "https://doi.org/10.1007/978-3-032-19211-0_5",
+  "nordicityandresiliencenortherncanadainachangingworld": "https://doi.org/10.1007/978-3-032-19211-0_1",
+  "dataforagenticgeoaiabibliometricmappingandtypologyofconversationalspatialintelligence": "https://doi.org/10.5281/zenodo.21384857",
+  "dataandcodeforplaceaffectandcreativelabourinmozartscorrespondenceacomputationalanalysis": "https://doi.org/10.5281/zenodo.21575033",
+  "naeupnorthamericanethnicgroupurbanpanelametropolitanareaethnicgrouppopulationpanelfor150us": "https://doi.org/10.5281/zenodo.22260459",
+  "coastalhazardexposurehousingpricesandurbanlandscapemetricsfortheparishesofthealgarveportug": "https://doi.org/10.5281/zenodo.22920692",
+  "naeupaconstructharmonizedmetropolitanpanelofethnicgrouppopulationdynamicsfor150unitedstate": "https://doi.org/10.3390/data11100265",
+  "scaleconditionedgeometryhowmeasurementresolutioninducesdistanceproximityandspatialdependen": "https://doi.org/10.1111/gean.70061",
+  "countingtherightentrepreneursselfemploymentstartupsanddecentworkacrossuscountiesdataandcod": "https://doi.org/10.5281/zenodo.23428710",
+  "countingtherightentrepreneursselfemploymentstartupsanddecentworkacrossuscounties": "https://doi.org/10.1007/s12076-026-00454-1"
+ }
+}

@@ -1,0 +1,418 @@
+{
+ "meta": {
+  "disciplines": 9,
+  "_note": "Edit this file to add or change members, then run python3 tools/build_site.py. records_confirmed becomes true once a fellow confirms their ORCID, OpenAlex and Scholar links."
+ },
+ "people": [
+  {
+   "id": "eric-vaz",
+   "name": "Eric Vaz",
+   "sort": "Vaz",
+   "category": "lead",
+   "position": "Principal Investigator · Full Professor, Department of Geography and Environmental Studies",
+   "institution": "Toronto Metropolitan University",
+   "country": "Canada",
+   "strange": "director",
+   "orcid": "0000-0003-1738-2677",
+   "openalex": [
+    "A5084167587"
+   ],
+   "scholar": "EfpbSEYAAAAJ",
+   "bio": "",
+   "research": "",
+   "records_confirmed": false
+  },
+  {
+   "id": "godwin-arku",
+   "name": "Godwin Arku",
+   "sort": "Arku",
+   "category": "fellow",
+   "position": "Full Professor",
+   "institution": "Western University",
+   "country": "Canada",
+   "strange": null,
+   "orcid": "0000-0001-7720-1554",
+   "openalex": [
+    "A5089570894"
+   ],
+   "scholar": "7_gUjc0AAAAJ",
+   "bio": "",
+   "research": "",
+   "records_confirmed": false
+  },
+  {
+   "id": "michael-batty",
+   "name": "Michael Batty",
+   "sort": "Batty",
+   "category": "honorary",
+   "position": "Professor Emeritus",
+   "institution": "University College London",
+   "country": "United Kingdom",
+   "strange": null,
+   "orcid": "0000-0002-9931-1305",
+   "openalex": [
+    "A5003307854"
+   ],
+   "scholar": "UqKi_qAAAAAJ",
+   "bio": "Michael Batty is Emeritus Bartlett Professor of Planning at University College London and Chair of the Centre for Advanced Spatial Analysis (CASA). He is a graduate of the University of Manchester in Town and Country Planning and of the University of Wales Institute of Science and Technology in Architecture, where he was Professor of Town Planning and Dean in the 1980s. He was Director of the National Center for Geographic Information and Analysis (NCGIA) at SUNY-Buffalo from 1990 to 1995 before he set up CASA at UCL. He is a Fellow of the British Academy, the Royal Society, the Academy of Social Sciences, and the Royal Town Planning Institute, and he was elected a foreign Academician of the Chinese Academy of Sciences in 2023 and the Indian National Science Academy in 2025. He has worked on computer models of cities and their visualisation since the 1970s. His recent books are Cities and Complexity (2005), The New Science of Cities (2013), Inventing Future Cities (2018), and The Computable City (2024), all from The MIT Press. His edited book Urban Informatics (Springer, 2021) reflects his focus on digital and geospatial technologies in urban planning, and he co-authored A Digital Future for Planning, the report of the Digital Task Force for Planning (2022).",
+   "research": "",
+   "records_confirmed": false
+  },
+  {
+   "id": "fabio-breunig",
+   "name": "Fábio Breunig",
+   "sort": "Breunig",
+   "category": "fellow",
+   "position": "Associate Professor",
+   "institution": "Universidade Federal do Paraná",
+   "country": "Brazil",
+   "strange": "board",
+   "orcid": "0000-0002-0405-9603",
+   "openalex": [
+    "A5002401708"
+   ],
+   "scholar": "ssCj7awAAAAJ",
+   "bio": "",
+   "research": "",
+   "records_confirmed": false
+  },
+  {
+   "id": "luis-serra-coelho",
+   "name": "Luís Serra Coelho",
+   "sort": "Coelho",
+   "category": "fellow",
+   "position": "Full Professor",
+   "institution": "Universidade do Algarve",
+   "country": "Portugal",
+   "strange": "board",
+   "orcid": "0000-0002-8074-4194",
+   "openalex": [
+    "A5082823043"
+   ],
+   "scholar": null,
+   "bio": "",
+   "research": "",
+   "records_confirmed": false
+  },
+  {
+   "id": "suzana-dragicevic",
+   "name": "Suzana Dragicevic",
+   "sort": "Dragicevic",
+   "category": "fellow",
+   "position": "Full Professor",
+   "institution": "Simon Fraser University",
+   "country": "Canada",
+   "strange": "board",
+   "orcid": "0000-0003-4144-7530",
+   "openalex": [
+    "A5085750678"
+   ],
+   "scholar": "u30396MAAAAJ",
+   "bio": "",
+   "research": "",
+   "records_confirmed": false
+  },
+  {
+   "id": "victoria-fast",
+   "name": "Victoria Fast",
+   "sort": "Fast",
+   "category": "fellow",
+   "position": "Associate Professor",
+   "institution": "University of Calgary",
+   "country": "Canada",
+   "strange": "board",
+   "orcid": "0000-0002-7093-3864",
+   "openalex": [
+    "A5044551536"
+   ],
+   "scholar": "_5Bk4NYAAAAJ",
+   "bio": "",
+   "research": "",
+   "records_confirmed": false
+  },
+  {
+   "id": "suzanne-fredericks",
+   "name": "Suzanne Fredericks",
+   "sort": "Fredericks",
+   "category": "fellow",
+   "position": "Full Professor",
+   "institution": "Toronto Metropolitan University",
+   "country": "Canada",
+   "strange": "board",
+   "orcid": "0000-0002-7462-636X",
+   "openalex": [
+    "A5059538210"
+   ],
+   "scholar": "B4zTPhMAAAAJ",
+   "bio": "",
+   "research": "",
+   "records_confirmed": false
+  },
+  {
+   "id": "murtaza-haider",
+   "name": "Murtaza Haider",
+   "sort": "Haider",
+   "category": "fellow",
+   "position": "Full Professor",
+   "institution": "University of Alberta",
+   "country": "Canada",
+   "strange": "board",
+   "orcid": "0000-0003-4559-2014",
+   "openalex": [
+    "A5047899302"
+   ],
+   "scholar": "WfxbeZ0AAAAJ",
+   "bio": "",
+   "research": "",
+   "records_confirmed": false
+  },
+  {
+   "id": "jamal-jokar-arsanjani",
+   "name": "Jamal Jokar Arsanjani",
+   "sort": "Jokar Arsanjani",
+   "category": "fellow",
+   "position": "Full Professor",
+   "institution": "Aalborg University",
+   "country": "Denmark",
+   "strange": "board",
+   "orcid": "0000-0001-6347-2935",
+   "openalex": [
+    "A5057027850"
+   ],
+   "scholar": "3DrsOpkAAAAJ",
+   "bio": "",
+   "research": "",
+   "records_confirmed": false
+  },
+  {
+   "id": "jinhyung-lee",
+   "name": "Jinhyung Lee",
+   "sort": "Lee",
+   "category": "fellow",
+   "position": "Associate Professor",
+   "institution": "Western University",
+   "country": "Canada",
+   "strange": null,
+   "orcid": "0000-0003-1859-3441",
+   "openalex": [
+    "A5100725773"
+   ],
+   "scholar": "jU-OIv4AAAAJ",
+   "bio": "",
+   "research": "",
+   "records_confirmed": false
+  },
+  {
+   "id": "songnian-li",
+   "name": "Songnian Li",
+   "sort": "Li",
+   "category": "fellow",
+   "position": "Full Professor",
+   "institution": "Toronto Metropolitan University",
+   "country": "Canada",
+   "strange": "board",
+   "orcid": "0000-0002-8244-5681",
+   "openalex": [
+    "A5047703394"
+   ],
+   "scholar": "RodaPPgAAAAJ",
+   "bio": "",
+   "research": "",
+   "records_confirmed": false
+  },
+  {
+   "id": "xintao-liu",
+   "name": "Xintao Liu",
+   "sort": "Liu",
+   "category": "fellow",
+   "position": "Associate Professor",
+   "institution": "The Hong Kong Polytechnic University",
+   "country": "Hong Kong",
+   "strange": "board",
+   "orcid": "0000-0002-7323-9878",
+   "openalex": [
+    "A5056683902"
+   ],
+   "scholar": "BhcMunkAAAAJ",
+   "bio": "",
+   "research": "",
+   "records_confirmed": false
+  },
+  {
+   "id": "raktim-mitra",
+   "name": "Raktim Mitra",
+   "sort": "Mitra",
+   "category": "fellow",
+   "position": "Full Professor",
+   "institution": "Toronto Metropolitan University",
+   "country": "Canada",
+   "strange": "board",
+   "orcid": "0000-0001-6712-8568",
+   "openalex": [
+    "A5019437444"
+   ],
+   "scholar": "FNtreSgAAAAJ",
+   "bio": "",
+   "research": "",
+   "records_confirmed": false
+  },
+  {
+   "id": "marco-painho",
+   "name": "Marco Painho",
+   "sort": "Painho",
+   "category": "fellow",
+   "position": "Full Professor",
+   "institution": "NOVA Information Management School, Universidade Nova de Lisboa",
+   "country": "Portugal",
+   "strange": null,
+   "orcid": "0000-0003-1136-3387",
+   "openalex": [
+    "A5021459381"
+   ],
+   "scholar": "L1PHpI8AAAAJ",
+   "bio": "",
+   "research": "",
+   "records_confirmed": false
+  },
+  {
+   "id": "liliana-perez",
+   "name": "Liliana Perez",
+   "sort": "Perez",
+   "category": "fellow",
+   "position": "Full Professor",
+   "institution": "Université de Montréal",
+   "country": "Canada",
+   "strange": "board",
+   "orcid": "0000-0002-6599-9893",
+   "openalex": [
+    "A5060446935"
+   ],
+   "scholar": "iCCIPAoAAAAJ",
+   "bio": "",
+   "research": "",
+   "records_confirmed": false
+  },
+  {
+   "id": "robert-gilmore-pontius",
+   "name": "Robert Gilmore Pontius Jr",
+   "sort": "Pontius",
+   "category": "honorary",
+   "position": "Full Professor",
+   "institution": "Clark University",
+   "country": "United States",
+   "strange": null,
+   "orcid": "0000-0001-7287-5875",
+   "openalex": [
+    "A5077205117"
+   ],
+   "scholar": "Lfmhbd8AAAAJ",
+   "bio": "Robert Gilmore Pontius Jr is Professor in the Graduate School of Geography at Clark University, where he has taught since 1998. He holds a PhD in Environmental Science from the State University of New York College of Environmental Science and Forestry and a Master of Applied Statistics from The Ohio State University. He creates quantitative methods for GIScience, remote sensing, and statistics, among them quantity and allocation disagreement, Intensity Analysis, and the Total Operating Characteristic, and several of these methods are built into the TerrSet software, formerly IDRISI. He was a Fulbright Scholar in Brazil in 2022 to 2023. His book <a href=\"https://link.springer.com/book/10.1007/978-3-030-70765-1\" target=\"_blank\" rel=\"noopener\">Metrics That Make a Difference: How to Analyze Change and Error</a> (Springer, 2022) brings these methods together for students and researchers.",
+   "research": "",
+   "records_confirmed": false
+  },
+  {
+   "id": "greg-rybarczyk",
+   "name": "Greg Rybarczyk",
+   "sort": "Rybarczyk",
+   "category": "fellow",
+   "position": "Full Professor",
+   "institution": "University of Michigan-Flint",
+   "country": "United States",
+   "strange": "board",
+   "orcid": "0000-0002-3920-2780",
+   "openalex": [
+    "A5058346563"
+   ],
+   "scholar": "hrvCZUQAAAAJ",
+   "bio": "",
+   "research": "",
+   "records_confirmed": false
+  },
+  {
+   "id": "alysha-van-duynhoven",
+   "name": "Alysha van Duynhoven",
+   "sort": "van Duynhoven",
+   "category": "fellow",
+   "position": "Assistant Professor",
+   "institution": "Wilfrid Laurier University",
+   "country": "Canada",
+   "strange": "board",
+   "orcid": "0000-0002-4625-5426",
+   "openalex": [
+    "A5004975866"
+   ],
+   "scholar": "Vh7MAJ0AAAAJ",
+   "bio": "",
+   "research": "",
+   "records_confirmed": false
+  },
+  {
+   "id": "michael-widener",
+   "name": "Michael Widener",
+   "sort": "Widener",
+   "category": "fellow",
+   "position": "Full Professor",
+   "institution": "University of Toronto",
+   "country": "Canada",
+   "strange": null,
+   "orcid": "0000-0003-3312-6710",
+   "openalex": [
+    "A5053169940"
+   ],
+   "scholar": "EIjB7f0AAAAJ",
+   "bio": "",
+   "research": "",
+   "records_confirmed": false
+  },
+  {
+   "id": "alexander-zipf",
+   "name": "Alexander Zipf",
+   "sort": "Zipf",
+   "category": "fellow",
+   "position": "Full Professor",
+   "institution": "Heidelberg University",
+   "country": "Germany",
+   "strange": null,
+   "orcid": "0000-0003-4916-9838",
+   "openalex": [
+    "A5091474205"
+   ],
+   "scholar": "1TAZiPwAAAAJ",
+   "bio": "",
+   "research": "",
+   "records_confirmed": false
+  },
+  {
+   "id": "teagan-soni",
+   "name": "Teagan Soni",
+   "sort": "Soni",
+   "category": "doctoral",
+   "position": "PhD student, Environmental Applied Science and Management",
+   "institution": "Toronto Metropolitan University",
+   "country": "Canada",
+   "strange": "manager",
+   "orcid": null,
+   "openalex": [],
+   "scholar": null,
+   "bio": "",
+   "research": "Migration, demographics, and settlement across North America and India, and how climate, environmental, and socioeconomic conditions shape human mobility.",
+   "records_confirmed": false
+  },
+  {
+   "id": "anastasiia-smirnova",
+   "name": "Anastasiia Smirnova",
+   "sort": "Smirnova",
+   "category": "doctoral",
+   "position": "PhD student, Environmental Applied Science and Management",
+   "institution": "Toronto Metropolitan University",
+   "country": "Canada",
+   "strange": null,
+   "orcid": null,
+   "openalex": [],
+   "scholar": null,
+   "bio": "",
+   "research": "How urban environments and transportation infrastructure shape cycling safety, with attention to equity of access and data representativeness.",
+   "records_confirmed": false
+  }
+ ]
+}

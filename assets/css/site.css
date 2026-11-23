@@ -156,7 +156,6 @@ h2{font-size:clamp(26px,4vw,34px);line-height:1.15;margin-bottom:28px;max-width:
   .fold:last-of-type:not([open])>summary{border-bottom:0}
 }
 
-/* A to Z bar for long member lists (phones) */
 
 /* everything flows: books and music */
 .flows-lede{color:var(--muted);margin-bottom:32px}
@@ -192,7 +191,7 @@ h2{font-size:clamp(26px,4vw,34px);line-height:1.15;margin-bottom:28px;max-width:
 .filters button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
 .search{width:100%;font:inherit;font-size:16px;padding:12px 14px;border:1px solid var(--rule);border-radius:10px;margin:0 0 8px;background:#fff;color:var(--ink)}
 .count{font-size:14px;color:var(--muted);margin:8px 0 12px}
-#list{border-top:1px solid var(--rule)}
+.list{border-top:1px solid var(--rule)}
 .pub{display:grid;grid-template-columns:56px 1fr;gap:4px;padding:14px 0;border-bottom:1px solid var(--rule)}
 .pub .y{color:var(--muted);font-size:15px;font-variant-numeric:tabular-nums}
 .pub .t{font-weight:500}
@@ -204,23 +203,35 @@ h2{font-size:clamp(26px,4vw,34px);line-height:1.15;margin-bottom:28px;max-width:
 .book h3{font-size:15px;line-height:1.3;margin:0 0 4px;letter-spacing:-.01em}
 .book span{display:block;color:var(--muted)}
 @media (min-width:760px){.books{grid-template-columns:repeat(4,1fr)}}
-/* swipeable people rows on phones */
-@media (max-width:759px){
-  .people.swipe{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;border-top:0;padding:2px 0 10px;margin:0;scrollbar-width:none;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
-  .people.swipe::-webkit-scrollbar{display:none}
-  .people.swipe li{flex:0 0 78%;scroll-snap-align:start;border:1px solid var(--rule);border-radius:14px;padding:18px 18px 16px;background:var(--soft)}
-  .swipe-count{font-size:13px;color:var(--muted);margin:2px 0 0}
-}
-@media (min-width:760px){.swipe-count{display:none}}
+/* people directory and members' records */
+.people a.n{text-decoration:none}
+.people a.n:hover,.people .n a:hover{text-decoration:underline}
+.people .n a{text-decoration:none}
+.people .tag{margin-left:6px;vertical-align:1px}
+.plinks{display:block;font-size:14px;margin-top:6px;color:var(--muted)}
+.plinks a{color:var(--ink)}
+.people li[id]{scroll-margin-top:80px}
+.people .d{margin:8px 0 0}
 
-/* honorary fellow: name opens a short bio in a small window */
-.people li.hon{position:relative}
-.bio-trigger{font:inherit;font-weight:500;color:inherit;background:none;border:0;padding:0;margin:0;cursor:help;text-align:left;text-decoration:underline dotted var(--muted);text-underline-offset:4px}
-.bio-trigger:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:2px}
-.people .bio{position:absolute;left:0;top:calc(100% - 6px);z-index:30;width:min(460px,calc(100vw - 2*var(--gutter)));max-height:60vh;overflow:auto;background:var(--bg);color:var(--ink);border:1px solid var(--rule);border-radius:12px;box-shadow:0 12px 32px rgba(0,0,0,.12);padding:16px 18px;font-size:14px;line-height:1.55;opacity:0;visibility:hidden;transform:translateY(4px);transition:opacity .15s ease .2s,transform .15s ease .2s,visibility 0s linear .35s}
-.bio-trigger:hover ~ .bio,.bio-trigger:focus-visible ~ .bio,.people .bio:hover,.people li.hon:focus-within .bio,.people li.hon.show .bio{opacity:1;visibility:visible;transform:none;transition:opacity .15s ease,transform .15s ease}
-@media (prefers-reduced-motion:reduce){.people .bio{transition:none}}
-/* in the swipeable phone cards the list scrolls sideways, so the bio opens as a panel fixed to the screen */
-@media (max-width:759px){
-  .people.swipe .bio{position:fixed;left:var(--gutter);right:var(--gutter);top:auto;bottom:16px;width:auto;max-height:65vh}
-}
+/* publications: provenance, method note, tools */
+.prov{font-size:14px;color:var(--muted);margin:14px 0 0;max-width:46em}
+.method{margin:14px 0 0;max-width:46em;font-size:15px;color:var(--muted)}
+.method summary{cursor:pointer;color:var(--ink);font-size:14px}
+.method p{margin:10px 0 0}
+.tools{display:grid;gap:8px;margin:0 0 8px}
+@media (min-width:760px){.tools{grid-template-columns:minmax(220px,280px) 1fr;align-items:end}}
+.pick-m{display:grid;gap:4px;font-size:13px;color:var(--muted)}
+.pick-m select{font:inherit;font-size:16px;padding:11px 12px;border:1px solid var(--rule);border-radius:10px;background:#fff;color:var(--ink)}
+.tools .search{margin:0}
+.pub .t a{text-decoration:none}
+.pub .t a:hover{text-decoration:underline}
+.pub .fellows{color:var(--ink);font-size:14px;margin-top:2px}
+.pub .fellows a{text-decoration:none}
+.pub .fellows a:hover{text-decoration:underline}
+.pub[hidden]{display:none}
+#together h2,#records h2,#director h2{max-width:none}
+
+/* STRANGE page */
+.strange-page{margin-top:0}
+.strange-page h1{margin:0}
+#masthead .sub{margin-top:28px}
