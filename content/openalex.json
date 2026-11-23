@@ -23,6 +23,7 @@
   "liliana-perez",
   "robert-gilmore-pontius",
   "greg-rybarczyk",
+  "ahmed-shaker",
   "alysha-van-duynhoven",
   "michael-widener",
   "alexander-zipf"
@@ -97,6 +98,9 @@
   "greg-rybarczyk": [
    "A5058346563"
   ],
+  "ahmed-shaker": [
+   "A5022818145"
+  ],
   "alysha-van-duynhoven": [
    "A5004975866"
   ],
@@ -108,9 +112,9 @@
   ]
  },
  "totals": {
-  "publications": 3372,
-  "citations": 134448,
-  "multi_fellow": 68
+  "publications": 3447,
+  "citations": 137330,
+  "multi_fellow": 77
  },
  "multi_fellow": [
   {
@@ -162,6 +166,30 @@
    ]
   },
   {
+   "title": "Toward a Unified Smart Point Cloud Framework: A Systematic Review of Definitions, Methods, and a Modular Knowledge-Integrated Pipeline",
+   "year": 2026,
+   "type": "review",
+   "venue": "Buildings",
+   "doi": "https://doi.org/10.3390/buildings16020293",
+   "openalex": "W7122634273",
+   "members": [
+    "ahmed-shaker",
+    "songnian-li"
+   ]
+  },
+  {
+   "title": "An Effective Approach to Geometric and Semantic BIM/GIS Data Integration for Urban Digital Twin",
+   "year": 2025,
+   "type": "article",
+   "venue": "ISPRS International Journal of Geo-Information",
+   "doi": "https://doi.org/10.3390/ijgi14120478",
+   "openalex": "W4416997608",
+   "members": [
+    "ahmed-shaker",
+    "songnian-li"
+   ]
+  },
+  {
    "title": "Assessing the Number of Criteria in GIS ‐Based Multicriteria Evaluation: A Machine Learning Approach",
    "year": 2025,
    "type": "article",
@@ -183,6 +211,18 @@
    "members": [
     "songnian-li",
     "xintao-liu"
+   ]
+  },
+  {
+   "title": "Georeferencing Building Information Models for BIM/GIS Integration: A Review of Methods and Tools",
+   "year": 2025,
+   "type": "article",
+   "venue": "ISPRS International Journal of Geo-Information",
+   "doi": "https://doi.org/10.3390/ijgi14050180",
+   "openalex": "W4409668104",
+   "members": [
+    "ahmed-shaker",
+    "songnian-li"
    ]
   },
   {
@@ -222,6 +262,18 @@
    ]
   },
   {
+   "title": "Optical Sensor Fusion for Identification and Visualization of Fugitive Greenhouse Gas Emissions",
+   "year": 2024,
+   "type": "conference-paper",
+   "venue": "IEEE International Geoscience and Remote Sensing Symposium (IGARSS)",
+   "doi": "https://doi.org/10.1109/igarss53475.2024.10642497",
+   "openalex": "W4402259428",
+   "members": [
+    "ahmed-shaker",
+    "songnian-li"
+   ]
+  },
+  {
    "title": "The Geographic Automata Tool: A New General-Purpose Geosimulation Extension for ArcGIS Pro",
    "year": 2024,
    "type": "article",
@@ -231,6 +283,18 @@
    "members": [
     "alysha-van-duynhoven",
     "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "Virtual cleaning of sooty murals in ancient temples using twice colour attenuation prior",
+   "year": 2024,
+   "type": "article",
+   "venue": "Computers & Graphics",
+   "doi": "https://doi.org/10.1016/j.cag.2024.103924",
+   "openalex": "W4395449669",
+   "members": [
+    "ahmed-shaker",
+    "songnian-li"
    ]
   },
   {
@@ -256,6 +320,18 @@
     "michael-batty",
     "songnian-li",
     "xintao-liu"
+   ]
+  },
+  {
+   "title": "DEVELOPING COMPLETE URBAN DIGITAL TWINS IN BUSY ENVIRONMENTS: A FRAMEWORK FOR FACILITATING 3D MODEL GENERATION FROM MULTI-SOURCE POINT CLOUD DATA",
+   "year": 2023,
+   "type": "article",
+   "venue": "The international archives of the photogrammetry, remote sensing and spatial information sciences/International archives of the photogrammetry, remote sensing and spatial information sciences",
+   "doi": "https://doi.org/10.5194/isprs-archives-xlviii-1-w2-2023-7-2023",
+   "openalex": "W4389658633",
+   "members": [
+    "ahmed-shaker",
+    "songnian-li"
    ]
   },
   {
@@ -320,6 +396,18 @@
    ]
   },
   {
+   "title": "Modeling and Processing of Smart Point Clouds of Cultural Relics with Complex Geometries",
+   "year": 2021,
+   "type": "article",
+   "venue": "ISPRS International Journal of Geo-Information",
+   "doi": "https://doi.org/10.3390/ijgi10090617",
+   "openalex": "W3200782896",
+   "members": [
+    "ahmed-shaker",
+    "songnian-li"
+   ]
+  },
+  {
    "title": "Validating models of one-way land change: an example case of forest insect disturbance",
    "year": 2021,
    "type": "article",
@@ -329,6 +417,18 @@
    "members": [
     "liliana-perez",
     "robert-gilmore-pontius"
+   ]
+  },
+  {
+   "title": "Visibility-Based Technologies and Methodologies for Autonomous Driving",
+   "year": 2021,
+   "type": "book-chapter",
+   "venue": "Artificial intelligence",
+   "doi": "https://doi.org/10.5772/intechopen.95328",
+   "openalex": "W3115871817",
+   "members": [
+    "ahmed-shaker",
+    "songnian-li"
    ]
   },
   {
@@ -437,6 +537,18 @@
    "members": [
     "eric-vaz",
     "jamal-jokar-arsanjani"
+   ]
+  },
+  {
+   "title": "Extracting faded mural patterns based on the combination of spatial-spectral feature of hyperspectral image",
+   "year": 2017,
+   "type": "article",
+   "venue": "Journal of Cultural Heritage",
+   "doi": "https://doi.org/10.1016/j.culher.2017.02.017",
+   "openalex": "W2598675171",
+   "members": [
+    "ahmed-shaker",
+    "songnian-li"
    ]
   },
   {

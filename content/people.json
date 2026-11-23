@@ -345,6 +345,23 @@
    "research": ""
   },
   {
+   "id": "ahmed-shaker",
+   "name": "Ahmed Shaker",
+   "sort": "Shaker",
+   "category": "fellow",
+   "position": "Full Professor",
+   "institution": "Toronto Metropolitan University",
+   "country": "Canada",
+   "strange": null,
+   "orcid": "0000-0003-1505-8216",
+   "openalex": [
+    "A5022818145"
+   ],
+   "scholar": null,
+   "bio": "",
+   "research": ""
+  },
+  {
    "id": "alysha-van-duynhoven",
    "name": "Alysha van Duynhoven",
    "sort": "van Duynhoven",
