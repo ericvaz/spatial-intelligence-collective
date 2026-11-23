@@ -238,7 +238,7 @@ people_body = f"""<section class="page-head">
   <div class="wrap">
     <p class="label">Where we are</p>
     <figure class="netmap-fig">{NETMAP}
-      <figcaption>{len(lead + fellows + doctoral)} members at {N_UNIS} universities in {N_COUNTRIES} countries, linked to Toronto, where the Collective is based.</figcaption>
+      <figcaption>{len(lead + fellows + doctoral)} members at {len({p['institution'] for p in lead + fellows + doctoral})} universities and organizations in {len({p['country'] for p in lead + fellows + doctoral})} countries, linked to Toronto, where the Collective is based.</figcaption>
     </figure>
   </div>
 </section>"""
@@ -379,7 +379,7 @@ dm = DIR['metrics']
 pubs_body = f"""<section class="page-head">
   <div class="wrap">
     <h1>Publications</h1>
-    <p class="lede">The research record of the Collective's members, drawn from OpenAlex and matched to each member by ORCID. Every member's own record is one click away, and the work fellows have written together is listed in full.</p>
+    <p class="lede">The research record of the Collective's members, drawn from OpenAlex and matched to each member by ORCID. Members' own research profiles are linked where available, and the work fellows have written together is listed in full.</p>
     <ul class="metrics">
       <li><b>{fmt(T['publications'])}</b> publications by members</li>
       <li><b>{T['multi_fellow']}</b> written by two or more fellows</li>
