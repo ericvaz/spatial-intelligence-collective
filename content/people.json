@@ -56,6 +56,23 @@
    "research": ""
   },
   {
+   "id": "amitrajeet-batabyal",
+   "name": "Amitrajeet A. Batabyal",
+   "sort": "Batabyal",
+   "category": "advisory",
+   "position": "Distinguished Professor",
+   "institution": "Rochester Institute of Technology",
+   "country": "United States",
+   "strange": null,
+   "orcid": "0000-0001-7813-1519",
+   "openalex": [
+    "A5072639493"
+   ],
+   "scholar": null,
+   "bio": "",
+   "research": ""
+  },
+  {
    "id": "fabio-breunig",
    "name": "Fábio Breunig",
    "sort": "Breunig",

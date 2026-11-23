@@ -6,6 +6,7 @@
   "eric-vaz",
   "godwin-arku",
   "michael-batty",
+  "amitrajeet-batabyal",
   "fabio-breunig",
   "luis-serra-coelho",
   "suzana-dragicevic",
@@ -36,6 +37,9 @@
   "michael-batty": [
    "A5003307854",
    "A5095078991"
+  ],
+  "amitrajeet-batabyal": [
+   "A5072639493"
   ],
   "fabio-breunig": [
    "A5002401708"
@@ -100,8 +104,8 @@
   ]
  },
  "totals": {
-  "publications": 2686,
-  "citations": 123493,
+  "publications": 3044,
+  "citations": 129075,
   "multi_fellow": 68
  },
  "multi_fellow": [

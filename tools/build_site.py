@@ -39,7 +39,7 @@ for p in PEOPLE:
     miss = [k for k in REQ if not p.get(k)]
     if miss:
         sys.exit(f'{p.get("id")}: missing {miss}')
-    if p['category'] not in ('lead', 'fellow', 'honorary', 'doctoral'):
+    if p['category'] not in ('lead', 'fellow', 'honorary', 'advisory', 'doctoral'):
         sys.exit(f'{p["id"]}: unknown category {p["category"]}')
 for m in OA['multi_fellow']:
     for i in m['members']:
@@ -49,8 +49,9 @@ for m in OA['multi_fellow']:
 # ------------------------------------------------------------------ derived facts
 az = lambda ps: sorted(ps, key=lambda p: p['sort'].lower())
 lead = [p for p in PEOPLE if p['category'] == 'lead']
-fellows = az([p for p in PEOPLE if p['category'] in ('fellow', 'honorary')])
+fellows = az([p for p in PEOPLE if p['category'] in ('fellow', 'honorary', 'advisory')])
 honorary = [p for p in fellows if p['category'] == 'honorary']
+advisory = [p for p in fellows if p['category'] == 'advisory']
 doctoral = [p for p in PEOPLE if p['category'] == 'doctoral']
 academics = lead + fellows
 N_FELLOWS = len(fellows)
@@ -164,6 +165,8 @@ def links(p, cls='plinks'):
 def affil(p):
     if p['category'] == 'honorary':
         return f'Honorary fellow · {esc(p["position"])} · {esc(p["institution"])}'
+    if p['category'] == 'advisory':
+        return f'Advisory board · {esc(p["position"])} · {esc(p["institution"])}'
     if p['category'] == 'doctoral':
         return f'{esc(p["position"])}, {esc(p["institution"])}'
     if p['category'] == 'lead':
@@ -219,9 +222,16 @@ people_body = f"""<section class="page-head">
   </div>
 </section>
 
+<section id="advisory">
+  <div class="wrap">
+    <p class="label">Advisory board</p>
+    <ul class="people">{''.join(entry(p) for p in advisory)}</ul>
+  </div>
+</section>
+
 <section id="fellows">
   <div class="wrap">
-    <p class="label">Fellows · {N_FELLOWS - len(honorary)}</p>
+    <p class="label">Fellows · {N_FELLOWS - len(honorary) - len(advisory)}</p>
     <ul class="people cols">{''.join(entry(p) for p in fellows if p['category'] == 'fellow')}</ul>
   </div>
 </section>
