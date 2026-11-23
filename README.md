@@ -10,6 +10,7 @@ Full Professor, Department of Geography and Environmental Studies, Toronto Metro
 - `index.html`: home page with research, recent joint work, people, STRANGE, books, news, data, and contact
 - `people/`: the full directory, with each member's Google Scholar, ORCID and OpenAlex links
 - `publications/`: the research record of all members, the works written by two or more fellows, and Eric Vaz's curated record
+- `learn/`: the SIC Lab (open data and browser spatial statistics, repo ericvaz/sic-lab, served at lab.spatialintelligence.network) and its tutorials
 - `strange/`: the magazine, its masthead, and how to contribute
 
 ## Content

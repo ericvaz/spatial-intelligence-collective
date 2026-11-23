@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Learn · Spatial Intelligence Collective</title>
+<meta name="description" content="The SIC Lab and tutorials: open data and spatial statistics that run in the browser, free for students and researchers.">
+<link rel="canonical" href="https://spatialintelligence.network/learn/">
+<meta property="og:title" content="Learn · Spatial Intelligence Collective">
+<meta property="og:description" content="The SIC Lab and tutorials: open data and spatial statistics that run in the browser, free for students and researchers.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://spatialintelligence.network/learn/">
+<meta property="og:image" content="https://spatialintelligence.network/assets/art/og-sic.jpg">
+<meta name="theme-color" content="#ffffff">
+<link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css?v=11">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='4' fill='%23111'/><circle cx='6' cy='7' r='2' fill='%23111'/><circle cx='26' cy='9' r='2' fill='%23111'/><circle cx='8' cy='26' r='2' fill='%23111'/><circle cx='25' cy='25' r='2' fill='%23111'/><g stroke='%23111' stroke-width='1' fill='none'><path d='M16 16 6 7M16 16l10-7M16 16 8 26M16 16l9 9'/></g></svg>">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Course", "name": "Spatial statistics with the SIC Lab", "description": "Interactive lessons on spatial autocorrelation, hot-spot analysis and interpolation, with Python that runs in the browser.", "url": "https://spatialintelligence.network/learn/", "isAccessibleForFree": true, "provider": {"@type": "Organization", "name": "Spatial Intelligence Collective", "url": "https://spatialintelligence.network/"}}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="../">Spatial Intelligence Collective</a>
+    <button class="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="../#research">Research</a>
+      <a href="../people/">People</a>
+      <a href="../strange/">STRANGE</a>
+      <a href="../publications/">Publications</a>
+      <a href="../learn/" aria-current="page">Learn</a>
+      <a href="../#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-head">
+  <div class="wrap">
+    <h1>Learn</h1>
+    <p class="lede">Open tools for students and researchers who want to learn spatial methods by using them. Everything here runs in the browser, needs no installation or account, and is free for teaching and research.</p>
+    <div class="cta">
+      <a class="btn solid" href="https://lab.spatialintelligence.network/india">Open the SIC Lab</a>
+      <a class="btn" href="https://lab.spatialintelligence.network/spatstat/">Start the tutorials</a>
+    </div>
+  </div>
+</section>
+
+<section id="lab">
+  <div class="wrap">
+    <p class="label">The SIC Lab</p>
+    <h2>A map, a toolbox, and open data.</h2>
+    <p class="lede muted">Choose a variable and the Lab maps it across every district or municipality. The Calculator lets you wire variables into a composite index or drop in a method: spatial weights, global Moran's I, LISA clusters, Getis-Ord Gi* hot spots, the Gini and Theil inequality indices, and OLS and geographically weighted regression. Every result can go back onto the map, into the Composer as a finished map, or out as CSV, GeoJSON, or a shapefile.</p>
+    <ul class="rows"><li><a class="row" href="https://lab.spatialintelligence.network/india"><span class="k">India</span><span class="v">725 districts, 81 variables. Open the map, the Calculator and the Composer.</span></a></li><li><a class="row" href="https://lab.spatialintelligence.network/brazil"><span class="k">Brazil</span><span class="v">558 microregions, 46 variables. Open the map, the Calculator and the Composer.</span></a></li><li><a class="row" href="https://lab.spatialintelligence.network/venezuela"><span class="k">Venezuela</span><span class="v">335 municipalities, 24 variables. Open the map, the Calculator and the Composer.</span></a></li></ul>
+  </div>
+</section>
+
+<section id="tutorials">
+  <div class="wrap">
+    <p class="label">Tutorials</p>
+    <h2>Spatial statistics, step by step.</h2>
+    <p class="lede muted">Each lesson explains a method visually and then lets you run it in Python inside the page, first on teaching data and then on real census data from the Lab.</p>
+    <ul class="rows"><li><a class="row" href="https://lab.spatialintelligence.network/spatstat/spatial-autocorrelation/"><span class="k">Spatial autocorrelation and Moran&#x27;s I</span><span class="v">What it means for nearby places to resemble each other, how spatial weights are built, and how to compute and test global Moran&#x27;s I.</span></a></li><li><a class="row" href="https://lab.spatialintelligence.network/spatstat/hot-spot-analysis/"><span class="k">LISA and hot-spot analysis</span><span class="v">Local indicators of spatial association and Getis-Ord Gi*, for finding where clusters and outliers sit on the map.</span></a></li><li><a class="row" href="https://lab.spatialintelligence.network/spatstat/interpolation/"><span class="k">Interpolation, variograms and kriging</span><span class="v">Estimating values between observations, from inverse distance weighting to the variogram and ordinary kriging.</span></a></li></ul>
+    <p class="more"><a href="https://lab.spatialintelligence.network/spatstat/">All lessons</a></p>
+  </div>
+</section>
+
+<section id="open-data">
+  <div class="wrap">
+    <p class="label">Open data</p>
+    <h2>Use the data in your own work.</h2>
+    <p class="lede muted">Every variable in the Lab is a plain JSON file that can be read from a notebook, a script, or a web page, for example <code>https://lab.spatialintelligence.network/v1/india/literacy_rate.json</code>. The catalogue for each country is at <a href="https://lab.spatialintelligence.network/v1/india/meta.json">/v1/india/meta.json</a>, <a href="https://lab.spatialintelligence.network/v1/brazil/meta.json">/v1/brazil/meta.json</a>, and <a href="https://lab.spatialintelligence.network/v1/venezuela/meta.json">/v1/venezuela/meta.json</a>. Sources and licences are listed with each file and in the Lab's Sources panel.</p>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> Spatial Intelligence Collective · Toronto Metropolitan University</span>
+    <span><a href="../people/">People</a> · <a href="../publications/">Publications</a> · <a href="../learn/">Learn</a> · <a href="../strange/">STRANGE</a> · <a href="../#flows">Everything flows</a></span>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+var m=document.querySelector('.menu'), nv=document.getElementById('nav'), h=document.querySelector('.hdr');
+m.addEventListener('click',function(){var o=nv.classList.toggle('open');m.setAttribute('aria-expanded',o);m.textContent=o?'Close':'Menu';});
+window.addEventListener('scroll',function(){h.classList.toggle('scrolled',window.scrollY>8);},{passive:true});
+</script>
+</body>
+</html>

@@ -235,3 +235,7 @@ h2{font-size:clamp(26px,4vw,34px);line-height:1.15;margin-bottom:28px;max-width:
 .strange-page{margin-top:0}
 .strange-page h1{margin:0}
 #masthead .sub{margin-top:28px}
+
+/* learn page */
+code{font-size:.9em;overflow-wrap:anywhere;word-break:break-word}
+#learn .cta,.page-head .cta{margin-top:28px}

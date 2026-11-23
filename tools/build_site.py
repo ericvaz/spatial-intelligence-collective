@@ -15,7 +15,7 @@ from collections import Counter
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 SITE = 'https://spatialintelligence.network'
-CSS_V = 10
+CSS_V = 11
 
 
 def load(name):
@@ -74,6 +74,7 @@ def nav(depth, here=''):
     up = '../' * depth
     items = [('Research', f'{up}#research', ''), ('People', f'{up}people/', 'people'),
              ('STRANGE', f'{up}strange/', 'strange'), ('Publications', f'{up}publications/', 'publications'),
+             ('Learn', f'{up}learn/', 'learn'),
              ('Contact', f'{up}#contact', '')]
     return '\n      '.join(
         f'<a href="{h}"' + (' aria-current="page"' if k and k == here else '') + f'>{t}</a>'
@@ -128,7 +129,7 @@ def page(path, title, desc, body, here, script='', jsonld=None, og_image='assets
 <footer class="ftr">
   <div class="wrap">
     <span>© <span id="yr">2026</span> Spatial Intelligence Collective · Toronto Metropolitan University</span>
-    <span><a href="{up}people/">People</a> · <a href="{up}publications/">Publications</a> · <a href="{up}strange/">STRANGE</a> · <a href="{up}#flows">Everything flows</a></span>
+    <span><a href="{up}people/">People</a> · <a href="{up}publications/">Publications</a> · <a href="{up}learn/">Learn</a> · <a href="{up}strange/">STRANGE</a> · <a href="{up}#flows">Everything flows</a></span>
   </div>
 </footer>
 
@@ -459,6 +460,70 @@ write('publications/index.html', page(
     f'{fmt(T["publications"])} publications by members of the Spatial Intelligence Collective, {T["multi_fellow"]} of them written by two or more fellows, with each member\'s own research record.',
     pubs_body, 'publications', script=pubs_js))
 
+
+# ================================================================== learn/
+LAB = 'https://lab.spatialintelligence.network'
+labs = [('india', 'India', '725 districts', 81), ('brazil', 'Brazil', '558 microregions', 46),
+        ('venezuela', 'Venezuela', '335 municipalities', 24)]
+lab_li = ''.join(
+    f'<li><a class="row" href="{LAB}/{k}"><span class="k">{n}</span>'
+    f'<span class="v">{u}, {v} variables. Open the map, the Calculator and the Composer.</span></a></li>'
+    for k, n, u, v in labs)
+lessons = [('spatial-autocorrelation', "Spatial autocorrelation and Moran's I",
+            "What it means for nearby places to resemble each other, how spatial weights are built, and how to compute and test global Moran's I."),
+           ('hot-spot-analysis', 'LISA and hot-spot analysis',
+            'Local indicators of spatial association and Getis-Ord Gi*, for finding where clusters and outliers sit on the map.'),
+           ('interpolation', 'Interpolation, variograms and kriging',
+            'Estimating values between observations, from inverse distance weighting to the variogram and ordinary kriging.')]
+les_li = ''.join(
+    f'<li><a class="row" href="{LAB}/spatstat/{k}/"><span class="k">{esc(t)}</span><span class="v">{esc(d)}</span></a></li>'
+    for k, t, d in lessons)
+learn_body = f"""<section class="page-head">
+  <div class="wrap">
+    <h1>Learn</h1>
+    <p class="lede">Open tools for students and researchers who want to learn spatial methods by using them. Everything here runs in the browser, needs no installation or account, and is free for teaching and research.</p>
+    <div class="cta">
+      <a class="btn solid" href="{LAB}/india">Open the SIC Lab</a>
+      <a class="btn" href="{LAB}/spatstat/">Start the tutorials</a>
+    </div>
+  </div>
+</section>
+
+<section id="lab">
+  <div class="wrap">
+    <p class="label">The SIC Lab</p>
+    <h2>A map, a toolbox, and open data.</h2>
+    <p class="lede muted">Choose a variable and the Lab maps it across every district or municipality. The Calculator lets you wire variables into a composite index or drop in a method: spatial weights, global Moran's I, LISA clusters, Getis-Ord Gi* hot spots, the Gini and Theil inequality indices, and OLS and geographically weighted regression. Every result can go back onto the map, into the Composer as a finished map, or out as CSV, GeoJSON, or a shapefile.</p>
+    <ul class="rows">{lab_li}</ul>
+  </div>
+</section>
+
+<section id="tutorials">
+  <div class="wrap">
+    <p class="label">Tutorials</p>
+    <h2>Spatial statistics, step by step.</h2>
+    <p class="lede muted">Each lesson explains a method visually and then lets you run it in Python inside the page, first on teaching data and then on real census data from the Lab.</p>
+    <ul class="rows">{les_li}</ul>
+    <p class="more"><a href="{LAB}/spatstat/">All lessons</a></p>
+  </div>
+</section>
+
+<section id="open-data">
+  <div class="wrap">
+    <p class="label">Open data</p>
+    <h2>Use the data in your own work.</h2>
+    <p class="lede muted">Every variable in the Lab is a plain JSON file that can be read from a notebook, a script, or a web page, for example <code>{LAB}/v1/india/literacy_rate.json</code>. The catalogue for each country is at <a href="{LAB}/v1/india/meta.json">/v1/india/meta.json</a>, <a href="{LAB}/v1/brazil/meta.json">/v1/brazil/meta.json</a>, and <a href="{LAB}/v1/venezuela/meta.json">/v1/venezuela/meta.json</a>. Sources and licences are listed with each file and in the Lab's Sources panel.</p>
+  </div>
+</section>"""
+learn_ld = {'@context': 'https://schema.org', '@type': 'Course', 'name': 'Spatial statistics with the SIC Lab',
+            'description': 'Interactive lessons on spatial autocorrelation, hot-spot analysis and interpolation, with Python that runs in the browser.',
+            'url': f'{SITE}/learn/', 'isAccessibleForFree': True,
+            'provider': {'@type': 'Organization', 'name': 'Spatial Intelligence Collective', 'url': f'{SITE}/'}}
+write('learn/index.html', page(
+    'learn/', 'Learn · Spatial Intelligence Collective',
+    'The SIC Lab and tutorials: open data and spatial statistics that run in the browser, free for students and researchers.',
+    learn_body, 'learn', jsonld=learn_ld))
+
 # ================================================================== index.html regions
 idx_path = os.path.join(ROOT, 'index.html')
 idx = open(idx_path).read()
@@ -517,7 +582,7 @@ open(idx_path, 'w').write(idx)
 
 # ================================================================== sitemap, robots
 today = datetime.date.today().isoformat()
-urls = ['', 'people/', 'publications/', 'strange/']
+urls = ['', 'people/', 'publications/', 'learn/', 'strange/']
 write('sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
       + ''.join(f'  <url><loc>{SITE}/{u}</loc><lastmod>{today}</lastmod></url>\n' for u in urls) + '</urlset>\n')
 write('robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n')
