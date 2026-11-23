@@ -7,6 +7,7 @@ Coordinates: content/places.json, one entry per institution in people.json.
 """
 import html
 import math
+import sys
 from collections import OrderedDict
 
 A1, A2, A3, A4 = 1.340264, -0.081106, 0.000893, 0.003796
@@ -120,6 +121,11 @@ def network_map(people, places, land, hub='Toronto Metropolitan University', lin
                  ('end', x - r - 3, y + r + FS + 1), ('end', x - r - 3, y - r - 4)]
         if inst == hub:
             cands = [('start', x + r + 3, y + r + FS + 2)] + cands
+        # further out, joined to the point by a short leader line
+        # (not for the points packed round Toronto, which the hover names instead)
+        if math.hypot(x - hx, y - hy) > 60:
+            for dy in (-20, 20, -34, 34):
+                cands += [('start', x + r + 12, y + dy + FS * 0.35), ('end', x - r - 12, y + dy + FS * 0.35)]
         for anchor, lx, ly in cands:
             bx = lx if anchor == 'start' else lx - w
             bb = box(bx, ly - FS * 0.8, w, h)
@@ -129,8 +135,13 @@ def network_map(people, places, land, hub='Toronto Metropolitan University', lin
                 continue
             taken.append(bb)
             cls = 'nm-label nm-hub' if inst == hub else 'nm-label'
+            if abs(ly - FS * 0.35 - y) > r + FS:
+                ex = lx - 2 if anchor == 'start' else lx + 2
+                labels.append(f'<line x1="{x:.1f}" y1="{y:.1f}" x2="{ex:.1f}" y2="{ly - FS * 0.35:.1f}" class="nm-lead"/>')
             labels.append(f'<text x="{lx:.1f}" y="{ly:.1f}" text-anchor="{anchor}" class="{cls}">{esc(city)}</text>')
             break
+        else:
+            pass  # no room: the point keeps its hover title
 
     n_inst, n_people = len(sites), len(people)
     title = f'Map of the Spatial Intelligence Collective: {n_people} members at {n_inst} institutions, linked to Toronto'

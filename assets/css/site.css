@@ -251,3 +251,4 @@ code{font-size:.9em;overflow-wrap:anywhere;word-break:break-word}
 .nm-label{font:500 13px Inter,system-ui,sans-serif;fill:var(--muted);paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round}
 .nm-label.nm-hub{fill:var(--ink);font-weight:600}
 .netmap-fig figcaption{font-size:14px;color:var(--muted);margin-top:12px}
+.nm-lead{stroke:var(--muted);stroke-width:.6;stroke-opacity:.6;vector-effect:non-scaling-stroke}
