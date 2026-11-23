@@ -222,14 +222,14 @@ people_body = f"""<section class="page-head">
   </div>
 </section>
 
-<section id="advisory">
+{f'''<section id="advisory">
   <div class="wrap">
     <p class="label">Advisory board</p>
     <ul class="people">{''.join(entry(p) for p in advisory)}</ul>
   </div>
 </section>
 
-<section id="fellows">
+''' if advisory else ''}<section id="fellows">
   <div class="wrap">
     <p class="label">Fellows · {N_FELLOWS - len(honorary) - len(advisory)}</p>
     <ul class="people cols">{''.join(entry(p) for p in fellows if p['category'] == 'fellow')}</ul>
