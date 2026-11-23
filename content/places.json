@@ -100,6 +100,11 @@
    "city": "Maasai Mara",
    "lat": -1.43,
    "lon": 35.17
+  },
+  "Florida State University": {
+   "city": "Tallahassee",
+   "lat": 30.4419,
+   "lon": -84.2985
   }
  }
 }

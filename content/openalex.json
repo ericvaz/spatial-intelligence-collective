@@ -11,6 +11,7 @@
   "luis-serra-coelho",
   "suzana-dragicevic",
   "victoria-fast",
+  "stewart-fotheringham",
   "suzanne-fredericks",
   "murtaza-haider",
   "jamal-jokar-arsanjani",
@@ -54,6 +55,9 @@
   ],
   "victoria-fast": [
    "A5044551536"
+  ],
+  "stewart-fotheringham": [
+   "A5014732659"
   ],
   "suzanne-fredericks": [
    "A5059538210"
@@ -112,9 +116,9 @@
   ]
  },
  "totals": {
-  "publications": 3447,
-  "citations": 137330,
-  "multi_fellow": 77
+  "publications": 3667,
+  "citations": 172776,
+  "multi_fellow": 85
  },
  "multi_fellow": [
   {
@@ -840,6 +844,18 @@
    ]
   },
   {
+   "title": "Taking Stock",
+   "year": 2014,
+   "type": "article",
+   "venue": "Transactions in GIS",
+   "doi": "https://doi.org/10.1111/tgis.12120",
+   "openalex": "W4237177285",
+   "members": [
+    "alexander-zipf",
+    "stewart-fotheringham"
+   ]
+  },
+  {
    "title": "Towards initiating OpenLandMap founded on citizens’ science: The current status of land use features of OpenStreetMap in Europe",
    "year": 2014,
    "type": "book-chapter",
@@ -1041,6 +1057,90 @@
    "members": [
     "liliana-perez",
     "suzana-dragicevic"
+   ]
+  },
+  {
+   "title": "Interaction maximization and the observed distribution of urban populations: An agent-based model of humanity\"s metric condition",
+   "year": 2007,
+   "type": "article",
+   "venue": "Infoscience (Ecole Polytechnique Fédérale de Lausanne)",
+   "doi": "",
+   "openalex": "W2243978551",
+   "members": [
+    "michael-batty",
+    "stewart-fotheringham"
+   ]
+  },
+  {
+   "title": "Spatial Models and GIS: New Potential and New Models",
+   "year": 1999,
+   "type": "book",
+   "venue": "Newcastle University ePrints (Newcastle Univesity)",
+   "doi": "https://doi.org/10.25405/ncl.34578726",
+   "openalex": "W639431485",
+   "members": [
+    "michael-batty",
+    "stewart-fotheringham"
+   ]
+  },
+  {
+   "title": "Fractal geometry and urban morphology",
+   "year": 1993,
+   "type": "book-chapter",
+   "venue": "UCL Discovery (University College London)",
+   "doi": "",
+   "openalex": "W1595682329",
+   "members": [
+    "michael-batty",
+    "stewart-fotheringham"
+   ]
+  },
+  {
+   "title": "Fractal Geometry and Spatial Phenomena: A Bibliography (91-1)",
+   "year": 1991,
+   "type": "article",
+   "venue": "eScholarship (California Digital Library)",
+   "doi": "",
+   "openalex": "W1001792788",
+   "members": [
+    "michael-batty",
+    "stewart-fotheringham"
+   ]
+  },
+  {
+   "title": "DIFFUSION‐LIMITED AGGREGATION AND THE FRACTAL NATURE OF URBAN GROWTH",
+   "year": 1989,
+   "type": "article",
+   "venue": "Papers of the Regional Science Association",
+   "doi": "https://doi.org/10.1111/j.1435-5597.1989.tb01182.x",
+   "openalex": "W2151059346",
+   "members": [
+    "michael-batty",
+    "stewart-fotheringham"
+   ]
+  },
+  {
+   "title": "Urban Growth and Form: Scaling, Fractal Geometry, and Diffusion-Limited Aggregation",
+   "year": 1989,
+   "type": "article",
+   "venue": "Environment and Planning A Economy and Space",
+   "doi": "https://doi.org/10.1068/a211447",
+   "openalex": "W2022543896",
+   "members": [
+    "michael-batty",
+    "stewart-fotheringham"
+   ]
+  },
+  {
+   "title": "Handbook of Spatial Analysis in the Social Sciences",
+   "year": null,
+   "type": "book",
+   "venue": "RePEc: Research Papers in Economics",
+   "doi": "",
+   "openalex": "W7113665981",
+   "members": [
+    "michael-batty",
+    "stewart-fotheringham"
    ]
   }
  ],

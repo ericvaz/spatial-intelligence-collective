@@ -141,6 +141,23 @@
    "research": ""
   },
   {
+   "id": "stewart-fotheringham",
+   "name": "A. Stewart Fotheringham",
+   "sort": "Fotheringham",
+   "category": "honorary",
+   "position": "Krafft Professor of Spatial Data Science",
+   "institution": "Florida State University",
+   "country": "United States",
+   "strange": null,
+   "orcid": "0000-0002-0407-1901",
+   "openalex": [
+    "A5014732659"
+   ],
+   "scholar": null,
+   "bio": "",
+   "research": ""
+  },
+  {
    "id": "suzanne-fredericks",
    "name": "Suzanne Fredericks",
    "sort": "Fredericks",
