@@ -540,7 +540,7 @@ FAQ = [
     ('Is SIC a university research centre?',
      'SIC is a faculty-led research network and has no formal research centre status at Toronto Metropolitan University or any other institution. It is unincorporated, has no employees, holds no funds, and signs no contracts of its own; any funding for its activities is held by an eligible host institution under that institution\'s rules. Members take part in their individual capacities, and membership does not imply that their institutions endorse SIC.'),
     ('Who leads the Collective?',
-     'SIC is led by its founder and Director, Eric Vaz, who sets its direction, invites members, and appoints its editors and organizers. The Director represents the Collective without speaking on behalf of individual members. He may seek the advice of Fellows on any matter, and names a Fellow to act in his place when he is unavailable.'),
+     'SIC is led by its founder and Director, Eric Vaz, who sets its direction, invites members, and appoints its editors and organizers. The Director represents the Collective without speaking on behalf of individual members, and may seek the advice of Fellows on any matter.'),
     ('How do people join?',
      'Membership is by invitation of the Director and begins when the invitation is accepted. Fellows are researchers and practitioners whose work advances the purpose of the Collective, and Honorary Fellows are distinguished contributors to the field. Doctoral Members are doctoral researchers whose work falls within its remit.'),
     ('What does membership ask of me?',
@@ -554,7 +554,7 @@ FAQ = [
     ('How is my information used?',
      'With each member\'s agreement, SIC publishes a profile drawing on public sources such as ORCID and OpenAlex. Members may ask for their profile to be corrected or removed at any time.'),
     ('Who can I contact with a concern?',
-     'Concerns can be raised with the Director or, if they involve the Director, with the Fellow named to act in his place. Members remain free to use their own institutions\' reporting channels.'),
+     'Concerns can be raised with the Director. Members remain free to use their own institutions\' reporting channels.'),
 ]
 faq_dl = ''.join(f'<div class="qa"><h2>{esc(q)}</h2><p>{esc(a)}</p></div>' for q, a in FAQ)
 about_body = f"""<section class="page-head">
