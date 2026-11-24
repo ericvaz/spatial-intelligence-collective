@@ -311,6 +311,23 @@
    "research": ""
   },
   {
+   "id": "paulo-neto",
+   "name": "Paulo Neto",
+   "sort": "Neto",
+   "category": "fellow",
+   "position": "Full Professor",
+   "institution": "Universidade de Évora",
+   "country": "Portugal",
+   "strange": "board",
+   "orcid": "0000-0003-1583-983X",
+   "openalex": [
+    "A5019698960"
+   ],
+   "scholar": null,
+   "bio": "",
+   "research": ""
+  },
+  {
    "id": "otto-anker-nielsen",
    "name": "Otto Anker Nielsen",
    "sort": "Nielsen",

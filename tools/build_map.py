@@ -119,6 +119,10 @@ def network_map(people, places, land, hub='Toronto Metropolitan University', lin
         cands = [('start', x + r + 5, y + FS * 0.35), ('end', x - r - 5, y + FS * 0.35),
                  ('start', x + r + 3, y + r + FS + 1), ('start', x + r + 3, y - r - 4),
                  ('end', x - r - 3, y + r + FS + 1), ('end', x - r - 3, y - r - 4)]
+        # a point with a close neighbour just east of it labels to the west first,
+        # so its name never sits beside the neighbour's dot (Lisbon next to Évora)
+        if any(0 < pts[j][0] - x < 10 and abs(pts[j][1] - y) < 8 for j in sites if j != inst):
+            cands[0], cands[1] = cands[1], cands[0]
         if inst == hub:
             cands = [('start', x + r + 3, y + r + FS + 2)] + cands
         # further out, joined to the point by a short leader line

@@ -115,6 +115,11 @@
    "city": "Hong Kong",
    "lat": 22.3364,
    "lon": 114.173
+  },
+  "Universidade de Évora": {
+   "city": "Évora",
+   "lat": 38.5727,
+   "lon": -7.9053
   }
  }
 }

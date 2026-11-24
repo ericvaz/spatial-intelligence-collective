@@ -21,6 +21,7 @@
   "songnian-li",
   "xintao-liu",
   "raktim-mitra",
+  "paulo-neto",
   "otto-anker-nielsen",
   "marco-painho",
   "liliana-perez",
@@ -95,6 +96,9 @@
   "raktim-mitra": [
    "A5019437444"
   ],
+  "paulo-neto": [
+   "A5019698960"
+  ],
   "otto-anker-nielsen": [
    "A5035078471"
   ],
@@ -124,9 +128,9 @@
   ]
  },
  "totals": {
-  "publications": 4307,
-  "citations": 191124,
-  "multi_fellow": 85
+  "publications": 4342,
+  "citations": 191448,
+  "multi_fellow": 86
  },
  "multi_fellow": [
   {
@@ -873,6 +877,18 @@
    "members": [
     "eric-vaz",
     "jamal-jokar-arsanjani"
+   ]
+  },
+  {
+   "title": "Innovation for Sustainability and Networking",
+   "year": 2013,
+   "type": "book",
+   "venue": "Portuguese National Funding Agency for Science, Research and Technology (RCAAP Project by FCT)",
+   "doi": "",
+   "openalex": "W2559819638",
+   "members": [
+    "eric-vaz",
+    "paulo-neto"
    ]
   },
   {
