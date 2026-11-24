@@ -54,7 +54,7 @@ honorary = [p for p in fellows if p['category'] == 'honorary']
 advisory = [p for p in fellows if p['category'] == 'advisory']
 doctoral = [p for p in PEOPLE if p['category'] == 'doctoral']
 academics = [p for p in lead + fellows if not p.get('nonacademic')]   # university-based members
-practitioners = [p for p in fellows if p.get('nonacademic')]
+practitioners = [p for p in fellows if p.get('nonacademic') and p['category'] != 'honorary']
 N_FELLOWS = len(fellows)
 N_UNIS = len({p['institution'] for p in academics})
 N_COUNTRIES = len({p['country'] for p in academics})

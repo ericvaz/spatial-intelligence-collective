@@ -141,6 +141,41 @@
    "research": ""
   },
   {
+   "id": "roberta-capello",
+   "name": "Roberta Capello",
+   "sort": "Capello",
+   "category": "honorary",
+   "position": "Full Professor",
+   "institution": "Politecnico di Milano",
+   "country": "Italy",
+   "strange": null,
+   "orcid": "0000-0003-0438-6900",
+   "openalex": [
+    "A5055294049",
+    "A5103807341"
+   ],
+   "scholar": null,
+   "bio": "",
+   "research": ""
+  },
+  {
+   "id": "alessandra-faggian",
+   "name": "Alessandra Faggian",
+   "sort": "Faggian",
+   "category": "honorary",
+   "position": "Full Professor",
+   "institution": "Gran Sasso Science Institute",
+   "country": "Italy",
+   "strange": null,
+   "orcid": "0000-0002-2479-2933",
+   "openalex": [
+    "A5030731615"
+   ],
+   "scholar": null,
+   "bio": "",
+   "research": ""
+  },
+  {
    "id": "henk-folmer",
    "name": "Henk Folmer",
    "sort": "Folmer",
@@ -392,6 +427,24 @@
     "A5077205117"
    ],
    "scholar": "Lfmhbd8AAAAJ",
+   "bio": "",
+   "research": ""
+  },
+  {
+   "id": "dawn-wright",
+   "name": "Dawn Wright",
+   "sort": "Wright",
+   "category": "honorary",
+   "position": "Chief Scientist",
+   "institution": "Esri",
+   "country": "United States",
+   "nonacademic": true,
+   "strange": null,
+   "orcid": "0000-0002-2997-7611",
+   "openalex": [
+    "A5060279878"
+   ],
+   "scholar": "yXytBYYAAAAJ",
    "bio": "",
    "research": ""
   },

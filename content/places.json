@@ -120,6 +120,21 @@
    "city": "Évora",
    "lat": 38.5727,
    "lon": -7.9053
+  },
+  "Politecnico di Milano": {
+   "city": "Milan",
+   "lat": 45.4781,
+   "lon": 9.2273
+  },
+  "Gran Sasso Science Institute": {
+   "city": "L'Aquila",
+   "lat": 42.3456,
+   "lon": 13.3989
+  },
+  "Esri": {
+   "city": "Redlands",
+   "lat": 34.0566,
+   "lon": -117.1956
   }
  }
 }

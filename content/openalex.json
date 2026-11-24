@@ -11,6 +11,8 @@
   "luis-serra-coelho",
   "suzana-dragicevic",
   "victoria-fast",
+  "roberta-capello",
+  "alessandra-faggian",
   "henk-folmer",
   "stewart-fotheringham",
   "eddie-hui",
@@ -26,6 +28,7 @@
   "marco-painho",
   "liliana-perez",
   "robert-gilmore-pontius",
+  "dawn-wright",
   "greg-rybarczyk",
   "ahmed-shaker",
   "alysha-van-duynhoven",
@@ -58,6 +61,13 @@
   ],
   "victoria-fast": [
    "A5044551536"
+  ],
+  "roberta-capello": [
+   "A5055294049",
+   "A5103807341"
+  ],
+  "alessandra-faggian": [
+   "A5030731615"
   ],
   "henk-folmer": [
    "A5067369111"
@@ -111,6 +121,9 @@
   "robert-gilmore-pontius": [
    "A5077205117"
   ],
+  "dawn-wright": [
+   "A5060279878"
+  ],
   "greg-rybarczyk": [
    "A5058346563"
   ],
@@ -128,9 +141,9 @@
   ]
  },
  "totals": {
-  "publications": 4342,
-  "citations": 191448,
-  "multi_fellow": 86
+  "publications": 4991,
+  "citations": 216883,
+  "multi_fellow": 94
  },
  "multi_fellow": [
   {
@@ -880,6 +893,18 @@
    ]
   },
   {
+   "title": "A new team for new challenges",
+   "year": 2013,
+   "type": "article",
+   "venue": "Papers of the Regional Science Association",
+   "doi": "https://doi.org/10.1111/pirs.12012",
+   "openalex": "W2135436318",
+   "members": [
+    "alessandra-faggian",
+    "roberta-capello"
+   ]
+  },
+  {
    "title": "Innovation for Sustainability and Networking",
    "year": 2013,
    "type": "book",
@@ -1093,6 +1118,90 @@
    "members": [
     "michael-batty",
     "stewart-fotheringham"
+   ]
+  },
+  {
+   "title": "Collective Learning and Relational Capital in Local Innovation Processes",
+   "year": 2005,
+   "type": "article",
+   "venue": "Regional Studies",
+   "doi": "https://doi.org/10.1080/0034340052000320851",
+   "openalex": "W2056027337",
+   "members": [
+    "alessandra-faggian",
+    "roberta-capello"
+   ]
+  },
+  {
+   "title": "The role of collective learning in local innovation processes: evidence from Italy",
+   "year": 2003,
+   "type": "article",
+   "venue": "CentAUR (University of Reading)",
+   "doi": "",
+   "openalex": "W636955842",
+   "members": [
+    "alessandra-faggian",
+    "roberta-capello"
+   ]
+  },
+  {
+   "title": "The role of collective learning in local innovation processes: the case of Italy",
+   "year": 2003,
+   "type": "article",
+   "venue": "ePrints Soton (University of Southampton)",
+   "doi": "",
+   "openalex": "W162966410",
+   "members": [
+    "alessandra-faggian",
+    "roberta-capello"
+   ]
+  },
+  {
+   "title": "An economic-ecological model of urban growth and urban externalities: empirical evidence from Italy",
+   "year": 2002,
+   "type": "article",
+   "venue": "Ecological Economics",
+   "doi": "https://doi.org/10.1016/s0921-8009(01)00252-x",
+   "openalex": "W2112268565",
+   "members": [
+    "alessandra-faggian",
+    "roberta-capello"
+   ]
+  },
+  {
+   "title": "Transport, energy and environment in Italian research and policy-making",
+   "year": 2001,
+   "type": "article",
+   "venue": "International Journal of Environmental Technology and Management",
+   "doi": "https://doi.org/10.1504/ijetm.2001.000755",
+   "openalex": "W2043384739",
+   "members": [
+    "alessandra-faggian",
+    "roberta-capello"
+   ]
+  },
+  {
+   "title": "Scenari insediativi e di domanda di trasporto al 2010: una metodologia e un’applicazione in una regione italiana\"",
+   "year": 1999,
+   "type": "book",
+   "venue": "Virtual Community of Pathological Anatomy (University of Castilla La Mancha)",
+   "doi": "",
+   "openalex": "W2800704312",
+   "members": [
+    "alessandra-faggian",
+    "roberta-capello"
+   ]
+  },
+  {
+   "title": "Scenari insediativi e interazione trasporti-sviluppo: un modello di previsione spazio-temporale",
+   "year": 1999,
+   "type": "book-chapter",
+   "venue": "Virtual Community of Pathological Anatomy (University of Castilla La Mancha)",
+   "doi": "",
+   "openalex": "W2757313667",
+   "members": [
+    "alessandra-faggian",
+    "roberta-capello"
    ]
   },
   {
