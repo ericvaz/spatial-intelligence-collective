@@ -135,6 +135,11 @@
    "city": "Redlands",
    "lat": 34.0566,
    "lon": -117.1956
+  },
+  "University of Chicago": {
+   "city": "Chicago",
+   "lat": 41.7886,
+   "lon": -87.5987
   }
  }
 }

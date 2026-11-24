@@ -33,7 +33,8 @@
   "ahmed-shaker",
   "alysha-van-duynhoven",
   "michael-widener",
-  "alexander-zipf"
+  "alexander-zipf",
+  "luc-anselin"
  ],
  "author_ids": {
   "eric-vaz": [
@@ -138,12 +139,15 @@
   ],
   "alexander-zipf": [
    "A5091474205"
+  ],
+  "luc-anselin": [
+   "A5054616540"
   ]
  },
  "totals": {
-  "publications": 4991,
-  "citations": 216883,
-  "multi_fellow": 94
+  "publications": 5203,
+  "citations": 288709,
+  "multi_fellow": 96
  },
  "multi_fellow": [
   {
@@ -413,6 +417,18 @@
    ]
   },
   {
+   "title": "Conclusions",
+   "year": 2021,
+   "type": "book-chapter",
+   "venue": "SpringerBriefs in regional science",
+   "doi": "https://doi.org/10.1007/978-3-319-95124-9_8",
+   "openalex": "W4233675226",
+   "members": [
+    "alessandra-faggian",
+    "luc-anselin"
+   ]
+  },
+  {
    "title": "Exploring the Sensitivity of Recurrent Neural Network Models for Forecasting Land Cover Change",
    "year": 2021,
    "type": "article",
@@ -434,6 +450,18 @@
    "members": [
     "ahmed-shaker",
     "songnian-li"
+   ]
+  },
+  {
+   "title": "The effects of different travel modes and travel destinations on COVID-19 transmission in global cities",
+   "year": 2021,
+   "type": "article",
+   "venue": "Science Bulletin",
+   "doi": "https://doi.org/10.1016/j.scib.2021.11.023",
+   "openalex": "W3216093197",
+   "members": [
+    "luc-anselin",
+    "michael-batty"
    ]
   },
   {
@@ -1318,8 +1346,8 @@
   "sustainabilityinthetransborderregionsthecaseofandalusiaalgarve": "https://doi.org/10.1504/ijgenvi.2015.067487",
   "potentialofgeographicinformationsystemsforrefugeecrisissyrianrefugeerelocationinurbanhabit": "https://doi.org/10.1016/j.habitatint.2017.02.001",
   "innovativefirmsbehindtheregionsanalysisofregionalinnovationperformanceinportugalbyexternal": "https://doi.org/10.2139/ssrn.2321155",
-  "theoreticalfoundationsinsupportofsmallandmediumtowns": "https://doi.org/10.3390/su12135312",
   "trappedbetweenantiquityandurbanismamulticriteriaassessmentmodelofthegreatercairometropolit": "https://doi.org/10.1080/1747423x.2010.519059",
+  "theoreticalfoundationsinsupportofsmallandmediumtowns": "https://doi.org/10.3390/su12135312",
   "linkingagriculturalpolicieswithdecisionmakingaspatialapproach": "https://doi.org/10.1080/09654313.2014.945818",
   "analyzingcropchangescenariowiththesmartscapespatialdecisionsupportsystem": "https://doi.org/10.1016/j.landusepol.2015.11.002",
   "urbanhabitatsandtheinjurylandscape": "https://doi.org/10.1016/j.habitatint.2016.04.006",
@@ -1327,6 +1355,7 @@
   "didcovid19lockdownpositivelyaffecttheurbanenvironmentandunsustainabledevelopmentgoals": "https://doi.org/10.1371/journal.pone.0274621",
   "amultilevelspatialurbanpressureanalysisofthegizapyramidplateauinegypt": "https://doi.org/10.1080/1743873x.2011.553285",
   "ageographicalexplorationofenvironmentalandlandusecharacteristicsofsuicideinthegreatertoron": "https://doi.org/10.1016/j.psychres.2020.112790",
+  "crossroadsoftourismacomplexspatialsystemsanalysisoftourismandurbansprawlinthealgarve": "https://doi.org/10.1504/ijsd.2011.041963",
   "diversifyingmediterraneantourismasastrategyforregionalresilienceenhancement": "https://doi.org/10.1007/978-3-319-95135-5_6",
   "machinelearningforanalysisofwealthincitiesaspatialempiricalexaminationofwealthintoronto": "https://doi.org/10.1016/j.habitatint.2021.102319",
   "opendataandinjuriesinurbanareasaspatialanalyticalframeworkoftorontousingmachinelearningand": "https://doi.org/10.1371/journal.pone.0248285",
@@ -1346,7 +1375,6 @@
   "technologicaladvancementsandknowledgedistribution": "https://doi.org/10.1007/978-3-031-76906-1_7",
   "spatialspilloversandknowledgestructures": "https://doi.org/10.1007/978-3-031-76906-1_2",
   "howcorporationsdealwithreportingsustainabilityassessmentusingthemulticriterialogisticbiplo": "https://doi.org/10.3390/systems3010006",
-  "crossroadsoftourismacomplexspatialsystemsanalysisoftourismandurbansprawlinthealgarve": "https://doi.org/10.1504/ijsd.2011.041963",
   "historicoculturalsustainabilityandurbandynamics": "https://doi.org/10.1007/978-90-481-2419-0_8",
   "theuseofgravityconceptsforagriculturallandusedynamicsacasestudyonthealgarve": "https://doi.org/10.1504/ijfip.2012.046113",
   "marsterraformingageographicinformationsystemsframework": "https://doi.org/10.1016/j.lssr.2019.12.001",
@@ -1360,11 +1388,11 @@
   "spatialanalysesforpolicyevaluationoftheruralworldportugueseagricultureinthelastdecade": "https://doi.org/10.1007/978-3-7908-2422-3_6",
   "recoveringancientlandscapesincoastalzonesforculturaltourismaspatialanalysis": "https://doi.org/10.1007/978-3-030-36479-3_2",
   "introductionresilienceconceptsandgeography": "https://doi.org/10.1007/978-3-319-95135-5_1",
+  "aspatialanalysisoftheinstagramhashtaghappyanassessmentoftoronto": "https://doi.org/10.1007/978-3-031-19871-7_2",
   "conclusionresiliencewhatsnext": "https://doi.org/10.1007/978-3-319-95135-5_13",
   "introductionregionalintelligenceanewkindofscience": "https://doi.org/10.1007/978-3-030-36479-3_1",
   "canadianregionalscience20": "https://doi.org/10.1007/978-981-33-4098-5_3",
   "sustainabledevelopmentinsoutherneuropespatialanalysisofregionalchallenges": "https://doi.org/10.1007/978-3-662-62177-6",
-  "aspatialanalysisoftheinstagramhashtaghappyanassessmentoftoronto": "https://doi.org/10.1007/978-3-031-19871-7_2",
   "regionalandurbanchangeandgeographicalinformationsystemsandscienceananalysisofnortherncanad": "https://doi.org/10.1007/978-3-032-19211-0",
   "dynamicsustainabilitybacktohistorytoadvocateforsmallandmediumsizedtowns": "https://doi.org/10.1007/978-981-33-4098-5_4",
   "faithpolicyandsuicideamachinelearningandspatialanalysisapproachofreligiousaffiliationandsu": "https://doi.org/10.1016/j.habitatint.2024.103119",

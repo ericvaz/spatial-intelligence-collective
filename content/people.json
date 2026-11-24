@@ -578,6 +578,23 @@
    "scholar": null,
    "bio": "",
    "research": "How urban environments and transportation infrastructure shape cycling safety, with attention to equity of access and data representativeness."
+  },
+  {
+   "id": "luc-anselin",
+   "name": "Luc Anselin",
+   "sort": "Anselin",
+   "category": "honorary",
+   "position": "Stein-Freiler Distinguished Service Professor of Spatial Data Science",
+   "institution": "University of Chicago",
+   "country": "United States",
+   "strange": null,
+   "orcid": "0000-0003-1076-2220",
+   "openalex": [
+    "A5054616540"
+   ],
+   "scholar": null,
+   "bio": "",
+   "research": ""
   }
  ]
 }
