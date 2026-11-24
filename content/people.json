@@ -175,6 +175,23 @@
    "research": ""
   },
   {
+   "id": "eddie-hui",
+   "name": "Eddie C. M. Hui",
+   "sort": "Hui",
+   "category": "honorary",
+   "position": "Chair Professor",
+   "institution": "City University of Hong Kong",
+   "country": "Hong Kong",
+   "strange": null,
+   "orcid": "0000-0002-6974-891X",
+   "openalex": [
+    "A5007155747"
+   ],
+   "scholar": null,
+   "bio": "",
+   "research": ""
+  },
+  {
    "id": "suzanne-fredericks",
    "name": "Suzanne Fredericks",
    "sort": "Fredericks",

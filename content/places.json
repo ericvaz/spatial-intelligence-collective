@@ -110,6 +110,11 @@
    "city": "Groningen",
    "lat": 53.2194,
    "lon": 6.5665
+  },
+  "City University of Hong Kong": {
+   "city": "Hong Kong",
+   "lat": 22.3364,
+   "lon": 114.173
   }
  }
 }

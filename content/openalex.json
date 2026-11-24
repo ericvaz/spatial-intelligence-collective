@@ -1,6 +1,6 @@
 {
  "source": "OpenAlex",
- "updated": "2026-11-23",
+ "updated": "2026-11-24",
  "policy": "Matched by ORCID. Works deduplicated by OpenAlex ID, DOI and title. Counts include articles, reviews, books, book chapters and conference papers.",
  "members_indexed": [
   "eric-vaz",
@@ -13,6 +13,7 @@
   "victoria-fast",
   "henk-folmer",
   "stewart-fotheringham",
+  "eddie-hui",
   "suzanne-fredericks",
   "murtaza-haider",
   "jamal-jokar-arsanjani",
@@ -62,6 +63,9 @@
   ],
   "stewart-fotheringham": [
    "A5014732659"
+  ],
+  "eddie-hui": [
+   "A5007155747"
   ],
   "suzanne-fredericks": [
    "A5059538210"
@@ -120,8 +124,8 @@
   ]
  },
  "totals": {
-  "publications": 3908,
-  "citations": 178358,
+  "publications": 4307,
+  "citations": 191124,
   "multi_fellow": 85
  },
  "multi_fellow": [
