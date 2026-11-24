@@ -15,7 +15,7 @@ from collections import Counter
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 SITE = 'https://spatialintelligence.network'
-CSS_V = 12
+CSS_V = 13
 
 
 def load(name):
@@ -76,7 +76,7 @@ def nav(depth, here=''):
     up = '../' * depth
     items = [('Research', f'{up}#research', ''), ('People', f'{up}people/', 'people'),
              ('STRANGE', f'{up}strange/', 'strange'), ('Publications', f'{up}publications/', 'publications'),
-             ('Learn', f'{up}learn/', 'learn'),
+             ('Learn', f'{up}learn/', 'learn'), ('About', f'{up}about/', 'about'),
              ('Contact', f'{up}#contact', '')]
     return '\n      '.join(
         f'<a href="{h}"' + (' aria-current="page"' if k and k == here else '') + f'>{t}</a>'
@@ -131,7 +131,7 @@ def page(path, title, desc, body, here, script='', jsonld=None, og_image='assets
 <footer class="ftr">
   <div class="wrap">
     <span>© <span id="yr">2026</span> Spatial Intelligence Collective · Toronto Metropolitan University</span>
-    <span><a href="{up}people/">People</a> · <a href="{up}publications/">Publications</a> · <a href="{up}learn/">Learn</a> · <a href="{up}strange/">STRANGE</a> · <a href="{up}#flows">Everything flows</a></span>
+    <span><a href="{up}people/">People</a> · <a href="{up}publications/">Publications</a> · <a href="{up}learn/">Learn</a> · <a href="{up}strange/">STRANGE</a> · <a href="{up}about/">How the Collective works</a> · <a href="{up}#flows">Everything flows</a></span>
   </div>
 </footer>
 
@@ -533,6 +533,49 @@ write('learn/index.html', page(
     'The SIC Lab and tutorials: open data and spatial statistics that run in the browser, free for students and researchers.',
     learn_body, 'learn', jsonld=learn_ld))
 
+# ================================================================== about/
+FAQ = [
+    ('What is the Spatial Intelligence Collective?',
+     'The Spatial Intelligence Collective (SIC) is an international network of researchers and practitioners who study cities and regions as complex adaptive systems through geocomputation, GeoAI, spatial statistics, and spatial econometrics. It grew out of the Laboratory for Geocomputation at Toronto Metropolitan University. SIC is preparing the first issue of STRANGE, a magazine of space, place, and imagination, and maintains the SIC Lab, an open resource for spatial data and methods.'),
+    ('Is SIC a university research centre?',
+     'SIC is a faculty-led research network and has no formal research centre status at Toronto Metropolitan University or any other institution. It is unincorporated, has no employees, holds no funds, and signs no contracts of its own; any funding for its activities is held by an eligible host institution under that institution\'s rules. Members take part in their individual capacities, and membership does not imply that their institutions endorse SIC.'),
+    ('Who leads the Collective?',
+     'SIC is led by its founder and Director, Eric Vaz, who sets its direction, invites members, and appoints its editors and organizers. The Director represents the Collective without speaking on behalf of individual members. He may seek the advice of Fellows on any matter, and names a Fellow to act in his place when he is unavailable.'),
+    ('How do people join?',
+     'Membership is by invitation of the Director and begins when the invitation is accepted. Fellows are researchers and practitioners whose work advances the purpose of the Collective, and Honorary Fellows are distinguished contributors to the field. Doctoral Members are doctoral researchers whose work falls within its remit.'),
+    ('What does membership ask of me?',
+     'Membership carries no obligation to contribute time, money, or work. Events, joint projects, and STRANGE are entirely voluntary. Members may leave at any time.'),
+    ('How do members work together?',
+     'Members treat one another with respect and fairness. Seniority is never used to press junior colleagues into taking on work, sharing data, or accepting authorship. Unpublished work and data shared through SIC are kept in confidence, subject to the permission of those entitled to share them and to any legal requirement.'),
+    ('Does membership help me publish in journals edited by members?',
+     'No. Membership gives no preferential treatment in any academic journal edited by a member, and editors of STRANGE do not decide on their own submissions.'),
+    ('Who owns the work members produce?',
+     'Its authors and their institutions. SIC claims no rights over its members\' work, and membership creates no entitlement to authorship, funding, data, or intellectual property.'),
+    ('How is my information used?',
+     'With each member\'s agreement, SIC publishes a profile drawing on public sources such as ORCID and OpenAlex. Members may ask for their profile to be corrected or removed at any time.'),
+    ('Who can I contact with a concern?',
+     'Concerns can be raised with the Director or, if they involve the Director, with the Fellow named to act in his place. Members remain free to use their own institutions\' reporting channels.'),
+]
+faq_dl = ''.join(f'<div class="qa"><h2>{esc(q)}</h2><p>{esc(a)}</p></div>' for q, a in FAQ)
+about_body = f"""<section class="page-head">
+  <div class="wrap">
+    <h1>How the Collective works</h1>
+    <p class="lede">A short guide for colleagues who are members, have been invited, or are curious about the Collective.</p>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap faq">{faq_dl}
+    <p class="more">Anything else? <a href="mailto:evaz@torontomu.ca?subject=Spatial%20Intelligence%20Collective">Write to the Director</a>.</p>
+  </div>
+</section>"""
+about_ld = {'@context': 'https://schema.org', '@type': 'FAQPage', 'url': f'{SITE}/about/',
+            'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in FAQ]}
+write('about/index.html', page(
+    'about/', 'How the Collective works · Spatial Intelligence Collective',
+    'What the Spatial Intelligence Collective is, who leads it, how members join, and what membership does and does not ask.',
+    about_body, 'about', jsonld=about_ld))
+
 # ================================================================== index.html regions
 idx_path = os.path.join(ROOT, 'index.html')
 idx = open(idx_path).read()
@@ -565,7 +608,7 @@ PRACT = ', with practitioners in ' + ' and '.join(sorted({p['country'] for p in 
 small = lambda p: f'<li><a class="n" href="people/#{p["id"]}">{esc(p["name"])}</a>{pills(p)}<span class="a">{esc(p["institution"])}</span></li>'
 region('people', f"""
     <ul class="facts reach"><li><b>{N_FELLOWS}</b> fellows</li><li><b>{N_UNIS}</b> universities</li><li><b>{N_COUNTRIES}</b> countries</li><li><b>{N_DISC}</b> disciplines</li></ul>
-    <p class="lede reach-lede">Members range from assistant to emeritus professors in geography, planning, geomatics engineering, remote sensing, information management, computing science, business, economics, and nursing, at universities in {COUNTRY_LIST}{PRACT}. That breadth lets the Collective build and fund research across disciplines and across borders.</p>
+    <p class="lede reach-lede">Members range from assistant to emeritus professors in geography, planning, geomatics engineering, remote sensing, information management, computing science, business, economics, and nursing, at universities in {COUNTRY_LIST}{PRACT}. Together, members can develop joint research and pursue funding across disciplines and national borders.</p>
     <details class="group fold" data-fold>
       <summary><h3>Director and fellows <span class="c">{N_MEMBERS}</span></h3></summary>
       <ul class="people cols">{''.join(small(p) for p in az(lead + fellows))}</ul>
@@ -589,7 +632,7 @@ open(idx_path, 'w').write(idx)
 
 # ================================================================== sitemap, robots
 today = datetime.date.today().isoformat()
-urls = ['', 'people/', 'publications/', 'learn/', 'strange/']
+urls = ['', 'people/', 'publications/', 'learn/', 'strange/', 'about/']
 write('sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
       + ''.join(f'  <url><loc>{SITE}/{u}</loc><lastmod>{today}</lastmod></url>\n' for u in urls) + '</urlset>\n')
 write('robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n')

@@ -252,3 +252,9 @@ code{font-size:.9em;overflow-wrap:anywhere;word-break:break-word}
 .nm-label.nm-hub{fill:var(--ink);font-weight:600}
 .netmap-fig figcaption{font-size:14px;color:var(--muted);margin-top:12px}
 .nm-lead{stroke:var(--muted);stroke-width:.6;stroke-opacity:.6;vector-effect:non-scaling-stroke}
+
+.faq .qa{max-width:46em;padding:22px 0;border-top:1px solid var(--rule)}
+.faq .qa:first-child{border-top:0;padding-top:0}
+.faq .qa h2{font-size:clamp(18px,2.4vw,21px);line-height:1.3;max-width:none;margin:0 0 8px}
+.faq .qa p{margin:0;font-size:16px;line-height:1.6;color:var(--muted)}
+.faq .more{margin-top:28px}
