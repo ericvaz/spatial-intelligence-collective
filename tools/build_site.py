@@ -548,7 +548,7 @@ FAQ = [
     ('How do members work together?',
      'Members treat one another with respect and fairness. Seniority is never used to press junior colleagues into taking on work, sharing data, or accepting authorship. Unpublished work and data shared through SIC are kept in confidence, subject to the permission of those entitled to share them and to any legal requirement.'),
     ('Does membership help me publish in journals edited by members?',
-     'No. Membership gives no preferential treatment in any academic journal edited by a member, and editors of STRANGE do not decide on their own submissions.'),
+     'No. Membership gives no preferential treatment in any academic journal edited by a member.'),
     ('Who owns the work members produce?',
      'Its authors and their institutions. SIC claims no rights over its members\' work, and membership creates no entitlement to authorship, funding, data, or intellectual property.'),
     ('How is my information used?',
