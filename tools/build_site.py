@@ -496,9 +496,9 @@ FAQ = [
     ('Who can I contact with a concern?',
      'Concerns can be raised with the Director. Members remain free to use their own institutions\' reporting channels.'),
     ('Why an owl?',
-     "The owl comes from the silver tetradrachm of Athens, where Athena's little owl stood for wisdom. Ours is drawn only with isolines, the contour lines of a map, so that the oldest emblem of knowledge is also a small piece of spatial analysis."),
+     'Our emblem comes from the silver tetradrachm of ancient Athens, where the little owl, Athene noctua, stood beside Athena. As Athena Polias she guarded the city, and Rome honoured her as Minerva, goddess of wisdom and craft. The owl suits a collective that studies cities: it perceives depth in low light, and some owls find their prey by sound alone.\n\nHegel wrote that the owl of Minerva spreads its wings only with the falling of dusk, when an age can be understood because it has already passed. We read that line as a challenge for the spatial sciences, which can study cities and regions while they are still changing.\n\nOur owl is drawn only with isolines, the lines of equal value that cartographers use to read terrain. An ancient figure of wisdom is set down in the working language of spatial analysis.'),
 ]
-faq_dl = ''.join(f'<div class="qa{" qa-owl" if q == "Why an owl?" else ""}"><h2>{esc(q)}</h2>' + (f'<img class="owl-emblem" src="../assets/art/owl.svg" alt="" width="72" height="72">' if q == "Why an owl?" else '') + f'<p>{esc(a)}</p></div>' for q, a in FAQ)
+faq_dl = ''.join(f'<div class="qa{" qa-owl" if q == "Why an owl?" else ""}"><h2>{esc(q)}</h2>' + (f'<img class="owl-emblem" src="../assets/art/owl.svg" alt="" width="72" height="72">' if q == "Why an owl?" else '') + ''.join(f'<p>{esc(x)}</p>' for x in a.split('\n\n')) + '</div>' for q, a in FAQ)
 about_body = f"""<section class="page-head">
   <div class="wrap">
     <h1>How the Collective works</h1>
