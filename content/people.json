@@ -595,6 +595,26 @@
    "scholar": null,
    "bio": "",
    "research": ""
+  },
+  {
+   "id": "xinyue-ye",
+   "name": "Xinyue Ye",
+   "sort": "Ye",
+   "category": "honorary",
+   "position": "Endowed Shelby Distinguished Professor",
+   "institution": "University of Alabama",
+   "country": "United States",
+   "strange": null,
+   "orcid": "0000-0001-8838-9476",
+   "openalex": [
+    "A5088393129",
+    "A5024195211",
+    "A5126493362",
+    "A5133729350"
+   ],
+   "scholar": null,
+   "bio": "",
+   "research": ""
   }
  ]
 }

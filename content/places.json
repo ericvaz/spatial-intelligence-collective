@@ -140,6 +140,11 @@
    "city": "Chicago",
    "lat": 41.7886,
    "lon": -87.5987
+  },
+  "University of Alabama": {
+   "city": "Tuscaloosa",
+   "lat": 33.2119,
+   "lon": -87.5459
   }
  }
 }
