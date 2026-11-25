@@ -615,6 +615,39 @@
    "scholar": null,
    "bio": "",
    "research": ""
+  },
+  {
+   "id": "richard-shaker",
+   "name": "Richard Ross Shaker",
+   "sort": "Shaker",
+   "category": "fellow",
+   "position": "Assistant Professor",
+   "institution": "SUNY College of Environmental Science and Forestry",
+   "country": "United States",
+   "strange": null,
+   "orcid": "0000-0002-3093-8628",
+   "openalex": [
+    "A5079873407"
+   ],
+   "scholar": null,
+   "bio": "",
+   "research": ""
+  },
+  {
+   "id": "charline-poirier",
+   "name": "Charline Poirier",
+   "sort": "Poirier",
+   "category": "editor",
+   "position": "Fiction Editor",
+   "institution": "STRANGE",
+   "country": "Canada",
+   "nonacademic": true,
+   "strange": "fiction",
+   "orcid": null,
+   "openalex": [],
+   "scholar": null,
+   "bio": "",
+   "research": ""
   }
  ]
 }

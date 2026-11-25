@@ -145,6 +145,11 @@
    "city": "Tuscaloosa",
    "lat": 33.2119,
    "lon": -87.5459
+  },
+  "SUNY College of Environmental Science and Forestry": {
+   "city": "Syracuse",
+   "lat": 43.0347,
+   "lon": -76.1355
   }
  }
 }

@@ -39,7 +39,7 @@ for p in PEOPLE:
     miss = [k for k in REQ if not p.get(k)]
     if miss:
         sys.exit(f'{p.get("id")}: missing {miss}')
-    if p['category'] not in ('lead', 'fellow', 'honorary', 'advisory', 'doctoral'):
+    if p['category'] not in ('lead', 'fellow', 'honorary', 'advisory', 'doctoral', 'editor'):
         sys.exit(f'{p["id"]}: unknown category {p["category"]}')
 for m in OA['multi_fellow']:
     for i in m['members']:
@@ -62,7 +62,8 @@ N_DISC = META['disciplines']
 board = az([p for p in PEOPLE if p.get('strange') == 'board'])
 director_p = [p for p in PEOPLE if p.get('strange') == 'director']
 manager_p = [p for p in PEOPLE if p.get('strange') == 'manager']
-N_MAST = len(director_p) + len(manager_p) + len(board)
+fiction_p = [p for p in PEOPLE if p.get('strange') == 'fiction']   # masthead-only editors (category 'editor', not fellows)
+N_MAST = len(director_p) + len(manager_p) + len(fiction_p) + len(board)
 T = OA['totals']
 indexed = len(OA['members_indexed'])
 UPDATED = datetime.date.fromisoformat(OA['updated'])
@@ -202,7 +203,7 @@ sys.path.insert(0, HERE)
 from build_map import network_map
 PLACES = load('places.json')['places']
 LAND = load('world-land.geojson')
-for p in PEOPLE:
+for p in lead + fellows + doctoral:
     if p['institution'] not in PLACES:
         sys.exit(f'{p["id"]}: add "{p["institution"]}" to content/places.json')
 NETMAP = network_map(lead + fellows + doctoral, PLACES, LAND)
@@ -252,6 +253,7 @@ write('people/index.html', page(
 # ================================================================== strange/
 mast = ''.join(f'<li><span class="n">{esc(p["name"])}</span><span class="a">Director</span></li>' for p in director_p)
 mast += ''.join(f'<li><span class="n">{esc(p["name"])}</span><span class="a">Editorial manager</span></li>' for p in manager_p)
+mast += ''.join(f'<li><span class="n">{esc(p["name"])}</span><span class="a">Fiction editor</span></li>' for p in fiction_p)
 board_li = ''.join(f'<li><span class="n"><a href="../people/#{p["id"]}">{esc(p["name"])}</a></span><span class="a">{affil(p)}</span></li>' for p in board)
 strange_body = f"""<div class="strange-band strange-page">
   <div class="wrap">
