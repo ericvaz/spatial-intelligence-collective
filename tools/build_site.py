@@ -65,8 +65,6 @@ manager_p = [p for p in PEOPLE if p.get('strange') == 'manager']
 N_MAST = len(director_p) + len(manager_p) + len(board)
 T = OA['totals']
 indexed = len(OA['members_indexed'])
-N_IDX_FELLOWS = sum(1 for p in fellows if p['id'] in OA['members_indexed'])
-COVER = ('All ' if N_IDX_FELLOWS == len(fellows) else f'{N_IDX_FELLOWS} of ') + f'{len(fellows)} fellows and the director indexed'
 UPDATED = datetime.date.fromisoformat(OA['updated'])
 UPDATED_TXT = f'{UPDATED.day} {UPDATED:%B %Y}'
 fmt = lambda n: f'{n:,}'
@@ -230,7 +228,7 @@ people_body = f"""<section class="page-head">
   <div class="wrap">
     <p class="label">Doctoral researchers · {len(doctoral)}</p>
     <ul class="people cols">{''.join(entry(p) for p in doctoral)}</ul>
-    <p class="more">Researchers whose work fits the Collective are welcome to <a href="mailto:evaz@torontomu.ca?subject=Spatial%20Intelligence%20Collective">write to Eric Vaz</a>. Each fellow's own research record is linked from their entry, and the <a href="../publications/">publications page</a> brings the Collective's work together.</p>
+    <p class="more">Researchers whose work fits the Collective are welcome to <a href="mailto:evaz@torontomu.ca?subject=Spatial%20Intelligence%20Collective">write to Eric Vaz</a>. Each fellow's own research record is linked from their entry, and the <a href="../publications/">publications page</a> lists work fellows have written together.</p>
   </div>
 </section>
 
@@ -379,24 +377,14 @@ dm = DIR['metrics']
 pubs_body = f"""<section class="page-head">
   <div class="wrap">
     <h1>Publications</h1>
-    <p class="lede">The research record of the Collective's members, drawn from OpenAlex and matched to each member by ORCID. Members' own research profiles are linked where available, and the work fellows have written together is listed in full.</p>
-    <ul class="metrics">
-      <li><b>{fmt(T['publications'])}</b> publications by members</li>
-      <li><b>{T['multi_fellow']}</b> written by two or more fellows</li>
-      <li><b>{COVER}</b></li>
-    </ul>
-    <p class="prov">Source: OpenAlex, matched to each member by ORCID · updated {UPDATED_TXT}.</p>
-    <details class="method">
-      <summary>How these numbers are counted</summary>
-      <p>Each member is matched to OpenAlex through their ORCID rather than by name, which keeps most namesakes out; OpenAlex can still attribute a work to the wrong person, so the figures are close estimates rather than exact counts. A work counts once however many members wrote it: duplicates are folded together by OpenAlex identifier, DOI, and title. The totals include journal articles, reviews, books, book chapters, and conference papers, and leave out preprints, editorials, errata, front matter, and whole proceedings volumes. Together these {fmt(T['publications'])} publications have been cited {fmt(T['citations'])} times in OpenAlex; one citing paper can cite several of them, so this is not a count of distinct citing works.</p>
-      <p>The totals describe the work members bring to the Collective across their careers, much of it written before the Collective existed. Works by two or more fellows include collaborations from before the Collective was founded. No collective h-index is given, and no member is ranked against another; individual metrics are on each member's own profiles. The record is refreshed monthly, and members can correct or withdraw their records by writing to Eric Vaz.</p>
-    </details>
+    <p class="lede">Work that fellows have written together, and a link to each member's own research record. Much of it predates the Collective and shows where members' research already meets.</p>
+    <p class="prov">Source: OpenAlex, matched to each member by ORCID · updated {UPDATED_TXT}. Members can correct or withdraw their records by writing to Eric Vaz.</p>
   </div>
 </section>
 
 <section id="together">
   <div class="wrap">
-    <p class="label">Written together · {T['multi_fellow']} works</p>
+    <p class="label">Written together</p>
     <h2>Work by two or more fellows.</h2>
     <div class="tools">
       <label class="pick-m"><span>Fellow</span>
@@ -466,7 +454,7 @@ a1();a2();
 """
 write('publications/index.html', page(
     'publications/', 'Publications · Spatial Intelligence Collective',
-    f'{fmt(T["publications"])} publications by members of the Spatial Intelligence Collective, {T["multi_fellow"]} of them written by two or more fellows, with each member\'s own research record.',
+    'Work written together by fellows of the Spatial Intelligence Collective, with links to each member\'s own research record.',
     pubs_body, 'publications', script=pubs_js))
 
 
@@ -598,7 +586,7 @@ work_li = ''.join(
     for w in recent)
 region('work', f"""
     <ul class="rows dated">{work_li}</ul>
-    <p class="more"><a href="publications/#together">All {T['multi_fellow']} works by two or more fellows</a> · <a href="publications/">{fmt(T['publications'])} publications by members</a></p>
+    <p class="more"><a href="publications/#together">All work by two or more fellows</a> · <a href="publications/#records">Members' research records</a></p>
     """)
 
 by_count = Counter(p['country'] for p in academics)
@@ -638,4 +626,4 @@ write('sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="htt
 write('robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n')
 
 print(f'built: {N_FELLOWS} fellows, {N_UNIS} universities, {N_COUNTRIES} countries; '
-      f'{fmt(T["publications"])} publications, {T["multi_fellow"]} multi-fellow; masthead {N_MAST}')
+      f'{T["multi_fellow"]} multi-fellow works; masthead {N_MAST}')
