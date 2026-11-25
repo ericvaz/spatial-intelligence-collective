@@ -13,7 +13,7 @@
   --step:clamp(56px,9vw,112px);  /* vertical rhythm between sections */
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:72px}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:96px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{margin:0;background:var(--bg);color:var(--ink);
   font:400 17px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
@@ -32,15 +32,15 @@ a:hover{text-decoration-color:var(--muted)}
   -webkit-backdrop-filter:saturate(1.4) blur(12px);backdrop-filter:saturate(1.4) blur(12px);
   border-bottom:1px solid transparent;transition:border-color .2s}
 .hdr.scrolled{border-bottom-color:var(--rule)}
-.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-.brand{font-weight:600;font-size:15px;letter-spacing:-.01em;text-decoration:none;white-space:nowrap;display:inline-flex;align-items:center;gap:12px}.brand-owl{width:36px;height:36px;flex:none;margin:-7px 0}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:84px}
+.brand{font-weight:600;font-size:15px;letter-spacing:-.01em;text-decoration:none;white-space:nowrap;display:inline-flex;align-items:center;gap:12px}.brand-owl{width:72px;height:72px;flex:none;margin:0 0 0 -8px;stroke-width:9px}
 .nav{display:flex;gap:28px;font-size:15px}
 .nav a{text-decoration:none;color:var(--muted)}
 .nav a:hover,.nav a[aria-current]{color:var(--ink)}
 .menu{display:none;background:none;border:0;font:inherit;font-size:15px;padding:8px 0;color:var(--ink);cursor:pointer}
 @media (max-width:759px){
   .menu{display:block}
-  .nav{display:none;position:absolute;left:0;right:0;top:60px;background:#fff;
+  .nav{display:none;position:absolute;left:0;right:0;top:84px;background:#fff;
     flex-direction:column;gap:0;padding:8px var(--gutter) 16px;border-bottom:1px solid var(--rule)}
   .nav.open{display:flex}
   .nav a{padding:12px 0;font-size:17px;color:var(--ink);border-top:1px solid var(--rule)}
@@ -210,7 +210,7 @@ h2{font-size:clamp(26px,4vw,34px);line-height:1.15;margin-bottom:28px;max-width:
 .people .tag{margin-left:6px;vertical-align:1px}
 .plinks{display:block;font-size:14px;margin-top:6px;color:var(--muted)}
 .plinks a{color:var(--ink)}
-.people li[id]{scroll-margin-top:80px}
+.people li[id]{scroll-margin-top:104px}
 .people .d{margin:8px 0 0}
 
 /* publications: provenance, method note, tools */
@@ -259,4 +259,5 @@ code{font-size:.9em;overflow-wrap:anywhere;word-break:break-word}
 .faq .qa p{margin:0;font-size:16px;line-height:1.6;color:var(--muted)}
 .faq .more{margin-top:28px}
 
-.ftr-id{display:flex;flex-direction:column;gap:8px}.ftr-brand{display:inline-flex;align-items:center;gap:10px;font-weight:500;font-size:13px;color:var(--ink)!important;text-decoration:none}.ftr-brand .brand-owl{width:24px;height:24px;margin:0}.qa-owl{position:relative}.owl-emblem{float:right;width:72px;height:72px;margin:0 0 8px 24px}
+.ftr-id{display:flex;flex-direction:column;gap:8px}.ftr-brand{display:inline-flex;align-items:center;gap:10px;font-weight:500;font-size:13px;color:var(--ink)!important;text-decoration:none}.ftr-brand .brand-owl{width:44px;height:44px;margin:0 0 0 -4px}.qa-owl{position:relative}.owl-emblem{float:right;width:72px;height:72px;margin:0 0 8px 24px}
+.qa p+p{margin-top:10px}
