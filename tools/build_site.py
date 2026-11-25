@@ -212,7 +212,7 @@ N_MEMBERS = len(lead) + len(fellows)
 people_body = f"""<section class="page-head">
   <div class="wrap">
     <h1>People</h1>
-    <p class="lede">The Spatial Intelligence Collective is a research network founded and led by Eric Vaz at Toronto Metropolitan University. Its fellows hold appointments at their own universities and organizations and work across geography, planning, geomatics engineering, remote sensing, information management, computing science, business, economics, and nursing. Fellowship is by invitation.</p>
+    <p class="lede">The Spatial Intelligence Collective is a research network based at Toronto Metropolitan University. Its fellows hold appointments at their own universities and organizations and work across geography, planning, geomatics engineering, remote sensing, information management, computing science, business, economics, and nursing. Fellowship is by invitation.</p>
     <ul class="metrics"><li><b>{N_FELLOWS}</b> fellows</li><li><b>{N_UNIS}</b> universities</li><li><b>{N_COUNTRIES}</b> countries</li><li><b>{N_DISC}</b> disciplines</li></ul>
   </div>
 </section>
@@ -355,24 +355,6 @@ records = ''.join(
     for p in lead + fellows)
 not_indexed = [p for p in PEOPLE if p['id'] not in OA['members_indexed']]
 
-drows = []
-for p in sorted(DIR['publications'], key=lambda p: (-int(p['year']), p['title'])):
-    au = '; '.join(p.get('authors') or [])
-    ven = esc(p.get('venue') or '')
-    drows.append(
-        f'<article class="pub" data-t="{theme(p["title"] + " " + (p.get("venue") or ""))}">'
-        f'<div class="y">{p["year"]}</div><div>'
-        f'<div class="t">{title_link(p["title"], p.get("doi"))}</div>'
-        f'<div class="a">{esc(au)}{" · " if au and ven else ""}<span class="v">{ven}</span></div>'
-        f'</div></article>')
-chips = ''.join(f'<button data-f="{k}" aria-pressed="false">{esc(l)}</button>' for k, l, _ in THEMES)
-DOI_ISBN = {"978-3-032-19210-3": "978-3-032-19211-0"}
-books = ''.join(
-    f'<a class="book" href="https://link.springer.com/book/10.1007/{DOI_ISBN.get(b["isbn"], b["isbn"])}" target="_blank" rel="noopener">'
-    f'<img src="../assets/covers/{b["isbn"]}.webp" alt="{esc(b["title"])}: {esc(b["subtitle"])}" loading="lazy">'
-    f'<h3>{esc(b["title"])}</h3><span>{esc(b["subtitle"])}</span><span>{b["year"]} · Springer</span></a>'
-    for b in DIR['books'])
-dm = DIR['metrics']
 
 pubs_body = f"""<section class="page-head">
   <div class="wrap">
@@ -391,7 +373,6 @@ pubs_body = f"""<section class="page-head">
         <select id="mf"><option value="">All fellows</option>{opts}</select></label>
       <input class="search" id="q2" type="search" placeholder="Search titles and journals" aria-label="Search works by two or more fellows">
     </div>
-    <p class="count" id="c2" aria-live="polite"></p>
     <div class="list" id="l2">{''.join(together)}</div>
     <p class="count" id="e2" hidden>No works match.</p>
   </div>
@@ -404,53 +385,23 @@ pubs_body = f"""<section class="page-head">
     <ul class="people cols">{records}</ul>
     <p class="note">{' and '.join(esc(p['name']) for p in not_indexed)} {'are' if len(not_indexed) > 1 else 'is'} not yet indexed.</p>
   </div>
-</section>
-
-<section id="director">
-  <div class="wrap">
-    <p class="label">Founding director's record · {len(drows)} entries</p>
-    <h2>Eric Vaz: selected publications.</h2>
-    <ul class="metrics"><li><b>{dm['citations']}</b> citations</li><li><b>h-index</b> {dm['h_index']}</li><li><b>{len(DIR['books'])}</b> Springer volumes</li></ul>
-    <p class="prov">Curated by Eric Vaz from his own record. Citation figures from {esc(dm['source'])}.</p>
-    <div class="filters">
-      <button data-f="all" aria-pressed="true">All</button>
-      {chips}
-    </div>
-    <input class="search" id="q" type="search" placeholder="Search titles, authors, journals" aria-label="Search Eric Vaz's publications">
-    <p class="count" id="count" aria-live="polite"></p>
-    <div class="list" id="list">{''.join(drows)}</div>
-    <p class="count" id="empty" hidden>No publications match that filter.</p>
-  </div>
-</section>
-
-<section id="books">
-  <div class="wrap">
-    <p class="label">Springer volumes by Eric Vaz</p>
-    <div class="books">{books}</div>
-  </div>
 </section>"""
 
 pubs_js = r"""
-function wire(listId, countId, emptyId, test){
-  var items=[].slice.call(document.querySelectorAll('#'+listId+' .pub')), c=document.getElementById(countId), e=document.getElementById(emptyId);
+function wire(listId, emptyId, test){
+  var items=[].slice.call(document.querySelectorAll('#'+listId+' .pub')), e=document.getElementById(emptyId);
   return function(){var n=0;items.forEach(function(el){var s=test(el);el.hidden=!s;if(s)n++;});
-    c.textContent=n+(n===1?' work':' works');e.hidden=!!n;};
+    e.hidden=!!n;};
 }
 var q2=document.getElementById('q2'), mf=document.getElementById('mf');
-var a2=wire('l2','c2','e2',function(el){var t=q2.value.trim().toLowerCase();
+var a2=wire('l2','e2',function(el){var t=q2.value.trim().toLowerCase();
   return (!mf.value||(' '+el.dataset.m+' ').indexOf(' '+mf.value+' ')>-1)&&(!t||el.textContent.toLowerCase().indexOf(t)>-1);});
 q2.addEventListener('input',a2); mf.addEventListener('change',a2);
 
-var q=document.getElementById('q'), filter='all', btns=[].slice.call(document.querySelectorAll('.filters button'));
-var a1=wire('list','count','empty',function(el){var t=q.value.trim().toLowerCase();
-  return (filter==='all'||el.dataset.t===filter)&&(!t||el.textContent.toLowerCase().indexOf(t)>-1);});
-btns.forEach(function(b){b.addEventListener('click',function(){filter=b.dataset.f;
-  btns.forEach(function(o){o.setAttribute('aria-pressed',o===b);});a1();});});
-q.addEventListener('input',a1);
 
 var qs=new URLSearchParams(location.search).get('q');
-if(qs){qs=qs.replace(/\+/g,' ');q.value=qs;q2.value=qs;}
-a1();a2();
+if(qs){qs=qs.replace(/\+/g,' ');q2.value=qs;}
+a2();
 """
 write('publications/index.html', page(
     'publications/', 'Publications · Spatial Intelligence Collective',
