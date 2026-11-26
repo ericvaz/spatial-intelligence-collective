@@ -666,6 +666,40 @@
    "scholar": null,
    "bio": "",
    "research": ""
+  },
+  {
+   "id": "bruno-damasio",
+   "name": "Bruno Damásio",
+   "sort": "Damasio",
+   "category": "fellow",
+   "position": "Assistant Professor",
+   "institution": "NOVA Information Management School, Universidade Nova de Lisboa",
+   "country": "Portugal",
+   "strange": null,
+   "orcid": "0000-0002-2289-3087",
+   "openalex": [
+    "A5054215767"
+   ],
+   "scholar": "7CJB4pgAAAAJ",
+   "bio": "",
+   "research": ""
+  },
+  {
+   "id": "fernando-bacao",
+   "name": "Fernando Bação",
+   "sort": "Bacao",
+   "category": "fellow",
+   "position": "Full Professor",
+   "institution": "NOVA Information Management School, Universidade Nova de Lisboa",
+   "country": "Portugal",
+   "strange": null,
+   "orcid": "0000-0002-0834-0275",
+   "openalex": [
+    "A5053763560"
+   ],
+   "scholar": "sFoh1WAAAAAJ",
+   "bio": "",
+   "research": ""
   }
  ]
 }
