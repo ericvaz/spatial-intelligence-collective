@@ -648,6 +648,24 @@
    "scholar": null,
    "bio": "",
    "research": ""
+  },
+  {
+   "id": "andre-samora-arvela",
+   "name": "André Samora-Arvela",
+   "sort": "Samora-Arvela",
+   "category": "fellow",
+   "position": "Assistant Professor",
+   "institution": "Universidade do Porto",
+   "country": "Portugal",
+   "strange": null,
+   "orcid": "0000-0001-6528-1040",
+   "openalex": [
+    "A5022864092",
+    "A5162845374"
+   ],
+   "scholar": null,
+   "bio": "",
+   "research": ""
   }
  ]
 }

@@ -150,6 +150,11 @@
    "city": "Syracuse",
    "lat": 43.0347,
    "lon": -76.1355
+  },
+  "Universidade do Porto": {
+   "city": "Porto",
+   "lat": 41.1474,
+   "lon": -8.6127
   }
  }
 }
