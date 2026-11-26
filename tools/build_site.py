@@ -128,7 +128,7 @@ def page(path, title, desc, body, here, script='', jsonld=None, og_image='assets
 
 <footer class="ftr">
   <div class="wrap">
-    <div class="ftr-id"><a class="ftr-brand" href="{up or './'}">{OWL}<span>Spatial Intelligence Collective</span></a><span>© <span id="yr">2026</span> Toronto Metropolitan University</span></div>
+    <div class="ftr-id"><a class="ftr-brand" href="{up or './'}">{OWL}<span>Spatial Intelligence Collective</span></a><span>© <span id="yr">2026</span> Spatial Intelligence Collective</span></div>
     <span><a href="{up}people/">People</a> · <a href="{up}publications/">Publications</a> · <a href="{up}learn/">Learn</a> · <a href="{up}strange/">STRANGE</a> · <a href="{up}about/">How the Collective works</a> · <a href="{up}#flows">Everything flows</a></span>
   </div>
 </footer>
