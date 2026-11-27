@@ -17,6 +17,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 SITE = 'https://spatialintelligence.network'
 CSS_V = 18
+# Visitor statistics: GoatCounter (no cookies, no personal data), dashboard at https://spatialintelligence.goatcounter.com
+COUNTER = '<script data-goatcounter="https://spatialintelligence.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>'
 
 
 def load(name):
@@ -110,6 +112,7 @@ def page(path, title, desc, body, here, script='', jsonld=None, og_image='assets
 <link rel="preload" href="{up}assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{up}assets/css/site.css?v={CSS_V}">
 <link rel="icon" href="{ICON}">
+{COUNTER}
 {ld}</head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -599,6 +602,8 @@ org_ld = {'@context': 'https://schema.org', '@type': 'Organization', 'name': 'Sp
                       'affiliation': {'@type': 'CollegeOrUniversity', 'name': lead[0]['institution']}},
           'member': [person_ld(p) for p in fellows]}
 region('jsonld', f'<script type="application/ld+json">{json.dumps(org_ld, ensure_ascii=False)}</script>')
+if 'data-goatcounter' not in idx:
+    idx = idx.replace('</head>', COUNTER + '\n</head>', 1)
 open(idx_path, 'w').write(idx)
 
 # ================================================================== sitemap, robots
