@@ -4,6 +4,7 @@
   content/people.json    every member, their roles and profile links (edit by hand)
   content/openalex.json  dated research snapshot (refresh with tools/fetch_openalex.py)
   content/director.json  Eric Vaz's curated record and Springer volumes
+  content/strange.json   essays published on STRANGE's Substack (refresh with tools/fetch_strange.py)
 
 Writes people/, strange/, publications/, sitemap.xml and robots.txt, and fills
 the marked <!--b:...--> regions of index.html, so the counts, people lists and
@@ -15,7 +16,7 @@ from collections import Counter
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 SITE = 'https://spatialintelligence.network'
-CSS_V = 17
+CSS_V = 18
 
 
 def load(name):
@@ -26,6 +27,7 @@ PD = load('people.json')
 PEOPLE, META = PD['people'], PD['meta']
 OA = load('openalex.json')
 DIR = load('director.json')
+STRANGE_POSTS = load('strange.json')['posts'] if os.path.exists(os.path.join(ROOT, 'content', 'strange.json')) else []
 BY_ID = {p['id']: p for p in PEOPLE}
 esc = lambda s: html.escape(str(s or ''), quote=True)
 
@@ -249,6 +251,27 @@ write('people/index.html', page(
     f'The director, {N_FELLOWS} fellows and doctoral researchers of the Spatial Intelligence Collective, at {N_UNIS} universities in {N_COUNTRIES} countries.',
     people_body, 'people', jsonld=people_ld))
 
+# ================================================================== STRANGE essays (from Substack)
+SUBSTACK = 'https://strangemagazine.substack.com'
+ESSAYS_SHOWN = 6
+ISSUE_CAPTION = '<figcaption><b>Issue 01</b> · Winter 2026 <span class="status">Published in instalments</span></figcaption>'
+
+
+def essays_block():
+    """The list under the cover: newest first, author over title, each opening the essay on Substack."""
+    if not STRANGE_POSTS:
+        return ''
+    li = ''.join(
+        f'<li><a class="essay" href="{esc(e["url"])}" target="_blank" rel="noopener">'
+        + (f'<span class="e-author">{esc(e["author"])}</span>' if e['author'] else '')
+        + f'<span class="e-title">{esc(e["title"])}</span><span class="e-arrow" aria-hidden="true">↗</span></a></li>'
+        for e in STRANGE_POSTS[:ESSAYS_SHOWN])
+    more = (f'<p class="essays-all"><a href="{SUBSTACK}/archive" target="_blank" rel="noopener">All essays on Substack</a></p>'
+            if len(STRANGE_POSTS) > ESSAYS_SHOWN else '')
+    return (f'<section class="essays" aria-labelledby="essays-h"><h3 id="essays-h">The essays</h3>'
+            f'<ul class="essay-list">{li}</ul>{more}</section>')
+
+
 # ================================================================== strange/
 mast = ''.join(f'<li><span class="n">{esc(p["name"])}</span><span class="a">Director</span></li>' for p in director_p)
 mast += ''.join(f'<li><span class="n">{esc(p["name"])}</span><span class="a">Editorial manager</span></li>' for p in manager_p)
@@ -262,10 +285,13 @@ strange_body = f"""<div class="strange-band strange-page">
         <h1><img class="wordmark" src="../assets/strange/wordmark.svg" alt="STRANGE" width="300" height="51"></h1>
         <p class="tagline">Space, place, and imagination.</p>
       </div>
+      <div class="cover-col">
       <figure class="issue">
         <img src="../assets/strange/strange-01.webp" srcset="../assets/strange/strange-01-sm.webp 600w, ../assets/strange/strange-01.webp 900w" sizes="(min-width:760px) 420px, 72vw" width="900" height="1201" alt="Cover of STRANGE Issue 01: a flooded classical hall with arches and a staircase descending into still water.">
-        <figcaption><b>Issue 01</b> <span class="status">Winter issue · In preparation</span></figcaption>
+        {ISSUE_CAPTION}
       </figure>
+      {essays_block()}
+      </div>
       <div class="s-body">
         <p class="lede">STRANGE explores space, place, and imagination through essays, images, letters, and conversations. It welcomes short reflections as well as longer contributions, and it gives the stranger problems of spatial analysis a place to be thought through in public.</p>
         <p class="note">STRANGE is an editorially curated magazine published by the Spatial Intelligence Collective.</p>
@@ -298,7 +324,7 @@ strange_body = f"""<div class="strange-band strange-page">
     <!-- When Issue 01 is published, give it a page at strange/issue-01/ and list it here, newest first:
          <li><a href="issue-01/"><img src="../assets/strange/strange-01-sm.webp" alt="STRANGE Issue 01 cover">Issue 01 · Winter 2027</a></li> -->
     <ul class="archive"></ul>
-    <p class="muted">Issue 01 is in preparation.</p>
+    <p class="muted">Issue 01 is appearing in instalments on <a href="https://strangemagazine.substack.com" target="_blank" rel="noopener">Substack</a>. The essays will be collected in a single PDF once the issue is complete.</p>
   </div>
 </section>"""
 strange_ld = {'@context': 'https://schema.org', '@type': 'Periodical', 'name': 'STRANGE',
@@ -354,7 +380,8 @@ records = ''.join(
     f'<li><span class="n"><a href="../people/#{p["id"]}">{esc(p["name"])}</a></span>'
     f'<span class="a">{esc(p["institution"])}</span>{links(p)}</li>'
     for p in lead + fellows)
-not_indexed = [p for p in PEOPLE if p['id'] not in OA['members_indexed']]
+not_indexed = [p for p in PEOPLE if p['id'] not in OA['members_indexed'] and p['category'] != 'editor']   # masthead-only editors are not members
+and_list = lambda xs: xs[0] if len(xs) == 1 else ' and '.join(xs) if len(xs) == 2 else ', '.join(xs[:-1]) + ', and ' + xs[-1]
 
 
 pubs_body = f"""<section class="page-head">
@@ -384,7 +411,7 @@ pubs_body = f"""<section class="page-head">
     <p class="label">Members' records</p>
     <h2>Every member's own record.</h2>
     <ul class="people cols">{records}</ul>
-    <p class="note">{' and '.join(esc(p['name']) for p in not_indexed)} {'are' if len(not_indexed) > 1 else 'is'} not yet indexed.</p>
+    <p class="note">{and_list([esc(p['name']) for p in not_indexed])} {'are' if len(not_indexed) > 1 else 'is'} not yet indexed.</p>
   </div>
 </section>"""
 
@@ -531,6 +558,8 @@ def region(name, content):
     idx = pat.sub(lambda m: m.group(1) + content + m.group(2), idx)
 
 
+region('essays', essays_block())
+region('issue-caption', ISSUE_CAPTION)
 region('facts', f'<li><b>{N_FELLOWS}</b> fellows</li><li><b>{N_UNIS}</b> universities</li><li><b>{N_COUNTRIES}</b> countries</li>')
 
 recent = [w for w in OA['multi_fellow'] if w['type'] in ('article', 'review', 'book')][:4]

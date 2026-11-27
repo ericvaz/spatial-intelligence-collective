@@ -650,6 +650,22 @@
    "research": ""
   },
   {
+   "id": "sophie-charalambous",
+   "name": "Sophie Charalambous",
+   "sort": "Charalambous",
+   "category": "editor",
+   "position": "Fiction Editor",
+   "institution": "STRANGE",
+   "country": "Canada",
+   "nonacademic": true,
+   "strange": "fiction",
+   "orcid": null,
+   "openalex": [],
+   "scholar": null,
+   "bio": "",
+   "research": ""
+  },
+  {
    "id": "andre-samora-arvela",
    "name": "André Samora-Arvela",
    "sort": "Samora-Arvela",

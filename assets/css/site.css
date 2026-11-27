@@ -121,7 +121,7 @@ h2{font-size:clamp(26px,4vw,34px);line-height:1.15;margin-bottom:28px;max-width:
 .archive img{margin-bottom:8px}
 .strange{grid-template-areas:"head" "cover" "body";gap:28px}
 .s-head{grid-area:head}.s-head .tagline{margin-bottom:0}
-.issue{grid-area:cover}
+.cover-col{grid-area:cover;min-width:0}
 .s-body{grid-area:body}
 .issue img{max-width:min(420px,72vw)}
 .masthead{border-top:0}
@@ -132,6 +132,23 @@ h2{font-size:clamp(26px,4vw,34px);line-height:1.15;margin-bottom:28px;max-width:
   .issue img{max-width:420px}
   .archive{grid-template-columns:repeat(4,1fr)}
 }
+
+/* STRANGE essays: the issue's running contents, under the cover */
+.essays{margin-top:32px;padding:0;border:0;max-width:420px}
+.essays h3{font:600 11px/1.4 Inter,system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+.essay-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.essay{position:relative;display:block;padding:18px 28px 18px 0;border-bottom:1px solid var(--rule);text-decoration:none;color:var(--ink)}
+.e-author{display:block;font-size:13px;font-weight:500;line-height:1.5;color:var(--muted);margin-bottom:5px}
+.e-title{display:block;font-family:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;font-size:23px;font-weight:400;line-height:1.25;color:#1c1a16}
+.e-arrow{position:absolute;top:19px;right:2px;font-size:12px;color:var(--muted);opacity:.65;transition:transform .15s,opacity .15s}
+.essay:hover .e-title{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px;text-decoration-color:var(--muted)}
+.essay:hover .e-arrow,.essay:focus-visible .e-arrow{opacity:1;transform:translate(2px,-2px)}
+.essay:focus-visible{outline:2px solid var(--muted);outline-offset:4px}
+.essays-all{margin:14px 0 0;font-size:14px}
+.essays-all a{color:var(--muted)}
+@media (min-width:760px){.e-title{font-size:24px}}
+@media (max-width:759px){.essays{max-width:none}}
+@media (prefers-reduced-motion:reduce){.e-arrow{transition:none}}
 
 /* folds: collapsible groups on phones, always open on wide screens */
 .fold>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;
